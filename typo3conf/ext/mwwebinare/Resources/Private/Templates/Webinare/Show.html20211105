@@ -1,0 +1,304 @@
+
+<html xmlns:f="https://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+	<f:layout name="Default" />
+
+	This Template is responsible for displaying a single view for a domain object
+
+	If you modify this template, do not forget to change the overwrite settings
+	in /Configuration/ExtensionBuilder/settings.yaml:
+	  Resources:
+		Private:
+		  Templates:
+			Show.html: keep
+
+	Otherwise your changes will be overwritten the next time you save the extension in the extension builder
+
+	<f:section name="content">
+		<div id="c2009" class="content-list   ">
+			<div data-orientation="vertical" data-theme="grey" data-url="<f:uri.action action="show" pageUid="{settings.detailseite}" arguments="{webinare : webinare.uid, termine: webinare.terminuid}" absolute="TRUE" />" data-mail-subject="Ein Webinar von www.infoniqa.com" data-mail-url="mailto:" data-services="[&quot;facebook&quot;,&quot;twitter&quot;,&quot;linkedin&quot;,&quot;mail&quot;]" data-lang="de" class="shariff"></div></div>
+		<div id="c239x" class="content-text content-text-page-introduction-h1 bg_white"
+			     data-content="text" data-layout="page-introduction-h1">
+				<div class="container">
+					
+					
+						<div class="body-text without-h1">
+							
+
+						</div>
+					
+				</div>
+			</div>
+		<div class="tx-calendars">
+			<div class="webinare">
+				<div class="container">
+						<div class="row webinar-item odd">
+								<div class="col-12 col-xl-4">
+									<f:for each="{webinare.bilder}" as="image" iteration="imageIterator">
+										<f:if condition="{imageIterator.isFirst}">
+											
+											<div class="webinar-image d-none d-md-block"
+												 style="background-image: url({f:uri.image(image: image, treatIdAsReference: 1, width: 690)})"
+												 title="{event.title}"
+												 data-sizes="auto"
+												 data-parent-fit="cover"
+												 data-bgset="{f:uri.image(image: image, treatIdAsReference: 1, width: 690)} 690w,
+															     {f:uri.image(image: image, treatIdAsReference: 1, width: 930)} 930w,
+															     {f:uri.image(image: image, treatIdAsReference: 1, width: 850)} 850w,
+															     {f:uri.image(image: image, treatIdAsReference: 1, width: 980)} 980w,
+															     {f:uri.image(image: image, treatIdAsReference: 1, width: 1110)} 1110w,
+															     {f:uri.image(image: image, treatIdAsReference: 1, width: 1190)} 1190w">
+											</div>
+										</f:if>
+									</f:for>
+								</div>
+								<div class="col-12 col-xl-8">
+									<div class="d-flex flex-column bg-white">
+										<f:if condition="{webinare.grueneslabel} == '0'">
+											<div class="webinar-type-free d-flex align-items-center  justify-content-xl-center">Kostenlos</div>
+										</f:if>
+										<f:if condition="{webinare.grueneslabel} == '1'">
+											<div class="webinar-type-with-costs d-flex align-items-center  justify-content-xl-center">Kostenpflichtig</div>
+										</f:if>
+										<h2 class="webinar-title">{webinare.titel}</h2>
+										<div class="webinar-description"><f:format.html>{webinare.wichtigsteninfos}</f:format.html></div>
+										
+										
+										
+										<a href="#c2489" class="anke icon-arrow icon-arrowr" id="gotoform">Anmelden</a>
+									
+										<div class="webinar-information">
+											<span class="webinar-date"><f:format.date format="d.m.Y">{termine.beginn}</f:format.date>&nbsp;</span>
+											<span class="webinar-date-separator d-none d-xl-inline-block">|</span>
+											<span class="webinar-time"> <f:format.date format="H:i">{termine.beginn}</f:format.date> Uhr </span>
+											<span class="webinar-time-separator">| </span>
+											<span class="webinar-duration"> {webinare.dauer}</span>
+										</div>
+									</div>
+								</div>
+							</div>
+				</div>
+			</div>
+		
+		
+</div>
+		<f:if condition="{webinare.beschreibung} != '' || {weiteretermines}">
+				<div class="content-text content-text-page-introduction-h1 bg_white nopadding text-left"
+			     data-content="text" data-layout="page-introduction-h1">
+					<div class="container">
+						<f:format.html>{webinare.beschreibung}</f:format.html>
+						
+						
+						
+						<f:if condition="{weiteretermines}">
+							<f:if condition="{webinare.beschreibung} != ''}"><hr></f:if>
+							<h3>Weitere Termine zu diesem Webinar:</h3>
+							<f:for each="{weiteretermines}" as="weiteretermine">
+									<div class="webinar-weitereinformation floatleft">
+										<f:link.action action="show" pageUid="{settings.detailseite}" arguments="{webinare : webinare.uid, termine: weiteretermine.uid}">
+											<span class="webinar-date"><strong><f:format.date format="d.m.Y">{weiteretermine.beginn}</f:format.date></strong>&nbsp;</span>
+											<span class="webinar-date-separator d-none d-xl-inline-block">|</span>
+											<span class="webinar-time"> <f:format.date format="H:i">{weiteretermine.beginn}</f:format.date> Uhr </span>
+											<span class="webinar-time-separator">| </span>
+											<span class="webinar-duration"> {webinare.dauer}</span>
+										</f:link.action>
+										</div>
+							</f:for>
+						</f:if>
+					</div>
+					
+				</div>
+			</f:if>
+		<div id="c37d" class="content-text content-text-page-introduction-h1_ padtop84 bg-light margbot50"
+							data-content="text" data-layout="page-introduction-h1">
+							<div class="container ">
+								<div class="roundicon">
+									<img src="typo3conf/ext/mwwebinare/Resources/Public/images/personen.svg" alt="">
+								</div>
+								<div class="body-text without-h1">
+									<h2 class="text-center">Ihre Infoniqa Experten</h2>
+								</div>
+								
+								<div class="text-center">
+							<f:for each="{webinare.experten}" as="experte">
+									<div class="col25">
+										<div class="referntbox">
+											
+												<div class="referent_img">
+													<f:if condition="{experte.bild}"><f:image image="{experte.bild}" width="468c" height="298c" /></f:if>
+												</div>
+												<div class="referent_txt">
+													<h3><f:if condition="{experte.titel} != ''">{experte.titel} </f:if>{experte.vorname} {experte.nachname}</h3>
+													<p>{experte.spezialgebiet}</p>
+												</div>
+											
+										</div>
+									</div>
+									
+							</f:for>
+									</div>
+								
+							</div>
+						</div>
+
+
+		<div id="c2489" class="content-list   ">
+			<div class="tx-calendars">
+	<div id="calendars-flash-messages"></div>
+	
+	<div class="calendar-registration-show bg bg-gray-space-right-medium">
+		<div class="container-fluid">
+			
+				<f:form action="createanfrage" id="anfrageform" noCache="TRUE" enctype="multipart/form-data"  name="newAnfrage" object="{newAnfrage}">
+				
+					<f:form.hidden name="uid" value="{webinare.uid}" />
+					<f:form.hidden name="addressuid" value="{webinare.registrationaddress.uid}" />
+					<div class="card mb-3">
+					<div class="card-header"><h2 class="h1">Anmeldung</h2></div>
+					<div class="card-body">
+						<div class="form-group row">
+							<label for="event" class="col-xs-12 col-sm-12 col-md-4 col-lg-4 control-label ">Veranstaltung:*</label>
+							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+								<f:form.textfield placeholder="Termein" class="form-control" id="event" name="event" value="{webinare.titel} {f:format.date(date: termine.beginn, format: 'd.m.Y H:i')} Uhr" required="TRUE" />
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card-header"><h2>Firmendaten</h2></div>
+					<div class="card-body">
+						
+						<div class="row">
+							<div class="form-group col-md-6">
+								<label for="company" class="control-label sr-only ">Firma *</label>
+								<f:form.textfield placeholder="Firma *" class="form-control" id="company" name="company" required="TRUE" />
+							</div>
+							
+							<div class="form-group col-md-6">
+								<label for="company" class="control-label sr-only">Branche </label>
+								<f:form.textfield placeholder="Branche" class="form-control" id="branch" name="branch" />
+							</div>
+							<div class="w-100"></div>
+							<div class="form-group col-md-6">
+								<label for="lastName" class="control-label sr-only">Name: *</label>
+								<f:form.textfield placeholder="Name *" class="form-control" id="lastName" name="lastName" required="TRUE" />
+							</div>
+							<div class="form-group col-md-6">
+								<label for="firstName" class="control-label sr-only">Vorname *</label>
+								<f:form.textfield placeholder="Vorname *" class="form-control" id="firstName" name="firstName" required="TRUE" />
+							</div>
+							<div class="form-group col-md-6">
+								<label for="street" class="control-label sr-only">Straße:</label>
+								<f:form.textfield placeholder="Straße" class="form-control" id="street" name="street" />
+							</div>
+							<div class="form-group col-md-6">
+								<label for="city" class="control-label sr-only">PLZ/Ort:</label>
+								<f:form.textfield placeholder="PLZ" class="form-control input-postcode" id="postalCode" name="postalCode" />
+								<f:form.textfield placeholder="Ort" class="form-control input-city" id="city" name="city" />
+							</div>
+							<div class="w-100"></div>
+							<div class="form-group col-md-6">
+								<label for="phone" class="control-label sr-only">Telefon:</label>
+								<f:form.textfield placeholder="Telefon" class="form-control" id="phone" name="phone" />
+							</div>
+							
+							<div class="form-group col-md-6">
+								<label for="email" class="control-label sr-only">Ihre E-Mail-Adresse: *</label>
+								<f:form.textfield placeholder="Ihre E-Mail-Adresse *" class="form-control" id="email" name="email" required="TRUE" />
+							</div>
+							<hr style="width: 100%; padding-bottom: 25px; margin: 0; margin-right: 15px; margin-left: 15px;opacity: 0.4">
+
+							<div class="form-group col-md-4">
+								<label for="teilnehmereins" class="control-label sr-only">Weitere Teilnehmer 1</label>
+								<f:form.textfield placeholder="Weitere Teilnehmer 1 (Vorname)" class="form-control" id="teilnehmereins" name="teilnehmereins" />
+							</div>
+							<div class="form-group col-md-4">
+								<label for="teilnehmereinsname" class="control-label sr-only">Weitere Teilnehmer 1 Name</label>
+								<f:form.textfield placeholder="Weitere Teilnehmer 1 (Name)" class="form-control" id="teilnehmereinsname" name="teilnehmereinsname" />
+							</div>
+							<div class="form-group col-md-4">
+								<label for="teilnehmereinsemail" class="control-label sr-only">Weitere Teilnehmer 1 Emai</label>
+								<f:form.textfield placeholder="Weitere Teilnehmer 1 (Email)" class="form-control" id="teilnehmereinsemail" name="teilnehmereinsemail" />
+							</div>
+
+
+
+							<div class="w-100"></div>
+							<div class="form-group col-md-4">
+								<label for="teilnehmerzwei" class="control-label sr-only">Weitere Teilnehmer 2</label>
+								<f:form.textfield placeholder="Weitere Teilnehmer 2 (Vorname)" class="form-control" id="teilnehmerzwei" name="teilnehmerzwei" />
+							</div>
+							<div class="form-group col-md-4">
+								<label for="teilnehmerzweiname" class="control-label sr-only">Weitere Teilnehmer 1 Name</label>
+								<f:form.textfield placeholder="Weitere Teilnehmer 2 (Name)" class="form-control" id="teilnehmerzweiname" name="teilnehmerzweiname" />
+							</div>
+							<div class="form-group col-md-4">
+								<label for="teilnehmerzweiemail" class="control-label sr-only">Weitere Teilnehmer 1 Emai</label>
+								<f:form.textfield placeholder="Weitere Teilnehmer 2 (Email)" class="form-control" id="teilnehmerzweiemail" name="teilnehmerzweiemail" />
+							</div>
+
+
+
+
+
+
+							<div class="w-100"></div>
+							<div class="form-group col-md-4">
+								<label for="teilnehmerdrei" class="control-label sr-only">Weitere Teilnehmer 3</label>
+								<f:form.textfield placeholder="Weitere Teilnehmer 3 (Vorname)" class="form-control" id="teilnehmerdrei" name="teilnehmerdrei" />
+							</div>
+							<div class="form-group col-md-4">
+								<label for="teilnehmerdreiname" class="control-label sr-only">Weitere Teilnehmer 1 Name</label>
+								<f:form.textfield placeholder="Weitere Teilnehmer 3 (Name)" class="form-control" id="teilnehmerdreiname" name="teilnehmerdreiname" />
+							</div>
+							<div class="form-group col-md-4">
+								<label for="teilnehmerdreiemail" class="control-label sr-only">Weitere Teilnehmer 1 Emai</label>
+								<f:form.textfield placeholder="Weitere Teilnehmer 3 (Email)" class="form-control" id="teilnehmerdreiemail" name="teilnehmerdreiemail" />
+							</div>
+
+
+
+
+
+
+							<div class="w-100"></div>
+							<div class="form-group col-md-12">
+								<label for="rechnungsadresse" class="control-label label-for-textarea sr-only">Rechnungsadresse</label>
+								<f:form.textarea rows="3" placeholder="Rechnungsadresse, falls abweichend" class="form-control" id="rechnungsadresse" name="rechnungsadresse" />
+							</div>
+
+
+
+
+							<hr style="width: 100%; padding-bottom: 25px; margin: 0; margin-right: 15px; margin-left: 15px;opacity: 0.4">
+							<div class="w-100"></div>
+
+							<div class="form-group col-md-12">
+								<label for="message" class="control-label label-for-textarea sr-only">Anmerkung:</label>
+								<f:form.textarea rows="3" placeholder="Anmerkung" class="form-control" id="nachricht" name="nachricht" />
+								
+							</div>
+							<div class="displaynone" style="display: none;"><f:form.textarea name="message" id="message" value="" /></div>
+							<div class="form-group col-md-12">
+								<div class="row">
+									<div class="col-xs-12 col-sm-8 col-md-6 d-flex flex-column justify-content-end">
+										<small>* Pflichtfelder</small><br>
+										<button type="submit" name="submit" class="btn btn-primary">Absenden</button>
+									</div>
+									<div class="col-xs-12 col-sm-8 col-md-6">
+
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</f:form>
+		</div>
+	</div>
+
+</div>
+</div>
+				
+		
+	</f:section>
+</html>

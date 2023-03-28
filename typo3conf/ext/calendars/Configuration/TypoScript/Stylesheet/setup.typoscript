@@ -1,0 +1,60 @@
+plugin.tx_calendars._CSS_DEFAULT_STYLE (
+	/* Bootstrap4 fixes */
+
+	.tx-calendars .calender-year {
+		overflow: hidden;
+	}
+	.tx-calendars .calender-year .month-container {
+		width: 100%;
+		float: left;
+		display: inline-block;
+		min-height: 230px;
+	}
+	@media (min-width: 576px) {
+		.tx-calendars .calender-year .month-container {
+			width: 50%;
+		}
+	}
+	@media (min-width: 768px) {
+		.tx-calendars .calender-year .month-container {
+			width: 33.333333333%;
+		}
+	}
+	@media (min-width: 992px) {
+		.tx-calendars .calender-year .month-container {
+			width: 25%;
+		}
+	}
+	@media (min-width: 1200px) {
+		.tx-calendars .calender-year .month-container {
+			width: 25%;
+		}
+	}
+	.tx-calendars .calendar-event-list .calendar-list-item .event-image {
+		width: 100%;
+		text-align: center;
+	}
+	.tx-calendars .event-category-default {
+		background-color: #aaa;
+	}
+	.tx-calendars .event-category-primary {
+		background-color: #007bff;
+	}
+	.tx-calendars .event-category-secondary {
+		background-color: #6c757d;
+	}
+	.tx-calendars .event-category-success {
+		background-color: #28a745;
+	}
+	.tx-calendars .event-category-info {
+		background-color: #17a2b8;
+	}
+	.tx-calendars .event-category-warning {
+		background-color: #ffc107;
+	}
+	.tx-calendars .event-category-danger {
+		background-color: #dc3545;
+	}
+
+)
+

@@ -1,0 +1,21 @@
+{
+    "name": "econcess-gmbh/bootstrap-package-econcess",
+    "type": "typo3-cms-extension",
+    "description": "Bootstrap package based template for Infoniqa by econcess",
+    "homepage": "https://www.econcess.de",
+    "license": ["GPL-2.0-or-later"],
+    "keywords": ["TYPO3 CMS"],
+    "require": {
+        "bk2k/bootstrap-package": "^12.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "EconcessGmbh\\BootstrapPackageEconcess\\": "Classes/"
+        }
+    },
+    "extra": {
+        "typo3/cms": {
+            "extension-key": "bootstrap_package_econcess"
+        }
+    }
+}

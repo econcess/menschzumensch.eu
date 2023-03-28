@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2020-01-16T10:14:48Z" product-name="mwwebinare">
+		<header/>
+		<body>
+			<trans-unit id="frage.description">
+				<source>frage</source>
+			</trans-unit>
+			<trans-unit id="antwort.description">
+				<source>antwort</source>
+			</trans-unit>
+			<trans-unit id="biild.description">
+				<source>biild</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

@@ -1,0 +1,16 @@
+<div class="tx-calendars"
+	 data-calendars-json-api="{f:uri.action(
+	 	action: 'select',
+	 	absolute: 1,
+	 	controller: 'JsonApi',
+	 	pluginName: 'JsonApi',
+	 	extensionName: 'Calendars',
+	 	pageType: 1505818823,
+	 	noCache: 1,
+	 	noCacheHash: 1,
+		additionalParams: '{type: 1505818823}'
+	)}"><f:comment>It happens in a TYPO3 7.6.15, that pageType: 1491378305 had no effect,
+	therefore additionally with additionalParams!</f:comment>
+	<div id="calendars-flash-messages"></div>
+	<f:render section="Main" />
+</div>

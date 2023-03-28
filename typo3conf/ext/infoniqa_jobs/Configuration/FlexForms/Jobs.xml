@@ -1,0 +1,58 @@
+<T3DataStructure>
+	<meta>
+		<langDisable>1</langDisable>
+		<!--  <langChildren>1</langChildren> !-->
+	</meta>
+	<sheets>
+		<sDEF>
+			<ROOT>
+				<TCEforms>
+					<sheetTitle>LLL:EXT:bookings/Resources/Private/Language/locallang_db.xlf:tx_bookings_plugin_bookingobject.flex_form_title_general</sheetTitle>
+				</TCEforms>
+				<type>array</type>
+				<el>
+
+					<settings.template>
+						<TCEforms>
+							<exclude>0</exclude>
+							<label>LLL:EXT:bookings/Resources/Private/Language/locallang_db.xlf:tx_bookings_plugin_bookingobject.template</label>
+							<config>
+								<type>select</type>
+								<renderType>selectSingle</renderType>
+								<minitems>1</minitems>
+								<maxitems>1</maxitems>
+								<size>1</size>
+								<items type="array">
+									<numIndex index="0" type="array">
+										<numIndex index="0">LLL:EXT:bookings/Resources/Private/Language/locallang_db.xlf:tx_bookings_plugin_bookingobject.template_detailed</numIndex>
+										<numIndex index="1">Detailed</numIndex>
+									</numIndex>
+									<numIndex index="1" type="array">
+										<numIndex index="0">LLL:EXT:bookings/Resources/Private/Language/locallang_db.xlf:tx_bookings_plugin_bookingobject.template_teaser</numIndex>
+										<numIndex index="1">Teaser</numIndex>
+									</numIndex>
+								</items>
+							</config>
+						</TCEforms>
+					</settings.template>
+
+					<settings.url>
+						<TCEforms>
+							<exclude>0</exclude>
+							<label>URL</label>
+							<config>
+                                <type>input</type>
+                                <size>40</size>
+                                <max>255</max>
+                                <eval>required,trim</eval>
+								<default>https://demo.infoniqa-hr.com/ei/services/getJobOffers/infoniqa</default>
+							</config>
+						</TCEforms>
+					</settings.url>
+
+				</el>
+			</ROOT>
+		</sDEF>
+
+	</sheets>
+</T3DataStructure>

@@ -1,0 +1,43 @@
+<f:comment>
+//+2968/econcess
+</f:comment>
+<f:layout name="Default" />
+<f:section name="Main">
+	<div class="container tweetcontainer" data-tweet-id="{data.bodytext}">
+		<blockquote>
+			<div style="border-style: solid; padding:15px; text-align:center; margin: 0 5rem 25px;">
+				<p>
+					<em style="font-size:18px; font-weight:bold">
+					„{data.bodytext}“
+					</em><br />
+					Infoniqa
+				</p>
+				<a 
+					href="https://twitter.com/share?ref_src=twsrc%5Etfw" 
+					class="twitter-share-button quote-at-twitter" 
+					data-text="„{data.bodytext}“ Infoniqa" 
+					data-url="<f:uri.page additionalParams="{tx_news_pi1: {action: 'detail',controller: 'News',news: newsRecordId}}"></f:uri.page>" 
+					data-via="Infoniqa" 
+					data-hashtags="infoniqa" 
+					data-related="" 
+					data-show-count="false"
+				>
+					Tweet
+				</a>
+			</div>
+		</blockquote>
+	</div>
+</div>
+</f:section>
+<f:comment>
+//-2968/econcess
+</f:comment>
+<f:section name="FooterAssets">
+	<script id="twitter-quoteurls" data-cookieconsent="marketing">
+	var curr_Url = window.location.href;
+	$('.quote-at-twitter').each(function(index) {
+		$(this).attr('data-url',curr_Url);
+	});
+	</script>
+	<script id="twitter-wjs" type="text/javascript" data-cookieconsent="marketing" async src="https://platform.twitter.com/widgets.js"></script>
+</f:section>

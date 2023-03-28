@@ -1,0 +1,49 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:layout name="Default" />
+
+This Template is responsible for creating a table of domain objects.
+
+If you modify this template, do not forget to change the overwrite settings
+in /Configuration/ExtensionBuilder/settings.yaml:
+  Resources:
+    Private:
+      Templates:
+        List.html: keep
+
+Otherwise your changes will be overwritten the next time you save the extension in the extension builder
+
+<f:section name="content">
+ <style>
+     body, pre, p 	 {
+		  font-family: Arial, Helvetica, sans-serif; 
+      	font-size: 13px
+	 }
+
+    </style>
+	<p>Lieber Besucher,</p>
+	<p><strong>vielen Dank  für Ihre Anmeldung!</strong><br>
+Webinar: {args.event}<br>
+Firma/Branche: {args.company} - {args.branch}<br>
+Name: {args.firstName} {args.lastName}<br>
+Adresse: {args.street}, {args.postalCode} {args.city}<br>
+Telefon: {args.phone}<br>
+E-Mail: {args.email}<br>
+Teilnehmer 1: {args.teilnehmereins} - {args.teilnehmereinsname} - {args.teilnehmereinsemail} <br>
+Teilnehmer 2: {args.teilnehmerzwei} - {args.teilnehmerzweiname} - {args.teilnehmerzweiemail} <br>
+Teilnehmer 3: {args.teilnehmerdrei} - {args.teilnehmerdreiname} - {args.teilnehmerdreiemail} <br>
+Rechnungsadresse: {args.rechnungsadresse}<br>
+Nachricht: {args.nachricht}</p>
+<p>Viele Grüße<br>
+  Ihr Infoniqa Team</p>
+<p>Infoniqa  Deutschland GmbH <br>
+  Hanns-Klemm-Str. 5<br>
+  D-71034 Böblingen<br>
+  Tel.: +49 7031 - 4107 100 <br>
+  kontakt@infoniqa.com<br>
+  Amtsgericht  Stuttgart HRB 738032<br>
+  Vertreten durch die Geschäftsführer: Patrick Attanasio, Tanja Ziegler <br>
+  <a href="https://www.infoniqa.com/impressum/">Impressum</a><br>
+  <a href="https://www.infoniqa.com/datenschutz/">Datenschutzerklärung</a></p>
+  <img src="https://www.infoniqa.com/typo3conf/ext/theme_bootstrap4_infoniqa/Resources/Public/Images/logo.png" alt="">
+</f:section>
+</html>

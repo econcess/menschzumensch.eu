@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2013-07-13T17:08:58Z" product-name="additional_tca">
+		<header/>
+		<body>
+			<!--=== Backend: TCA Tabs ===-->
+			<trans-unit id="tx_additionaltca_label.tab_seo">
+				<source>SEO</source>
+			</trans-unit>
+			<trans-unit id="tx_additionaltca_label.tab_relations">
+				<source>Relations</source>
+			</trans-unit>
+			<trans-unit id="tx_additionaltca_label.tab_images">
+				<source>Images</source>
+			</trans-unit>
+			<trans-unit id="tx_additionaltca_label.tab_files">
+				<source>Files</source>
+			</trans-unit>
+			<trans-unit id="tx_additionaltca_label.tab_links">
+				<source>Links</source>
+			</trans-unit>
+			<trans-unit id="tx_additionaltca_label.tab_markdown">
+				<source>Markdown</source>
+			</trans-unit>
+			<trans-unit id="tx_additionaltca_label.tab_contact">
+				<source>Contact</source>
+			</trans-unit>
+			<trans-unit id="tx_additionaltca_label.tab_persons">
+				<source>Persons</source>
+			</trans-unit>
+			<trans-unit id="tx_additionaltca_label.tab_bookings">
+				<source>Bookings</source>
+			</trans-unit>
+			<trans-unit id="tx_additionaltca_label.tab_prices">
+				<source>Prices</source>
+			</trans-unit>
+			<trans-unit id="tx_additionaltca_label.tab_map">
+				<source>Map</source>
+			</trans-unit>
+			<trans-unit id="tx_additionaltca_label.tab_registration">
+				<source>Registration</source>
+			</trans-unit>
+
+
+			<!--==============================
+				Update and information service
+				==============================-->
+
+			<!--=== Backend: Update message ===-->
+			<trans-unit id="tx_additionaltca_message.info_click_for_more_information">
+				<source><![CDATA[Click <a href="%1$s" target="_blank">here</a> for more information.]]></source>
+			</trans-unit>
+			<trans-unit id="tx_additionaltca_message.info_need_help_or_new_features">
+				<source>Sie brauchen Hilfe bei der Einrichtung diese Erweiterung oder benötigen ein weiteres Feature?</source>
+			</trans-unit>
+			<trans-unit id="tx_additionaltca_message.info_mail_us">
+				<source><![CDATA[<b>Schreiben Sie einfach eine E-Mail an:</b> <a href="mailto:%1$s"><em>%1$s</em></a>]]></source>
+			</trans-unit>
+			<trans-unit id="tx_additionaltca_message.info_about_this_message">
+				<source>über diese Nachricht</source>
+			</trans-unit>
+
+			<!--=== Backend: Update message ===-->
+			<trans-unit id="tx_additionaltca_message.error_version_not_detected">
+				<source>Version could not be detected. Possibly CURL is not enabled and file_get_contents is not allowed to call remote URLs!</source>
+			</trans-unit>
+			<trans-unit id="tx_additionaltca_message.error_version_json_invalid">
+				<source>Version data couldn't be parsed!</source>
+			</trans-unit>
+			<trans-unit id="tx_additionaltca_message.info_major_release_available">
+				<source>A new major release is available!</source>
+			</trans-unit>
+			<trans-unit id="tx_additionaltca_message.info_minor_release_available">
+				<source>A new minor release is available!</source>
+			</trans-unit>
+			<trans-unit id="tx_additionaltca_message.info_patch_available">
+				<source>A new patch is available!</source>
+			</trans-unit>
+			<trans-unit id="tx_additionaltca_message.warning_update_message">
+				<source>We recommend you to update this extension to the current version.</source>
+			</trans-unit>
+
+			<!--=== Backend: Extension-Manager settings ===-->
+			<trans-unit id="tx_additionaltca_ext_conf_template.extension_update_service_active">
+				<source>Enable extension update service</source>
+			</trans-unit>
+			<trans-unit id="tx_additionaltca_ext_conf_template.extension_update_service_email">
+				<source>Display email address for support or extension request</source>
+			</trans-unit>
+
+		</body>
+	</file>
+</xliff>

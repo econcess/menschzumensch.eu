@@ -1,0 +1,173 @@
+base: /menschzumensch.eu/
+errorHandling:
+  -
+    errorCode: 404
+    errorHandler: Page
+    errorContentSource: 't3://page?uid=5'
+languages:
+  -
+    title: Deutsch
+    enabled: true
+    languageId: 0
+    base: /
+    typo3Language: de
+    locale: german
+    iso-639-1: de
+    navigationTitle: Deutsch
+    hreflang: de-DE
+    direction: ''
+    flag: de
+    websiteTitle: ''
+rootPageId: 1
+routeEnhancers:
+  PageTypeSuffix:
+    type: PageType
+    default: /
+    suffix: /
+    index: ''
+    map:
+      sitemap_check.xml: 1533906435
+      yoast-snippetpreview.json: 1480321830
+      redirect.json: 1555
+      /: 0
+  News:
+    type: Extbase
+    extension: News
+    plugin: Pi1
+    routes:
+      -
+        routePath: /
+        _controller: 'News::list'
+      -
+        routePath: '/page-{page}'
+        _controller: 'News::list'
+        _arguments:
+          page: '@widget_0/currentPage'
+      -
+        routePath: '/{news-title}'
+        _controller: 'News::detail'
+        _arguments:
+          news-title: news
+      -
+        routePath: '/{category-name}'
+        _controller: 'News::list'
+        _arguments:
+          category-name: overwriteDemand/categories
+      -
+        routePath: '/{tag-name}'
+        _controller: 'News::list'
+        _arguments:
+          tag-name: overwriteDemand/tags
+    defaultController: 'News::list'
+    defaults:
+      page: '0'
+    aspects:
+      news-title:
+        type: PersistedAliasMapper
+        tableName: tx_news_domain_model_news
+        routeFieldName: path_segment
+      page:
+        type: StaticRangeMapper
+        start: '1'
+        end: '100'
+      category-name:
+        type: PersistedAliasMapper
+        tableName: sys_category
+        routeFieldName: slug
+      tag-name:
+        type: PersistedAliasMapper
+        tableName: tx_news_domain_model_tag
+        routeFieldName: slug
+  NewsAuthorPlugin:
+    type: Extbase
+    extension: MdNewsAuthor
+    plugin: NewsAuthor
+    routes:
+      -
+        routePath: '{slug}'
+        _controller: 'NewsAuthor::show'
+        _arguments:
+          slug: newsAuthor
+      -
+        routePath: '/a-z/{letter}'
+        _controller: 'NewsAuthor::list'
+        _arguments:
+          letter: selectedLetter
+    defaultController: 'NewsAuthor::list'
+    defaults:
+      letter: ''
+    requirements:
+      slug: '^[a-zA-Z0-9].*$'
+      letter: \d+
+    aspects:
+      slug:
+        type: PersistedAliasMapper
+        tableName: tx_mdnewsauthor_domain_model_newsauthor
+        routeFieldName: slug
+      letter:
+        type: StaticValueMapper
+        map:
+          a: A
+          b: B
+          c: C
+          d: D
+          e: E
+          f: F
+          g: G
+          h: H
+          i: I
+          j: J
+          k: K
+          l: L
+          m: M
+          'n': 'N'
+          o: O
+          p: P
+          q: Q
+          r: R
+          s: S
+          t: T
+          u: U
+          v: V
+          w: W
+          x: X
+          'y': 'Y'
+          z: Z
+  Jobs:
+    type: Extbase
+    extension: infoniqa_jobs
+    plugin: Jobs
+    routes:
+      -
+        routePath: '/{job_title}-{job_id}'
+        _controller: 'Jobs::show'
+        _arguments:
+          job_title: slug
+          job_id: job
+    defaultController: 'Jobs::show'
+    requirements:
+      job_id: '[0-9a-z]{32}'
+      job_title: '[a-z0-9\-]*'
+  Mwwebinare:
+    type: Extbase
+    extension: mwwebinare
+    plugin: Mwlistwebinare
+    routes:
+      -
+        routePath: '/{webinare_uid}-{termine_nr}'
+        _controller: 'Webinare::show'
+        _arguments:
+          termine_nr: termine
+          webinare_uid: webinare
+    defaultController: 'Webinare::show'
+    aspects:
+      webinare_uid:
+        type: PersistedAliasMapper
+        tableName: tx_mwwebinare_domain_model_webinare
+        routeFieldName: path_segment
+      termine_nr:
+        type: StaticValueMapper
+        map:
+            1: '1'
+            2: '2'
+websiteTitle: 'TYPO3 Introduction Package'

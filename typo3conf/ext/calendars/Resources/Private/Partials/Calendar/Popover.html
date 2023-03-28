@@ -1,0 +1,36 @@
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en"
+	  xmlns:f="http://typo3.org/ns/fluid/ViewHelpers"
+	  xmlns:calendars="http://typo3.org/ns/CodingMs/Calendars/ViewHelpers"
+	  data-namespace-typo3-fluid="true">
+	<f:section name="Default">
+
+		<calendars:variable.set name="startDate" value="{f:format.date(format: settings.formatting.date.format, date: event.startDate)}"/>
+		<calendars:variable.set name="endDate" value="{f:format.date(format: settings.formatting.date.format, date: event.endDate)}"/>
+		<calendars:variable.set name="startTime" value="{f:format.date(format: settings.formatting.time.format, date: event.startDate)}"/>
+		<calendars:variable.set name="endTime" value="{f:format.date(format: settings.formatting.time.format, date: event.endDate)}"/>
+
+		<div>
+			<h5>{event.title}</h5>
+			<p>{event.subtitle}<br />
+				<f:if condition="{startDate} == {endDate}">
+					<f:then>
+						{startDate}, <f:translate key="tx_calendars_label.from"/> {startTime} <f:translate key="tx_calendars_label.to"/> {endTime} <f:translate key="tx_calendars_label.hours"/>
+					</f:then>
+					<f:else>
+						<f:translate key="tx_calendars_label.uc_from"/>: {startDate} {startTime } <f:translate key="tx_calendars_label.hours"/><br />
+						<f:translate key="tx_calendars_label.uc_to"/>: {endDate} {endTime} <f:translate key="tx_calendars_label.hours"/>
+					</f:else>
+				</f:if>
+			</p>
+			<f:link.action pageUid="{settings.detail.pageUid}"
+						   controller="Calendar"
+						   pluginName="CalendarList"
+						   extensionName="Calendars"
+						   action="showEvent"
+						   arguments="{event: event}">
+				<f:translate key="tx_calendars_label.button_event_detail"/>
+			</f:link.action>
+		</div>
+
+	</f:section>
+</html>

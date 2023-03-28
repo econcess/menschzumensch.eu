@@ -1,0 +1,204 @@
+<div xmlns="http://www.w3.org/1999/xhtml" lang="en"
+	 xmlns:f="http://typo3.org/ns/fluid/ViewHelpers">
+<f:layout name="Default"/>
+<f:section name="Main">
+<f:flashMessages />
+<f:comment>
+//+3091/econcess
+</f:comment>
+<div class="frame frame-default frame-type-card_group frame-layout-default frame-size-default frame-height-default frame-background-none frame-space-before-none frame-space-after-none frame-no-backgroundimage">
+   <div class="frame-group-container">
+      <div class="frame-group-inner">
+         <div class="frame-container frame-container-default">
+            <div class="frame-inner container jobs-background">
+               <div class="row">
+                  <div class="frame-header">
+                     <h1 class="element-header">
+                        <f:translate key="vacancies" />
+                     </h1>
+                  </div>
+                  <div class="col-12">
+                     <div class="row career-dropdown-row">
+                        <div class="dropdown joblocations-filter-dropdown">
+                           <a class="btn dropdown-toggle" id="joblocations-filter-dropdown-button" data-bs-toggle="dropdown" aria-expanded="false">
+                           <f:translate key="location" />
+                           </a>
+                           <div class="dropdown-menu" aria-labelledby="joblocations-filter-dropdown-button">
+                              <a class="dropdown-item active" href="#" data-type="all">
+                                 <f:translate key="alllocations" />
+                              </a>
+                              <f:for each="{jobLocations}" as="location">
+                                 <a class="dropdown-item" href="#" data-type="{location}">{location}</a>
+                              </f:for>
+                           </div>
+                        </div>
+                        <div class="dropdown jobgroups-filter-dropdown">
+                           <a class="btn dropdown-toggle" id="jobgroups-filter-dropdown-button" data-bs-toggle="dropdown" aria-expanded="false">
+                              <f:translate key="jobarea" />
+                           </a>
+                           <div class="dropdown-menu" aria-labelledby="jobgroups-filter-dropdown-button">
+                              <a class="dropdown-item active" href="#" data-type="all">
+                                 <f:translate key="allareas" />
+                              </a>
+                              <f:for each="{jobGroups}" as="jobgroup">
+                                 <a class="dropdown-item" href="#" data-type="{jobgroup}">{jobgroup}</a>
+                              </f:for>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="row card-group-element card-group-element-align-left card-group-element-columns-3">
+                  <f:for each="{jobOffers}" as="jobOffer" iteration="jobIteratior">
+                     <div 
+                        class="jobs-row card-group-element-item{f:if(condition:'{jobIteratior.cycle} < 0', then: ' d-none')}" 
+                        data-location='<f:for each="{jobOffer.exertionPlace}" as="exertionPlace" iteration="exertionIteratior">{exertionPlace}<f:if condition="{exertionIteratior.cycle}<{exertionIteratior.total}">, </f:if></f:for>'
+                        data-jobgroup='{jobOffer.jobGroup.values.value}'>
+                        <div class="card">
+                           <div class="col-12 col-md-12 jobs-title">
+                              <v:media.exists file="fileadmin/user_upload/jobportal/{jobOffer.jobGroup.id}.svg">
+                                 <f:then>						
+                                    <img class="symbol-jobs-title" src='<f:uri.typolink parameter="fileadmin/user_upload/jobportal/{jobOffer.jobGroup.id}.svg" />' />
+                                 </f:then>
+                                 <f:else>
+                                    <img class="symbol-jobs-title" src='<f:uri.typolink parameter="fileadmin/user_upload/jobportal/default.svg" />' />
+                                 </f:else>
+                              </v:media.exists>
+                              <p>
+                                 <f:link.action action="show" arguments="{job: jobOffer.id, slug: jobOffer.slug}" pageUid="{settings.jobdetailUid}">{jobOffer.description.values.value}</f:link.action>
+                              </p>
+                           </div>
+                           <div class="col-12 col-md-12 jobs-image">
+                              <f:link.action action="show" arguments="{job: jobOffer.id, slug: jobOffer.slug}" pageUid="{settings.jobdetailUid}">
+                                 <v:media.exists file="fileadmin/user_upload/jobportal/{jobOffer.jobGroup.id}.jpg">
+                                    <f:then>	
+                                       <img src='<f:uri.typolink parameter="fileadmin/user_upload/jobportal/{jobOffer.jobGroup.id}.jpg" />' />
+                                    </f:then>
+                                    <f:else>
+                                       <img src='<f:uri.typolink parameter="fileadmin/user_upload/jobportal/default.jpg" />' />
+                                    </f:else>
+                                 </v:media.exists>
+                              </f:link.action>
+                              <div class="img_divider"></div>
+                           </div>
+                           <div class="img_divider symbol"></div>
+                           <div class="col-12 col-md-8 jobs-dim-and-place">
+                              <div class="col-12 col-md-12 jobs-emp-dimension">
+                                 {jobOffer.employmentDimensions.employmentDimension.values.value}
+                              </div>
+                              <div class="col-12 col-md-12 jobs-place">
+                                 <f:link.action action="show" arguments="{job: jobOffer.id, slug: jobOffer.slug}" pageUid="{settings.jobdetailUid}">
+                                    <f:if condition="{jobOffer.exertionPlace}">
+                                       <f:then>
+                                          <f:if condition="{jobOffer.country.values.value}">Standort: {jobOffer.country.values.value} | </f:if>
+                                          <f:for each="{jobOffer.exertionPlace}" as="exertionPlace" iteration="exertionIteratior">
+                                             {exertionPlace}
+                                             <f:if condition="{exertionIteratior.cycle}<{exertionIteratior.total}">, </f:if>
+                                          </f:for>
+                                       </f:then>
+                                       <f:else>
+                                          <f:if condition="{jobOffer.country.values.value}">
+                                             {jobOffer.country.values.value}
+                                          </f:if>
+                                       </f:else>
+                                    </f:if>
+                                 </f:link.action>
+                              </div>
+                           </div>
+                           <div class="col-12 col-md-4 jobs-single-action">
+                              <f:link.action action="show" arguments="{job: jobOffer.id, slug: jobOffer.slug}" pageUid="{settings.jobdetailUid}">			
+                                 Go! <i class="fas fa-long-arrow-alt-right"></i>
+                              </f:link.action>
+                           </div>
+                        </div>
+                     </div>
+                  </f:for>
+               </div>
+               <div class="jobs-action row">
+                  <f:if condition="{jobOffers->f:count()}<0">
+                     <div class="col-12 col-md-12">
+                        <p><a href="#" class="more-jobs" id="jobs-offers-more-button" data-items-visible="10">Das war längst noch nicht alles!</a></p>
+                     </div>
+                  </f:if>
+                  <div class="col-12 col-md-12">
+                     <h2>
+                        <f:translate key="nomatch" />
+                     </h2>
+                     <p>
+                        <f:translate key="forwarddocumentation" />
+                     </p>
+                     <p>
+                        <a href="https://hcm.infoniqa.co.at/engage/jobexchange/selectBlindJobOffer.do?j=jobexchange" target="_blank" class="btn btn-primary">
+                           <f:translate key="applynow" />
+                        </a>
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+</f:section>
+<f:section name="FooterAssets">
+<script>
+    let eventType = 'click';
+    if(jQuery('html.touch').length===1) {
+        eventType = 'touchend';
+    }
+	 jQuery('.joblocations-filter-dropdown .dropdown-item').on(eventType, function(event) {
+        let link = jQuery(this);
+        let location = link.data('type');
+        jQuery.each(jQuery('.jobs-row'), function() {
+            let row = jQuery(this);
+            let rowLocation = row.data('location');
+            row.removeClass('d-none');
+            if(rowLocation.includes(location) || location === 'all') {
+                row.css('display', 'flex');
+            }
+            else {
+                row.css('display', 'none');
+            }
+        });
+        jQuery('.joblocations-filter-dropdown a.dropdown-item').removeClass('active');
+        link.addClass('active');
+        jQuery('.joblocations-filter-dropdown .dropdown-menu').removeClass('show');
+		jQuery('.joblocations-filter-dropdown .dropdown-toggle').removeClass('show');
+		jQuery('.joblocations-filter-dropdown .dropdown-toggle').setAttr('aria-expanded','false');
+        jQuery('#joblocations-offers-more-button').hide();
+		jQuery('.joblocations-filter-dropdown .dropdown-item').removeClass('active');
+        event.preventDefault();
+        event.stopPropagation();
+        return false;
+    });
+    jQuery('.jobgroups-filter-dropdown .dropdown-item').on(eventType, function(event) {
+        let link = jQuery(this);
+        let jobgroup = link.data('type');
+        jQuery.each(jQuery('.jobs-row'), function() {
+            let row = jQuery(this);
+            let rowGroup = row.data('jobgroup');
+            row.removeClass('d-none');
+            if(rowGroup.includes(jobgroup) || jobgroup === 'all') {
+                row.css('display', 'flex');
+            }
+            else {
+                row.css('display', 'none');
+            }
+        });
+        jQuery('.jobgroups-filter-dropdown a.dropdown-item').removeClass('active');
+        link.addClass('active');
+        jQuery('.jobgroups-filter-dropdown .dropdown-menu').removeClass('show');
+		jQuery('.jobgroups-filter-dropdown .dropdown-toggle').removeClass('show');
+		jQuery('.jobgroups-filter-dropdown .dropdown-toggle').setAttr('aria-expanded','false');
+        jQuery('#jobs-offers-more-button').hide();
+		jQuery('.jobgroups-filter-dropdown .dropdown-item').removeClass('active');
+        event.preventDefault();
+        event.stopPropagation();
+        return false;
+    });
+</script>
+<f:comment>
+//+3091/econcess
+</f:comment>
+</f:section>
+</div>

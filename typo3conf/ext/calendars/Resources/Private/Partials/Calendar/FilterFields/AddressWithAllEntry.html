@@ -1,0 +1,17 @@
+<div class="form-group">
+	<label for="addressSelect"><f:translate key="tx_calendars_label.address" />:</label>
+	<f:if condition="{f:count(subject: addressSelect)}">
+		<f:then>
+			<f:form.select id="addressSelect" name="addressSelect" class="category-select form-control"
+						   additionalAttributes="{onChange: 'this.form.submit()' }" value="{address.uid}"
+						   optionValueField="uid" optionLabelField="name"
+						   options="{addressSelect}"
+						   prependOptionLabel="{f:translate(key: 'tx_calendars_label.all_addresses')}" prependOptionValue="0" />
+		</f:then>
+		<f:else>
+			<f:form.select id="addressSelect" name="addressSelect" class="category-select form-control"
+						   additionalAttributes="{onChange: 'this.form.submit()' }" value="{address.uid}"
+						   options="{0: '{f:translate(key: \'tx_calendars_label.all_addresses\')}' }" />
+		</f:else>
+	</f:if>
+</div>

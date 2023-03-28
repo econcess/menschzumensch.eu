@@ -1,0 +1,28 @@
+{
+  "name": "typo3-ec_news_sections/ec_news_sections",
+  "type": "typo3-cms-extension",
+  "description": "TYPO3 News with Section Index Content Element",
+  "homepage": "http://www.econcess.de",
+  "license": ["GPL-2.0+"],
+  "keywords": ["TYPO3 CMS", "TYPO3 Sections with News"],
+  "require": {
+    "typo3/cms-core": "^9.5 || ^10.4.6",
+    "ext-json": "*",
+    "ext-pdo": "*"
+  },
+  "support": {
+
+  },
+  "autoload": {
+
+  },
+  "autoload-dev": {
+
+  },
+  "replace": {
+
+  },
+  "conflict": {
+
+  }
+}

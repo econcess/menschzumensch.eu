@@ -1,0 +1,66 @@
+plugin.tx_calendars._LOCAL_LANG {
+	default {
+
+
+		tx_calendars_label.button_event_new = Event erstellen
+
+		tx_calendars_label.form_event_new_title = Title of the event
+		tx_calendars_label.form_event_new_title_placeholder = Event xy..
+		tx_calendars_label.form_event_new_subtitle = Subtitle
+		tx_calendars_label.form_event_new_subtitle_place = This is the subtitle..
+		tx_calendars_label.form_event_new_category = Category
+		tx_calendars_label.form_event_new_start_date = Startdate
+		tx_calendars_label.form_event_new_start_date_placeholder = dd-mm-yyyy
+		tx_calendars_label.form_event_new_end_date = Enddate
+		tx_calendars_label.form_event_new_end_date_placeholder = dd-mm-yyyy
+		tx_calendars_label.form_event_new_category = Category
+		tx_calendars_label.form_event_new_description = Description of the event
+		tx_calendars_label.form_event_new_image = Image
+		tx_calendars_label.form_event_new_external_link = External link
+		tx_calendars_label.form_event_new_external_link_placeholder = http://www.link.de
+		tx_calendars_label.form_event_new_submit = submit
+
+		tx_calendars_label.upload_allowed_file_types_notice = Allowed file types: %1$s
+		tx_calendars_label.upload_max_file_size_notice = Max file size %1$s MB
+	}
+	de {
+
+		# Cancel buttons
+		tx_calendars_label.button_cancel = abbrechen
+		tx_calendars_label.button_cancel_event_edit = Event '%1$s' bearbeiten abbrechen
+		# Delete buttons
+		tx_calendars_label.button_event_delete = löschen
+		tx_calendars_label.button_event_delete_title = Event '%1$s' löschen
+
+		tx_calendars_label.button_event_edit = bearbeiten
+		tx_calendars_label.button_event_edit_title = Event '%1$s' bearbeiten
+
+		tx_calendars_label.button_event_save = speichern
+		tx_calendars_label.button_event_save_title = Veranstaltung '%1$s' speichern
+
+
+		tx_calendars_label.event_list_headline = Veranstaltungen
+		tx_calendars_label.event_list_title = Title
+		tx_calendars_label.event_list_subtitle = Subtitle
+
+		tx_calendars_label.button_event_new = Veranstaltung erstellen
+
+		tx_calendars_label.form_event_new_title = Titel
+		tx_calendars_label.form_event_new_title_placeholder = Veranstaltung xy..
+		tx_calendars_label.form_event_new_subtitle = Untertitel
+		tx_calendars_label.form_event_new_subtitle_placeholder = Dies ist der Untertitel
+		tx_calendars_label.form_event_new_category = Gruppe
+		tx_calendars_label.form_event_new_start_date = Startdatum
+		tx_calendars_label.form_event_new_start_date_placeholder = dd-mm-yyyy
+		tx_calendars_label.form_event_new_end_date = Enddatum
+		tx_calendars_label.form_event_new_end_date_placeholder = dd-mm-yyyy
+		tx_calendars_label.form_event_new_description = Beschreibung
+		tx_calendars_label.form_event_new_image = Bild
+		tx_calendars_label.form_event_new_external_link = Externer Link
+		tx_calendars_label.form_event_new_external_link_placeholder = http://www.link.de
+		tx_calendars_label.form_event_new_submit = erstellen
+
+		tx_calendars_label.upload_allowed_file_types_notice = Erlaubte Dateitypen: %1$s
+		tx_calendars_label.upload_max_file_size_notice = Maximale Dateigröße %1$s MB
+	}
+}

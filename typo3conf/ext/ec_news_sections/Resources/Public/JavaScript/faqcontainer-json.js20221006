@@ -1,0 +1,29 @@
+
+    if($( ".faqcontainer" ).length ){
+        var json =     {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+            ]};
+
+                $( ".faqcontainer" ).each(function( index ) {
+                        var frage = $(this).find(".frage").text().replace(/\t|\n/g, '');
+                        var antwort = $(this).find(".antwort").html().replace(/\t|\n/g, '');
+                        var json_temp = {}; 
+                        json_temp["@type"] = 'Question';
+                        json_temp.name = frage;
+                        json_temp.acceptedAnswer = {};
+                        json_temp.acceptedAnswer["@type"] = 'Answer'; 
+                        json_temp.acceptedAnswer.text = antwort; 
+                        json.mainEntity.push(json_temp);
+
+                });
+                //console.log(json);
+
+                var s = document.createElement("script");
+                s.type = "application/ld+json";
+                s.text = JSON.stringify(json);
+                $("head").append(s);
+    }
+
+

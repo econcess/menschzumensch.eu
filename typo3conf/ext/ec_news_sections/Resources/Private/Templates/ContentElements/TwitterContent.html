@@ -1,0 +1,37 @@
+<f:comment>
+//+2967/econcess
+</f:comment>
+<f:layout name="Default" />
+<f:section name="Main">
+	<div class="container tweetcontainer" data-tweet-id="{data.bodytext}">
+		<span class="no_marketing_cookies">
+			<f:translate key="LLL:EXT:ec_news_sections/Resources/Private/Language/locallang_newcontentelementwizard.xlf:ecnewssections_twittercontent.please_accept_marketing_cookies" />
+		</span>
+	</div>
+</div>
+</f:section>
+<f:section name="FooterAssets">
+	<script id="twitter-wjs" type="text/javascript" data-cookieconsent="marketing" async src="https://platform.twitter.com/widgets.js"></script>
+	<script id="twitter-functionshow" data-cookieconsent="marketing">
+	function getTweets() {
+		$('.tweetcontainer').each(function(index) {
+			twttr.widgets.createTweet(
+				$(this).attr('data-tweet-id'),
+				this,
+				{
+					theme: 'light',
+					align: 'center'
+				}
+			);
+			$(this).find('.no_marketing_cookies').hide();
+		});
+	}
+	var script = document.querySelector('#twitter-wjs');
+	script.addEventListener('load', function() {
+		getTweets(); 
+	});
+	</script>
+</f:section>
+<f:comment>
+//-2967/econcess
+</f:comment>

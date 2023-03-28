@@ -1,0 +1,63 @@
+######################
+#### DEPENDENCIES ####
+######################
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bootstrap_package/Configuration/TypoScript/setup.typoscript">
+#//+3106/econcess
+<INCLUDE_TYPOSCRIPT: source="FILE:fileadmin/templates/configuration/inlinestylescss.typoscript">
+#//-3106/econcess
+
+##############
+#### PAGE ####
+##############
+#//+3102/econcess
+#//+3149/econcess
+[request.getNormalizedParams().getHttpHost() == 'localhost'] ||
+[request.getNormalizedParams().getHttpHost() == '127.0.0.1']
+config.absRefPrefix = /menschzumensch.eu/
+[end]
+#//-3149/econcess
+page {
+    includeCSS {
+        theme = EXT:bootstrap_package_econcess/Resources/Public/Scss/Theme/theme.scss
+		
+    }
+    includeCSS {
+		#criticalinline = EXT:bootstrap_package_econcess/Resources/Public/Scss/Theme/critical.scss
+		#criticalinline {
+			#inline = 1
+			# forceOnTop = 1
+			#media = all
+		}
+    }
+	cssInline {
+	
+	}
+    includeJSLibs {
+
+    }
+
+    includeJS {
+
+    }
+
+    includeJSFooterlibs {
+
+    }
+
+    includeJSFooter {
+        bootstrap_package_econcess_scripts = EXT:bootstrap_package_econcess/Resources/Public/JavaScript/Dist/scripts.js
+    }
+}
+#//+3006/econcess
+plugin.tx_news.settings.detail.checkPidOfNewsRecord = 1
+#//-3006/econcess
+#//-3102/econcess
+#//+3104/econcess
+#//+3159/econcess
+[{$plugin.ec_page_speed.settings.clsTest} == 1]
+config.pageRendererTemplateFile = EXT:ec_page_speed/Resources/Private/Templates/MainPageCLSTest.html
+[else]
+config.pageRendererTemplateFile = EXT:ec_page_speed/Resources/Private/Templates/MainPage.html
+[end]
+#//-3159/econcess
+#//-3104/econcess

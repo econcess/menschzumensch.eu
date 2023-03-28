@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2016-02-19T17:11:59Z" product-name="calendars">
+		<body>
+			<trans-unit id="last_name.description">
+				<source>Last name of registered person.</source>
+			</trans-unit>
+			<trans-unit id="first_name.description">
+				<source>First name of registered person.</source>
+			</trans-unit>
+			<trans-unit id="frontend_user.description">
+				<source>Frontend user who carried out registration if applicable.</source>
+			</trans-unit>
+			<trans-unit id="email.description">
+				<source>Email address of registered person.</source>
+			</trans-unit>
+			<trans-unit id="address.description">
+				<source>Address of registered person.</source>
+			</trans-unit>
+			<trans-unit id="zip.description">
+				<source>Zipcode of registered person.</source>
+			</trans-unit>
+			<trans-unit id="city.description">
+				<source>City of registered person.</source>
+			</trans-unit>
+			<trans-unit id="telephone.description" approved="yes">
+				<source>Telephone number of registered person</source>
+			</trans-unit>
+			<trans-unit id="fax.description">
+				<source>Fax number of registered person.</source>
+			</trans-unit>
+			<trans-unit id="message.description">
+				<source>Message included with registration</source>
+			</trans-unit>
+			<trans-unit id="hidden.description">
+				<source>If selected, the event is hidden.</source>
+			</trans-unit>
+			<trans-unit id="sys_language_uid.description">
+				<source>Language of this registration.</source>
+			</trans-unit>
+			<trans-unit id="event.description">
+				<source>Choose event for registration.</source>
+			</trans-unit>
+			<trans-unit id="starttime.description">
+				<source>Start time.</source>
+			</trans-unit>
+			<trans-unit id="endtime.description">
+				<source>Start time.</source>
+			</trans-unit>
+
+		</body>
+	</file>
+</xliff>

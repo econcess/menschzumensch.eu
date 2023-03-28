@@ -1,0 +1,275 @@
+<div xmlns="http://www.w3.org/1999/xhtml" lang="en"
+     xmlns:f="http://typo3.org/ns/fluid/ViewHelpers">
+	<f:layout name="Default"/>
+	<f:section name="Main">
+<f:comment>						
+//+627/econcess			
+</f:comment>
+		<div class="jobs-detail">
+<f:comment>						
+//+857/econcess	
+//+1523/econcess
+</f:comment>
+			<div class="container content-text-page-introduction-h1">
+				<h1>{jobOffer.description.values.value}</h1>
+			</div>
+<f:comment>	
+//-1523/econcess					
+//-857/econcess			
+</f:comment>
+			<div class="container jobs-background job-header">
+<f:comment>						
+//+731/econcess	
+//+1704/econcess/2		
+</f:comment>
+				<v:media.exists file="fileadmin/user_upload/jobportal/{jobOffer.jobGroup.id}-Headerbild.jpg">
+					<f:then>
+					<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+					 data-sizes="auto"
+					 data-src="{f:uri.image(src: 'fileadmin/user_upload/jobportal/{jobOffer.jobGroup.id}-Headerbild.jpg', cropVariant: 'mobile', width: 575)}"
+					 data-srcset="{f:uri.image(src: 'fileadmin/user_upload/jobportal/{jobOffer.jobGroup.id}-Headerbild.jpg', cropVariant: 'desktop', width: 1920)} 1920w,
+									  {f:uri.image(src: 'fileadmin/user_upload/jobportal/{jobOffer.jobGroup.id}-Headerbild.jpg', cropVariant: 'desktop', width: 1599)} 1599w,
+									  {f:uri.image(src: 'fileadmin/user_upload/jobportal/{jobOffer.jobGroup.id}-Headerbild.jpg', cropVariant: 'desktop', width: 1199)} 1199w,
+									  {f:uri.image(src: 'fileadmin/user_upload/jobportal/{jobOffer.jobGroup.id}-Headerbild.jpg', cropVariant: 'desktop', width: 991)} 991w,
+									  {f:uri.image(src: 'fileadmin/user_upload/jobportal/{jobOffer.jobGroup.id}-Headerbild.jpg', cropVariant: 'mobile', width: 767)} 767w,
+									  {f:uri.image(src: 'fileadmin/user_upload/jobportal/{jobOffer.jobGroup.id}-Headerbild.jpg', cropVariant: 'mobile', width: 575)} 575w"
+					 data-aspectratio="{column.dimensions.width}/{column.dimensions.height}"
+					 alt="Header-Bild Job-Details Infoniqa" title=""
+					 class="img-fluid lazyload" />
+					</f:then>
+					<f:else>
+					<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+					 data-sizes="auto"
+					 data-src="{f:uri.image(src: 'fileadmin/user_upload/jobportal/default-Headerbild.jpg', cropVariant: 'mobile', width: 575)}"
+					 data-srcset="{f:uri.image(src: 'fileadmin/user_upload/jobportal/default-Headerbild.jpg', cropVariant: 'desktop', width: 1920)} 1920w,
+									  {f:uri.image(src: 'fileadmin/user_upload/jobportal/default-Headerbild.jpg', cropVariant: 'desktop', width: 1599)} 1599w,
+									  {f:uri.image(src: 'fileadmin/user_upload/jobportal/default-Headerbild.jpg', cropVariant: 'desktop', width: 1199)} 1199w,
+									  {f:uri.image(src: 'fileadmin/user_upload/jobportal/default-Headerbild.jpg', cropVariant: 'desktop', width: 991)} 991w,
+									  {f:uri.image(src: 'fileadmin/user_upload/jobportal/default-Headerbild.jpg', cropVariant: 'mobile', width: 767)} 767w,
+									  {f:uri.image(src: 'fileadmin/user_upload/jobportal/default-Headerbild.jpg', cropVariant: 'mobile', width: 575)} 575w"
+					 data-aspectratio="{column.dimensions.width}/{column.dimensions.height}"
+					 alt="Header-Bild Job-Details Infoniqa" title=""
+					 class="img-fluid lazyload" />
+					</f:else>
+				</v:media.exists>
+					
+<f:comment>	
+//-1704/econcess/2						
+//-731/econcess			
+</f:comment>
+			</div>
+			<div class="container jobs-background">
+				<div class="img-wrap">
+					<f:if condition="{jobOffer.accountUserGroup.id} == 'HVD'">
+						<img src="{f:uri.image(src: 'typo3conf/ext/theme_bootstrap4_infoniqa/Resources/Public/Images/logo_haveldata.svg', cropVariant: 'mobile', width: 575)}" 
+						alt="Logo Haveldata Payroll, Recruiting, Personalmanagement Infoniqa"
+						/>
+					</f:if>
+				</div>
+				<div class="row">
+					<div class="col-12 col-md-12 job-description">
+						<f:format.nl2br>{jobOffer.profil.generalInfo.values.value}</f:format.nl2br>
+					</div>
+				</div>
+
+				<f:flashMessages/>
+
+				<h2>{jobOffer.description.values.value}</h2>
+
+
+
+				<div class="row">
+					<div class="col-12 col-md-6 job-description">
+						<f:if condition="{jobOffer.exertionPlace}">
+							<f:then>
+								<f:if condition="{jobOffer.country.values.value}">{jobOffer.country.values.value}: </f:if>
+								<f:for each="{jobOffer.exertionPlace}" as="exertionPlace" iteration="exertionIteratior">
+									{exertionPlace}<f:if condition="{exertionIteratior.cycle}<{exertionIteratior.total}">, </f:if>
+								</f:for>
+							</f:then>
+							<f:else>
+								<f:if condition="{jobOffer.country.values.value}">
+									{jobOffer.country.values.value}
+								</f:if>
+							</f:else>
+						</f:if>
+					</div>
+					<div class="col-12 col-md-6 job-description">{jobOffer.employmentDimensions.employmentDimension.values.value}</div>
+				</div>
+
+
+				<div class="row">
+					<div class="col-12 col-md-6">
+						<div class="acc_outer open" id="acc_5">
+							<div class="acc_head_o">
+								<div class="acc_head_jobs" data-toggle="acc_5">
+<f:comment>	
+//+2827/econcess		
+</f:comment>
+									<span></span><span><f:translate key="responsibilities" /></span>
+								</div>
+							</div>
+							<div class="acc_content" style="display:block;">
+								<div class="acc_content_i">
+									<f:if condition="{f:count(subject: jobOffer.profil.activityFields.activityField)}">
+							<ul class="list-plus">
+								<f:for each="{jobOffer.profil.activityFields.activityField}" as="row">
+									<li>
+										<span>{row.values.value}</span>
+									</li>
+								</f:for>
+							</ul>
+						</f:if>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-6">
+						<div class="acc_outer open" id="acc_6">
+							<div class="acc_head_o">
+								<div class="acc_head_jobs" data-toggle="acc_6">
+									<span></span><f:translate key="qualifications" />
+								</div>
+							</div>
+							<div class="acc_content" style="display:block;">
+								<div class="acc_content_i">
+									<f:if condition="{f:count(subject: jobOffer.profil.requirements.requirement)}">
+										<ul class="list-plus">
+											<f:for each="{jobOffer.profil.requirements.requirement}" as="row">
+												<li>
+													<span><f:format.raw>{row.values.value}</f:format.raw></span>
+												</li>
+											</f:for>
+										</ul>
+									</f:if>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<f:if condition="{f:count(subject: jobOffer.profil.managementActivities.managementActivity)}">
+				<div class="row">
+					<div class="col-12 col-md-12">
+						<div class="acc_outer open" id="acc_7">
+							<div class="acc_head_o">
+								<div class="acc_head_jobs" data-toggle="acc_7">
+									<span></span><f:translate key="benefits" />
+								</div>
+							</div>
+							<div class="acc_content" style="display:block;">
+								<div class="acc_content_i">
+									<div class="col-12 col-md-12">
+										<ul class="list-plus">
+											<f:for each="{jobOffer.profil.managementActivities.managementActivity}"
+												   as="row">
+												<li>
+													<span><f:format.raw>{row.values.value}</f:format.raw></span>
+												</li>
+											</f:for>
+												<li>
+													<span><f:link.page pageUid='{benefits}' target='_blank'><f:translate key="benefitsataglance" /></f:link.page></span>
+												</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				</f:if>
+				
+				<f:if condition="{jobOffer.country.values.value}=='Österreich'">
+					<f:if condition="{jobOffer.profil.salaryInfoText.values.value}">
+					
+						<div class="row">
+							<div class="col-12 col-lg-1 col-md-2 piggy-bank">
+							</div>							
+							<div class="col-12 col-lg-11 col-md-10 job-description">
+								<div>
+									<f:format.nl2br>{jobOffer.profil.salaryInfoText.values.value}</f:format.nl2br>
+								</div>
+							</div>
+						</div>
+					</f:if>
+				</f:if>
+				<div class="row actions">
+					<div class="col-12 col-md-4">
+						<div>
+							<p><f:translate key="furtherquestionsfirst" /></p>
+							<p><f:translate key="furtherquestionssecond" /></p>
+<f:comment>						
+//+2751/econcess
+</f:comment>
+							<p><f:link.typolink class="btn btn-secondary email" parameter="{jobOffer.recruiter.mail}" target="_blank"><em class="fa-envelope far">&nbsp;</em>{jobOffer.recruiter.mail}</f:link.typolink></p>
+<f:comment>						
+//-2751/econcess
+</f:comment>						
+						</div>
+					</div>
+					<div class="col-12 col-md-6">
+<f:comment>						
+//+1633/econcess
+//+1704/econcess/1	
+</f:comment>
+					<v:media.exists file="fileadmin/user_upload/jobportal/{jobOffer.recruiter.mail}.jpg">
+						<f:then>
+						<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+							     data-sizes="auto"
+							     data-src="{f:uri.image(src: 'fileadmin/user_upload/jobportal/{jobOffer.recruiter.mail}.jpg', cropVariant: 'mobile', width: 575)}"
+							     data-srcset="{f:uri.image(src: 'fileadmin/user_upload/jobportal/{jobOffer.recruiter.mail}.jpg', cropVariant: 'desktop', width: 1920)} 1920w,
+												  {f:uri.image(src: 'fileadmin/user_upload/jobportal/{jobOffer.recruiter.mail}.jpg', cropVariant: 'desktop', width: 1599)} 1599w,
+												  {f:uri.image(src: 'fileadmin/user_upload/jobportal/{jobOffer.recruiter.mail}.jpg', cropVariant: 'desktop', width: 1199)} 1199w,
+												  {f:uri.image(src: 'fileadmin/user_upload/jobportal/{jobOffer.recruiter.mail}.jpg', cropVariant: 'desktop', width: 991)} 991w,
+												  {f:uri.image(src: 'fileadmin/user_upload/jobportal/{jobOffer.recruiter.mail}.jpg', cropVariant: 'mobile', width: 767)} 767w,
+												  {f:uri.image(src: 'fileadmin/user_upload/jobportal/{jobOffer.recruiter.mail}.jpg', cropVariant: 'mobile', width: 575)} 575w"
+							     alt="" title=""
+							     class="img-fluid lazyload" /> 
+						</f:then>
+						<f:else>
+						<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+							     data-sizes="auto"
+							     data-src="{f:uri.image(src: 'fileadmin/user_upload/jobportal/recruiter-default.jpg', cropVariant: 'mobile', width: 575)}"
+							     data-srcset="{f:uri.image(src: 'fileadmin/user_upload/jobportal/recruiter-default.jpg', cropVariant: 'desktop', width: 1920)} 1920w,
+												  {f:uri.image(src: 'fileadmin/user_upload/jobportal/recruiter-default.jpg', cropVariant: 'desktop', width: 1599)} 1599w,
+												  {f:uri.image(src: 'fileadmin/user_upload/jobportal/recruiter-default.jpg', cropVariant: 'desktop', width: 1199)} 1199w,
+												  {f:uri.image(src: 'fileadmin/user_upload/jobportal/recruiter-default.jpg', cropVariant: 'desktop', width: 991)} 991w,
+												  {f:uri.image(src: 'fileadmin/user_upload/jobportal/recruiter-default.jpg', cropVariant: 'mobile', width: 767)} 767w,
+												  {f:uri.image(src: 'fileadmin/user_upload/jobportal/recruiter-default.jpg', cropVariant: 'mobile', width: 575)} 575w"
+							     alt="" title=""
+							     class="img-fluid lazyload" /> 
+						</f:else>						
+					</v:media.exists>
+<f:comment>	
+//-1704/econcess/1						
+//-1633/econcess			
+</f:comment>
+					</div>
+					<div class="col-12 col-md-12">
+<f:comment>						
+//-499/econcess			
+</f:comment>
+						<p class="joboffer"><a href="{jobOffer.link}"
+					
+<f:comment>						
+//+499/econcess			
+</f:comment>
+					   target="_blank" class="btn btn-primary"><f:translate key="apply" /></a></p>
+					</div>
+					<div class="col-12 col-md-12 back">
+<f:comment>						
+//+717/econcess			
+</f:comment>
+						<f:link.page class="btn btn-back" pageUid="{joblist}"><i class="fas fa-long-arrow-alt-left">&nbsp;</i><f:translate key="back" /></f:link.page>
+<f:comment>						
+//+717/econcess		
+//-2827/econcess	
+</f:comment>
+					</div>
+				</div>
+			</div>
+		</div>
+<f:comment>						
+//-627/econcess			
+</f:comment>
+	</f:section>
+</div>

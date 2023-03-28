@@ -1,0 +1,28 @@
+{
+    "name": "codingms/infoniqa-jobs",
+    "type": "typo3-cms-extension",
+    "description": "",
+    "authors": [
+        {
+            "name": "Thomas Deuling",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "typo3/cms-core": "^11.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "CodingMs\\InfoniqaJobs\\": "Classes"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "CodingMs\\InfoniqaJobs\\Tests\\": "Tests"
+        }
+    },
+    "replace": {
+        "infoniqa_jobs": "self.version",
+        "typo3-ter/infoniqa-jobs": "self.version"
+    }
+}
