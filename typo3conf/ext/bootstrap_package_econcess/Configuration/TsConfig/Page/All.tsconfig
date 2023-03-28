@@ -1,7 +1,0 @@
-#
-# PageTS for bootstrap package econcess
-#
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bootstrap_package_econcess/Configuration/TsConfig/Page/RTE.tsconfig">
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bootstrap_package_econcess/Configuration/TsConfig/Page/TCEFORM.tsconfig">
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bootstrap_package_econcess/Configuration/TsConfig/Page/TCEMAIN.tsconfig">
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bootstrap_package_econcess/Configuration/TsConfig/Page/Mod/WebLayout/BackendLayouts.tsconfig">
