@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" target-language="de" datatype="plaintext" original="messages" date="2013-07-13T17:08:58Z" product-name="additional_tca">
+		<header/>
+		<body>
+			<!--=== Backend: TCA Tabs ===-->
+			<trans-unit id="tx_additionaltca_label.tab_seo">
+				<source>SEO</source>
+				<target>SEO</target>
+			</trans-unit>
+			<trans-unit id="tx_additionaltca_label.tab_relations">
+				<source>Relations</source>
+				<target>Relationen</target>
+			</trans-unit>
+			<trans-unit id="tx_additionaltca_label.tab_images">
+				<source>Images</source>
+				<target>Bilder</target>
+			</trans-unit>
+			<trans-unit id="tx_additionaltca_label.tab_files">
+				<source>Files</source>
+				<target>Dateien</target>
+			</trans-unit>
+			<trans-unit id="tx_additionaltca_label.tab_links">
+				<source>Links</source>
+				<target>Links</target>
+			</trans-unit>
+			<trans-unit id="tx_additionaltca_label.tab_markdown">
+				<source>Markdown</source>
+				<target>Markdown</target>
+			</trans-unit>
+			<trans-unit id="tx_additionaltca_label.tab_contact">
+				<source>Contact</source>
+				<target>Kontakt</target>
+			</trans-unit>
+			<trans-unit id="tx_additionaltca_label.tab_persons">
+				<source>Persons</source>
+				<target>Personen</target>
+			</trans-unit>
+			<trans-unit id="tx_additionaltca_label.tab_bookings">
+				<source>Bookings</source>
+				<target>Buchungen</target>
+			</trans-unit>
+			<trans-unit id="tx_additionaltca_label.tab_prices">
+				<source>Prices</source>
+				<target>Preise</target>
+			</trans-unit>
+			<trans-unit id="tx_additionaltca_label.tab_map">
+				<source>Map</source>
+				<target>Karte</target>
+			</trans-unit>
+			<trans-unit id="tx_additionaltca_label.tab_registration">
+				<source>Registration</source>
+				<target>Registrierung</target>
+			</trans-unit>
+
+
+			<!--==============================
+				Update and information service
+				==============================-->
+
+			<!--=== Backend: Update message ===-->
+			<trans-unit id="tx_additionaltca_message.info_click_for_more_information">
+				<source><![CDATA[Click <a href="%1$s" target="_blank">here</a> for more information.]]></source>
+				<target><![CDATA[Klicken Sie <a href="%1$s" target="_blank">hier</a> für mehr Informationen.]]></target>
+			</trans-unit>
+			<trans-unit id="tx_additionaltca_message.info_need_help_or_new_features">
+				<source>Do you need help setting up this extension or need another feature?</source>
+				<target>Sie brauchen Hilfe bei der Einrichtung diese Erweiterung oder benötigen ein weiteres Feature?</target>
+			</trans-unit>
+			<trans-unit id="tx_additionaltca_message.info_mail_us">
+				<source><![CDATA[<b>Just write an email to:</b> <a href="mailto:%1$s"><em>%1$s</em></a>]]></source>
+				<target><![CDATA[<b>Schreiben Sie einfach eine E-Mail an:</b> <a href="mailto:%1$s"><em>%1$s</em></a>]]></target>
+			</trans-unit>
+			<trans-unit id="tx_additionaltca_message.info_about_this_message">
+				<source>about this message</source>
+				<target>über diese Nachricht</target>
+			</trans-unit>
+
+			<!--=== Backend: Update message ===-->
+			<trans-unit id="tx_additionaltca_message.error_version_not_detected">
+				<source>Version could not be detected. Possibly CURL is not enabled and file_get_contents is not allowed to call remote URLs!</source>
+				<target>Version konnte nicht ermittelt werden. Eventuell ist CURL nicht aktiviert und file_get_contents darf keine Remote-URLs aufrufen!</target>
+			</trans-unit>
+			<trans-unit id="tx_additionaltca_message.error_version_json_invalid">
+				<source>Version data couldn't be parsed!</source>
+				<target>Versionsdaten konnten nicht gelesen werden!</target>
+			</trans-unit>
+			<trans-unit id="tx_additionaltca_message.info_major_release_available">
+				<source>A new major release is available!</source>
+				<target>Ein neues Major-Update ist verfügbar!</target>
+			</trans-unit>
+			<trans-unit id="tx_additionaltca_message.info_minor_release_available">
+				<source>A new minor release is available!</source>
+				<target>Ein neues Minor-Update ist verfügbar!</target>
+			</trans-unit>
+			<trans-unit id="tx_additionaltca_message.info_patch_available">
+				<source>A new patch is available!</source>
+				<target>Ein neuer Patch ist verfügbar!</target>
+			</trans-unit>
+			<trans-unit id="tx_additionaltca_message.warning_update_message">
+				<source>We recommend you to update this extension to the current version.</source>
+				<target>Wir empfehlen Ihnen diese Erweiterung zur aktuellen Version zu aktualisieren.</target>
+			</trans-unit>
+
+			<!--=== Backend: Extension-Manager settings ===-->
+			<trans-unit id="tx_additionaltca_ext_conf_template.extension_update_service_active">
+				<source>Enable extension update service</source>
+				<target>Extension Update-Service aktivieren</target>
+			</trans-unit>
+			<trans-unit id="tx_additionaltca_ext_conf_template.extension_update_service_email">
+				<source>Display email address for support or extension request</source>
+				<target>Zeige E-Mailadresse für Support- oder Erweiterungs-Anfragen an</target>
+			</trans-unit>
+
+		</body>
+	</file>
+</xliff>

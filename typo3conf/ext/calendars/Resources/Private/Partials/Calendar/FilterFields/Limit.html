@@ -1,0 +1,6 @@
+<div class="form-group">
+	<label for="limit"><f:translate key="tx_calendars_label.limit" />: </label>
+	<f:form.select id="limit" name="limit" options="{15: '15', 30: '30', 50: '50'}"
+				   class="form-control" value="{limit}"
+				   additionalAttributes="{onChange: 'this.form.submit()' }" />
+</div>

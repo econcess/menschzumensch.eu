@@ -1,0 +1,27 @@
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en"
+	 xmlns:f="http://typo3.org/ns/fluid/ViewHelpers"
+	 data-namespace-typo3-fluid="true">
+	<f:layout name="Default" />
+	<f:section name="Main">
+
+		<div class="calendar-year-overview">
+
+			<f:render partial="Calendar/EventListFilter" section="Default" arguments="{_all}" />
+
+			<div id="calender-{content.uid}" class="calender-year"
+				 data-calendar-week-visible="{settings.year.calendarWeekVisible}"></div>
+
+			<f:if condition="{settings.year.categoryExplanationVisible}">
+				<div class="category-explanation">
+					<ul>
+						<f:for each="{categories}" as="category">
+							<li class="event-category event-category-{category.variant}">{category.title}</li>
+						</f:for>
+					</ul>
+				</div>
+			</f:if>
+
+		</div>
+
+	</f:section>
+</html>

@@ -1,0 +1,6 @@
+<div class="form-group">
+	<label for="categorySelect"><f:translate key="tx_calendars_label.category" />:</label>
+	<f:form.select id="categorySelect" name="categorySelect" class="category-select form-control"
+				   additionalAttributes="{onChange: 'this.form.submit()' }" value="{category.uid}"
+				   optionValueField="uid" optionLabelField="title" options="{categorySelect}" />
+</div>

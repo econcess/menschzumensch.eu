@@ -1,0 +1,19 @@
+<div xmlns="http://www.w3.org/1999/xhtml" lang="en"
+	 xmlns:f="http://typo3.org/ns/fluid/ViewHelpers">
+	<f:section name="Default">
+
+		<f:if condition="{settings.showFilter}">
+			<div class="panel panel-default calendar-event-filter">
+				<div class="panel-heading"><f:translate key="tx_calendars_label.filter" /></div>
+				<div class="panel-body">
+					<f:form controller="Calendar" action="listEvents" class="form-inline">
+						<f:for each="{settings.filterFields}" as="filterField">
+							<f:render partial="Calendar/FilterFields/{filterField}" arguments="{_all}" />
+						</f:for>
+					</f:form>
+				</div>
+			</div>
+		</f:if>
+				
+	</f:section>
+</div>

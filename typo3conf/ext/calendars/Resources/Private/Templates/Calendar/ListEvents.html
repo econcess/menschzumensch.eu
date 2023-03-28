@@ -1,0 +1,28 @@
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en"
+	  xmlns:f="http://typo3.org/ns/fluid/ViewHelpers"
+	  data-namespace-typo3-fluid="true">
+	<f:layout name="Default" />
+	<f:section name="Main">
+
+		<f:render partial="Calendar/EventListFilter" section="Default" arguments="{_all}" />
+
+		<div class="calendar-event-list">
+			<f:if condition="{f:count(subject: events)}">
+				<f:then>
+					<f:for each="{events}" as="event" iteration="itemIteration">
+						<div class="calendar-list-item mb-3">
+							<f:render partial="Calendar/EventListItem" arguments="{event:event, itemIteration:itemIteration}"
+									  section="Default" />
+						</div>
+					</f:for>
+				</f:then>
+				<f:else>
+					<div class="alert alert-info">
+						<f:translate key="tx_calendars_label.no_events_found"/>
+					</div>
+				</f:else>
+			</f:if>
+		</div>
+
+	</f:section>
+</html>

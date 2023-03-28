@@ -1,0 +1,16 @@
+mod.wizards.newContentElement.wizardItems {
+	plugins {
+		elements {
+			calendarlist {
+				title = LLL:EXT:calendars/Resources/Private/Language/locallang_db.xlf:tx_calendars_newcontentelementwizard_calendarlist.title
+				description = LLL:EXT:calendars/Resources/Private/Language/locallang_db.xlf:tx_calendars_newcontentelementwizard_calendarlist.description
+				icon = ../typo3conf/ext/calendars/Resources/Public/Icons/iconmonstr-calendar-4.svg
+				iconIdentifier = icon-content-plugin-calendars-calendarlist
+				tt_content_defValues {
+					CType = list
+					list_type = calendars_calendarlist
+				}
+			}
+		}
+	}
+}

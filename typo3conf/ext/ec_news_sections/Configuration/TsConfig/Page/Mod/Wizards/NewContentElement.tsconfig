@@ -1,0 +1,21 @@
+mod.wizards.newContentElement.wizardItems.common {
+    elements {
+        ecnewssections_sectionindexnewscontent {
+            iconIdentifier = ec-news-sections
+            title = LLL:EXT:ec_news_sections/Resources/Private/Language/locallang_newcontentelementwizard.xlf:ecnewssections_sectionindexnewscontent.wizard.title
+            description = LLL:EXT:ec_news_sections/Resources/Private/Language/locallang_newcontentelementwizard.xlf:ecnewssections_sectionindexnewscontent.wizard.description
+            tt_content_defValues {
+                CType = ecnewssections_sectionindexnewscontent
+            }
+        },
+        ecnewssections_faqcontent {
+            iconIdentifier = ec-news-sections
+            title = LLL:EXT:ec_news_sections/Resources/Private/Language/locallang_newcontentelementwizard.xlf:ecnewssections_faqcontent.wizard.title
+            description = LLL:EXT:ec_news_sections/Resources/Private/Language/locallang_newcontentelementwizard.xlf:ecnewssections_faqcontent.wizard.description
+            tt_content_defValues {
+                CType = ecnewssections_faqcontent
+            }
+        }				
+    }
+    show := addToList(ecnewssections_sectionindexnewscontent, ecnewssections_faqcontent, ecnewssections_twittercontent, ecnewssections_twitterquote)
+}

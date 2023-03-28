@@ -1,0 +1,26 @@
+<div id="c{data.uid}" class="content-text">
+	<f:format.raw><script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "QAPage",
+		"mainEntity": {
+			"@type": "Question",
+			"answerCount": 1,
+			"name": "</f:format.raw><f:format.htmlentitiesDecode>{data.header}</f:format.htmlentitiesDecode><f:format.raw>",
+			"acceptedAnswer": {
+				"@type": "Answer",
+				"text": "</f:format.raw><f:format.htmlentitiesDecode>{data.bodytext}</f:format.htmlentitiesDecode><f:format.raw>"
+			}	
+		}
+	}
+	</script></f:format.raw>
+	<div class="container faqcontainer">
+		<f:if condition="{data.header}">
+		<f:render partial="Content/Header/Header" arguments="{header:data.header, 
+		link: data.header_link, 
+		layout: data.header_layout, 
+		positionClass: data.header_position}" />
+		</f:if>
+		<f:format.htmlentitiesDecode>{data.bodytext}</f:format.htmlentitiesDecode>
+	</div>
+</div>

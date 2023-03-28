@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" target-language="de" datatype="plaintext" original="messages" date="2016-02-19T17:11:59Z">
+		<header>
+			<generator>LFEditor</generator>
+		</header>
+		<body>
+		<trans-unit id="calendar_event_category.description" approved="yes">
+			<source>Choose event category</source>
+			<target>Wähle Kategorien für Veranstaltung</target>
+		</trans-unit>
+		<trans-unit id="teaser.description">
+			<source>Teaser text of the event.</source>
+			<target>Teaser Text der Veranstaltung</target>
+		</trans-unit>
+		<trans-unit id="frontend_user.description">
+			<source>Owner of the event.</source>
+			<target>Besitzer dieser Veranstaltung.</target>
+		</trans-unit>
+		<trans-unit id="description.description" approved="yes">
+			<source>Description of the event</source>
+			<target>Dies ist die Beschreibung des Events.</target>
+		</trans-unit>
+		<trans-unit id="detail_pid.description">
+			<source>Page where the details should be displayed. If it's empty, the details will be displayed on the same page. A linked page does not have a event plugin for displaying information, it can also be a simple page with text/media content.</source>
+			<target>Seite, auf der die Details angezeigt werden sollen. Wenn es leer ist, werden die Details auf derselben Seite angezeigt. Eine verlinkte Seite verfügt nicht über ein Ereignis-Plugin zum Anzeigen von Informationen, sondern kann auch eine einfache Seite mit Text- / Medieninhalten sein.</target>
+		</trans-unit>
+		<trans-unit id="registration_pid.description">
+			<source>Page where the registration should be displayed. If it's empty, the registration page from TypoScript constants setting will be displayed. If in TypoScript constants also isn't a value configured, the registration button won't be displayed.</source>
+			<target>Seite, auf der die Registrierung angezeigt werden soll. Wenn es leer ist, wird die Registrierungsseite aus der Einstellung der TypoScript-Konstanten angezeigt. Wenn in TypoScript-Konstanten auch kein Wert konfiguriert ist, wird die Registrierungsschaltfläche nicht angezeigt.</target>
+		</trans-unit>
+		<trans-unit id="registration_pid.description">
+			<source>Page for registration</source>
+			<target>Seite für Anmeldung</target>
+		</trans-unit>
+		<trans-unit id="registration_address.description">
+			<source>Registration address</source>
+			<target>Addresse für Anmeldung</target>
+		</trans-unit>
+		<trans-unit id="registrations.description">
+			<source>Add new registration</source>
+			<target>Neue Anmeldung hinzufügen</target>
+		</trans-unit>
+		<trans-unit id="endtime.description">
+			<source>End time.</source>
+			<target>Endzeit</target>
+		</trans-unit>
+		<trans-unit id="end_date.description" approved="yes">
+			<source>End date of event</source>
+			<target>Dies ist das Enddatum des Events.</target>
+		</trans-unit>
+		<trans-unit id="external_link.description">
+			<source>Link to the event</source>
+			<target>Link zu der Veranstaltung</target>
+		</trans-unit>
+		<trans-unit id="hidden.description" approved="yes">
+			<source>If selected, the event is hidden.</source>
+			<target>Ist dieser Haken gesetzt, dann wird die Veranstaltung verborgen.</target>
+		</trans-unit>
+		<trans-unit id="images.description">
+			<source>Description of the event</source>
+			<target>Beschreibung der Veranstaltung</target>
+		</trans-unit>
+		<trans-unit id="starttime.description">
+			<source>Start time.</source>
+			<target>Start</target>
+		</trans-unit>
+		<trans-unit id="start_date.description" approved="yes">
+			<source>The start date of the event</source>
+			<target>Dies ist das Startdatum des Events.</target>
+		</trans-unit>
+		<trans-unit id="subtitle.description" approved="yes">
+			<source>Subtitle of the event.</source>
+			<target>Dies ist der Untertitel des Events.</target>
+		</trans-unit>
+		<trans-unit id="sys_language_uid.description" approved="yes">
+			<source>Language of this event.</source>
+			<target>Sprache dieser Veranstaltung</target>
+		</trans-unit>
+		<trans-unit id="ticket_amount.description">
+			<source>Total amount of tickets</source>
+			<target>Gesamtzahl der Tickets</target>
+		</trans-unit>
+		<trans-unit id="tickets_available.description">
+			<source>Number of tickets left</source>
+			<target>Anzahl der restlichen verfuegbaren Tickets</target>
+		</trans-unit>
+		<trans-unit id="title.description" approved="yes">
+			<source>Title of the Event.</source>
+			<target>Dies ist der Titel des Events.</target>
+		</trans-unit>
+		<trans-unit id="address.description" approved="yes">
+			<source>Event address</source>
+			<target>Adresse wo das Event stattfindet.</target>
+		</trans-unit>
+		<trans-unit id="attribute1.description" approved="yes">
+			<source>Create an attribute</source>
+			<target>Neue Attribut erstellen.</target>
+		</trans-unit>
+		<trans-unit id="attribute2.description" approved="yes">
+			<source>Create an attribute</source>
+			<target>Neue Attribut erstellen.</target>
+		</trans-unit>
+		<trans-unit id="attribute3.description" approved="yes">
+			<source>Create an attribute</source>
+			<target>Neue Attribut erstellen.</target>
+		</trans-unit>
+		<trans-unit id="attribute4.description" approved="yes">
+			<source>Create an attribute</source>
+			<target>Neue Attribut erstellen.</target>
+		</trans-unit>
+
+		</body>
+	</file>
+</xliff>

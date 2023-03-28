@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2013-10-01T12:01:30Z" product-name="calendars">
+		<header/>
+		<body>
+
+			<trans-unit id="sys_language_uid.description" xml:space="preserve">
+				<source>Language of this event category.</source>
+			</trans-unit>
+			<trans-unit id="hidden.description" xml:space="preserve">
+				<source>If selected, the event category is hidden.</source>
+			</trans-unit>
+			<trans-unit id="title.description" xml:space="preserve">
+				<source>Title of the event-category</source>
+			</trans-unit>
+			<trans-unit id="variant.description" xml:space="preserve">
+				<source>Variant of the event-category</source>
+			</trans-unit>
+			<trans-unit id="description.description" xml:space="preserve">
+				<source>Description of the category</source>
+			</trans-unit>
+			<trans-unit id="starttime.description" xml:space="preserve">
+				<source>Start time.</source>
+			</trans-unit>
+			<trans-unit id="endtime.description" xml:space="preserve">
+				<source>End time.</source>
+			</trans-unit>
+
+		</body>
+	</file>
+</xliff>

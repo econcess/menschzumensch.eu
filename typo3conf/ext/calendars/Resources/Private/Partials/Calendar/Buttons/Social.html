@@ -1,0 +1,20 @@
+<div xmlns="http://www.w3.org/1999/xhtml" lang="en"
+	 xmlns:f="http://typo3.org/ns/fluid/ViewHelpers">
+	<f:section name="Facebook">
+			<a href="https://www.facebook.com/sharer/sharer.php?u={f:uri.page(absolute: 'true', addQueryString: 'true')}" target="_blank"
+			   title="{settings.socialmedia.facebook.title}"
+			   class="{settings.socialmedia.facebook.cssClass}"><f:translate key="tx_calendars_label.facebook"/></a>
+	</f:section>
+	<f:section name="Twitter">
+		<a href="http://www.twitter.com/share?url={f:uri.page(absolute: 'true', addQueryString: 'true')}"
+		   target="_blank"
+		   title="{settings.socialmedia.twitter.title}"
+		   class="{settings.socialmedia.twitter.cssClass}"><f:translate key="tx_calendars_label.twitter"/></a>
+	</f:section>
+	<f:section name="Email">
+		<a href="mailto:?subject=Event&amp;body=Event: {f:uri.page(absolute: 'true', addQueryString: 'true')}"
+		   target="_blank"
+		   title="{settings.socialmedia.email.title}"
+		   class="{settings.socialmedia.email.cssClass}"><f:translate key="tx_calendars_label.email"/></a>
+	</f:section>
+</div>

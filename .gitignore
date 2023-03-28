@@ -5,5 +5,10 @@
 /typo3_src/
 /menschlokal-buero-20230328.zip
 /menscheu-lokal-buero-20230328.sql
-/typo3conf/
-!/typo3conf/ext/
+/typo3conf/autoload/
+/typo3conf/sites/
+/typo3conf/system/
+/typo3conf/ENABLE_INSTALL_TOOL
+/typo3conf/LocalConfiguration.php
+/typo3conf/PackageStates.php
+
