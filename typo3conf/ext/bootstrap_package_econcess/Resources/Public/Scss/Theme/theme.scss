@@ -360,16 +360,52 @@ figcaption.caption {
 	}
 }
 @include media-breakpoint-up(xl) { 
+/*
+Beginn Topmenü
+*/
+	#page-header > .container {
+		position:relative;
+	}
+	.navbar-mainnavigation .dropdown-menu {
+	position: static;
+	//	width: 100%;
+	//	left: 0;
+	width:70%;
+	border: none;
+	border-radius: 0;
+    box-shadow: none;
+	}
+	.navbar-mainnavigation .nav-item.dropdown.dropdown-hover {
+		position:static;
+	}
+	.navbar-mainnavigation .nav-item.dropdown.dropdown-hover:first-child .dropdown-menu {
+		display:block;
+	}
+	.ul-and-record-holder {
+		position: absolute;
+		width: 100%;
+		left: 0;	
+		display:flex;
+		flex-wrap:wrap;
+		background: #fff;
+	}
+	.show .ul-and-record-holder {
+		border: 1px solid rgba(54,54,54,0.15);
+		border-radius: 0.25rem;
+		box-shadow: 0 0.5rem 1rem rgba(54,54,54,0.15);
+	}
+	.record-holder {
+		width: 30%;
+	}
 
 
 
 
 
 
-
-
-
-
+/*
+Ende Topmenü
+*/
 	html {
 		font-size:16px;
 	}

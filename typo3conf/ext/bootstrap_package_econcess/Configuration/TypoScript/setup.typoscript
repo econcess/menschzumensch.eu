@@ -61,3 +61,13 @@ config.pageRendererTemplateFile = EXT:ec_page_speed/Resources/Private/Templates/
 [end]
 #//-3159/econcess
 #//-3104/econcess
+#//+3325/econcess
+lib.fluidLoadRecordEco = RECORDS
+lib.fluidLoadRecordEco {
+    source.data = current:1
+    source.intval = 1
+    dontCheckPid = 1
+    tables = tt_content
+}
+page.10.dataProcessing.10.levels = 3
+#//-3325/econcess
