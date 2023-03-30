@@ -1,0 +1,16 @@
+mod.wizards.newContentElement.wizardItems {
+	plugins {
+		elements {
+			calendarfullyear {
+				title = LLL:EXT:calendars/Resources/Private/Language/locallang_db.xlf:tx_calendars_newcontentelementwizard_calendarfullyear.title
+				description = LLL:EXT:calendars/Resources/Private/Language/locallang_db.xlf:tx_calendars_newcontentelementwizard_calendarfullyear.description
+				icon = ../typo3conf/ext/calendars/Resources/Public/Icons/iconmonstr-calendar-4.svg
+				iconIdentifier = icon-content-plugin-calendars-calendarfullyear
+				tt_content_defValues {
+					CType = list
+					list_type = calendars_calendarfullyear
+				}
+			}
+		}
+	}
+}

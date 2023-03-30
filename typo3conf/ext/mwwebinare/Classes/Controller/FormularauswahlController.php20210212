@@ -1,0 +1,49 @@
+<?php
+namespace Mwwebinare\Mwwebinare\Controller;
+
+/***
+ *
+ * This file is part of the "Infoniqa Webinare" Extension for TYPO3 CMS.
+ *
+ * For the full copyright and license information, please read the
+ * LICENSE.txt file that was distributed with this source code.
+ *
+ *  (c) 2020 Martin Weymayer <office@weymayer.at>, Webagentur Weymayer
+ *
+ ***/
+
+/**
+ * FormularauswahlController
+ */
+class FormularauswahlController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
+{
+    /**
+     * formularauswahlRepository
+     *
+     * @var \Mwwebinare\Mwwebinare\Domain\Repository\FormularauswahlRepository
+     * @inject
+     */
+    protected $formularauswahlRepository = null;
+
+    /**
+     * action list
+     *
+     * @return void
+     */
+    public function listAction()
+    {
+        $formularauswahls = $this->formularauswahlRepository->findAll();
+        $this->view->assign('formularauswahls', $formularauswahls);
+    }
+
+    /**
+     * action show
+     *
+     * @param \Mwwebinare\Mwwebinare\Domain\Model\Formularauswahl $formularauswahl
+     * @return void
+     */
+    public function showAction(\Mwwebinare\Mwwebinare\Domain\Model\Formularauswahl $formularauswahl)
+    {
+        $this->view->assign('formularauswahl', $formularauswahl);
+    }
+}

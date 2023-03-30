@@ -1,0 +1,129 @@
+#//+2940/econcess
+tt_content {
+    ecnewssections_sectionindexnewscontent = FLUIDTEMPLATE
+    ecnewssections_sectionindexnewscontent {
+		templateRootPaths {
+			200 = EXT:bootstrap_package/Resources/Private/Templates/ContentElements/
+			400 = EXT:ec_news_sections/Resources/Private/Templates/ContentElements/
+		}
+		partialRootPaths {
+			200 = EXT:bootstrap_package/Resources/Private/Partials/ContentElements/
+			400 = EXT:ec_news_sections/Resources/Private/Partials/ContentElements/
+
+		}
+		layoutRootPaths {
+			200 = EXT:bootstrap_package/Resources/Private/Layouts/ContentElements/
+			400 = EXT:ec_news_sections/Resources/Private/Layouts/ContentElements/
+		}
+		templateName = SectionIndexNewsContent
+		settings {
+			header {
+				defaultHeaderType = {$plugin.bootstrap_package_contentelements.header.defaultHeaderType}
+			}
+		}
+		dataProcessing {
+			1 = Econcess\NewsSections\DataProcessing\NewContentElementProcessor
+			1 {
+				exampleOptionName = exampleOptionValue
+			}
+			10 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
+			10 {
+				table = tt_content
+				orderBy = sorting
+				where = tx_news_related_news = ###news_record_id### AND sectionIndex = 1
+				pidInList.field=pid
+				as = myrecords
+				markers {
+					news_record_id.data = GP:tx_news_pi1|news
+				}
+			}
+#//+2514/econcess
+			20 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
+			20 {
+				table = tx_news_domain_model_news
+				where = uid = ###news_record_id### AND l10n_parent = 0 AND sys_language_uid > 0
+				pidInList.field=pid
+				as = myrecords-wo-standard-lang
+				markers {
+				news_record_id.data = GP:tx_news_pi1|news
+				}
+				dataProcessing {
+					20 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
+					20 {
+						table = tt_content   
+						pidInList.field=pid
+						where.dataWrap = tx_news_related_news = {field:t3_origuid}
+						as = myrecords-wo-standard-lang-contents
+					}
+				}
+			}
+#//-2514/econcess
+		}
+    },
+    ecnewssections_faqcontent = FLUIDTEMPLATE
+    ecnewssections_faqcontent {
+		templateRootPaths {
+			200 = EXT:bootstrap_package/Resources/Private/Templates/ContentElements/
+			400 = EXT:ec_news_sections/Resources/Private/Templates/ContentElements/
+		}
+		partialRootPaths {
+			200 = EXT:bootstrap_package/Resources/Private/Partials/ContentElements/
+			400 = EXT:ec_news_sections/Resources/Private/Partials/ContentElements/FaqContainer/
+		}
+		layoutRootPaths {
+			200 = EXT:bootstrap_package/Resources/Private/Layouts/ContentElements/
+			400 = EXT:ec_news_sections/Resources/Private/Layouts/ContentElements/FaqContainer/
+		}
+		templateName = FaqContent
+		settings {
+			header {
+				defaultHeaderType = {$plugin.bootstrap_package_contentelements.header.defaultHeaderType}
+			}
+		}
+    }
+   ecnewssections_twittercontent = FLUIDTEMPLATE
+    ecnewssections_twittercontent {
+		templateRootPaths {
+			200 = EXT:bootstrap_package/Resources/Private/Templates/ContentElements/
+			400 = EXT:ec_news_sections/Resources/Private/Templates/ContentElements/
+		}
+		partialRootPaths {
+			200 = EXT:bootstrap_package/Resources/Private/Partials/ContentElements/
+			400 = EXT:ec_news_sections/Resources/Private/Partials/ContentElements/
+
+		}
+		layoutRootPaths {
+			200 = EXT:bootstrap_package/Resources/Private/Layouts/ContentElements/
+			400 = EXT:ec_news_sections/Resources/Private/Layouts/ContentElements/
+		}
+		templateName = TwitterContent
+		settings {
+			header {
+				defaultHeaderType = {$plugin.bootstrap_package_contentelements.header.defaultHeaderType}
+			}
+		}
+    }
+   ecnewssections_twitterquote = FLUIDTEMPLATE
+    ecnewssections_twitterquote {
+		templateRootPaths {
+			200 = EXT:bootstrap_package/Resources/Private/Templates/ContentElements/
+			400 = EXT:ec_news_sections/Resources/Private/Templates/ContentElements/
+		}
+		partialRootPaths {
+			200 = EXT:bootstrap_package/Resources/Private/Partials/ContentElements/
+			400 = EXT:ec_news_sections/Resources/Private/Partials/ContentElements/
+
+		}
+		layoutRootPaths {
+			200 = EXT:bootstrap_package/Resources/Private/Layouts/ContentElements/
+			400 = EXT:ec_news_sections/Resources/Private/Layouts/ContentElements/
+		}
+		templateName = TwitterQuote
+		settings {
+			header {
+				defaultHeaderType = {$plugin.bootstrap_package_contentelements.header.defaultHeaderType}
+			}
+		}
+    }
+}
+#//-2940/econcess

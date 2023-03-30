@@ -1,0 +1,173 @@
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en"
+	  xmlns:f="http://typo3.org/ns/fluid/ViewHelpers"
+	  data-namespace-typo3-fluid="true">
+
+
+<f:layout name="Default"/>
+<f:section name="Main">
+	<div class="calendar-registration-show">
+
+		<f:flashMessages/>
+
+		<f:form class="form-horizontal" action="saveRegistration" controller="Registration">
+
+			<div class="card mb-3">
+				<div class="card-header">
+					<f:translate key="tx_calendars_label.date"/>
+				</div>
+				<div class="card-body">
+					<div class="form-group">
+						<label for="event" class="col-xs-12 col-sm-12 col-md-4 col-lg-4 control-label">
+							<f:translate key="tx_calendars_label.event"/>
+							:</label>
+						<f:if condition="{settings.disableEventSelection} == 1 && {selectedEvent} != 0">
+							<f:then>
+								<div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+									{selectedEventObject.titleForSelect}
+								</div>
+								<f:form.hidden name="event" class="form-control" value="{selectedEvent}"/>
+							</f:then>
+							<f:else>
+								<div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+									<f:form.select name="event" class="form-control" options="{events}"
+												   optionValueField="uid"
+												   optionLabelField="titleForSelect" value="{selectedEvent}"/>
+								</div>
+							</f:else>
+						</f:if>
+					</div>
+				</div>
+			</div>
+
+			<div class="card">
+				<div class="card-header">
+					<f:translate key="tx_calendars_label.your_data"/>
+				</div>
+				<div class="card-body">
+
+					<f:if condition="{settings.registration.fields.available.lastName}">
+						<div class="form-group">
+							<label for="lastName" class="col-xs-12 col-sm-12 col-md-4 col-lg-4 control-label">
+								<f:translate key="tx_calendars_label.last_name"/>
+								<f:if condition="{settings.registration.fields.required.lastName}">*</f:if>
+								:</label>
+							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+								<f:form.textfield class="form-control" name="lastName" id="lastName"
+												  value="{arguments.lastName}"/>
+							</div>
+						</div>
+					</f:if>
+
+					<f:if condition="{settings.registration.fields.available.firstName}">
+						<div class="form-group">
+							<label for="firstName" class="col-xs-12 col-sm-12 col-md-4 col-lg-4 control-label">
+								<f:translate key="tx_calendars_label.first_name"/>
+								<f:if condition="{settings.registration.fields.required.firstName}">*</f:if>
+								:</label>
+							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+								<f:form.textfield class="form-control" name="firstName" id="firstName"
+												  value="{arguments.firstName}"/>
+							</div>
+						</div>
+					</f:if>
+
+					<f:if condition="{settings.registration.fields.available.address}">
+						<div class="form-group">
+							<label for="address" class="col-xs-12 col-sm-12 col-md-4 col-lg-4 control-label">
+								<f:translate key="tx_calendars_label.street"/>
+								<f:if condition="{settings.registration.fields.required.address}">*</f:if>
+								:</label>
+							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+								<f:form.textfield class="form-control" name="address" id="address"
+												  value="{arguments.address}"/>
+							</div>
+						</div>
+					</f:if>
+
+					<f:if condition="{settings.registration.fields.available.city}">
+						<div class="form-group">
+							<label for="city" class="col-xs-12 col-sm-12 col-md-4 col-lg-4 control-label">
+								<f:translate key="tx_calendars_label.zipcode_city"/>
+								<f:if condition="{settings.registration.fields.required.city}">*</f:if>
+								:</label>
+							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+								<f:form.textfield class="form-control" name="zip" id="zip" value="{arguments.zip}"
+												  style="float: left; width: 20%; margin: 0 5% 0 0"/>
+								<f:form.textfield class="form-control" name="city" id="city" value="{arguments.city}"
+												  style="width: 75%"/>
+							</div>
+						</div>
+					</f:if>
+
+					<f:if condition="{settings.registration.fields.available.telephone}">
+						<div class="form-group">
+							<label for="telephone" class="col-xs-12 col-sm-12 col-md-4 col-lg-4 control-label">
+								<f:translate key="tx_calendars_label.telephone"/>
+								<f:if condition="{settings.registration.fields.required.telephone}">*</f:if>
+								:</label>
+							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+								<f:form.textfield class="form-control" name="telephone" id="telephone"
+												  value="{arguments.telephone}"/>
+							</div>
+						</div>
+					</f:if>
+
+					<f:if condition="{settings.registration.fields.available.fax}">
+						<div class="form-group">
+							<label for="fax" class="col-xs-12 col-sm-12 col-md-4 col-lg-4 control-label">
+								<f:translate key="tx_calendars_label.fax"/>
+								<f:if condition="{settings.registration.fields.required.fax}">*</f:if>
+								:</label>
+							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+								<f:form.textfield class="form-control" name="fax" id="fax" value="{arguments.fax}"/>
+							</div>
+						</div>
+					</f:if>
+
+					<f:if condition="{settings.registration.fields.available.email}">
+						<div class="form-group">
+							<label for="email" class="col-xs-12 col-sm-12 col-md-4 col-lg-4 control-label">
+								<f:translate key="tx_calendars_label.your_email_address"/>
+								<f:if condition="{settings.registration.fields.required.email}">*</f:if>
+								:</label>
+							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+								<f:form.textfield class="form-control" name="email" id="email"
+												  value="{arguments.email}"/>
+							</div>
+						</div>
+					</f:if>
+
+					<div class="form-group">
+						<label for="message"
+							   class="col-xs-12 col-sm-12 col-md-4 col-lg-4 control-label label-for-textarea">
+							<f:translate key="tx_calendars_label.message"/>
+							<f:if condition="{settings.registration.fields.required.message}">*</f:if>
+							:</label>
+						<div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+							<f:form.textarea class="form-control" name="message" id="message"
+											 value="{arguments.message}" rows="3"/>
+						</div>
+					</div>
+
+					<div class="form-group">
+						<div class="col-sm-offset-4 col-md-offset-4 col-lg-offset-4 col-xs-12 col-sm-8 col-md-8 col-lg-8">
+							<f:translate key="tx_calendars_label.required_fields"/>
+						</div>
+						<div class="col-sm-offset-4 col-md-offset-4 col-lg-offset-4 col-xs-12 col-sm-8 col-md-8 col-lg-8">
+							<button type="submit" name="submit" class="btn btn-default">
+								<f:translate key="tx_calendars_label.submit"/>
+							</button>
+							<f:link.page class="btn btn-default" pageUid="{settings.backButtonTarget}">
+								<f:translate key="tx_calendars_label.back"/>
+							</f:link.page>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+		</f:form>
+
+	</div>
+</f:section>
+</html>

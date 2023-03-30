@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="en" datatype="plaintext" original="messages" date="2023-02-13T10:47:11Z"
+          product-name="bootstrap_package_econcess">
+        <header/>
+        <body>
+            <trans-unit id="backend_layout.column.teaserleft">
+                <source>Teaser: Left</source>
+            </trans-unit>
+            <trans-unit id="backend_layout.column.teaserright">
+                <source>Teaser: Right</source>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

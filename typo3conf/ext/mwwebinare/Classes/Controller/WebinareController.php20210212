@@ -1,0 +1,304 @@
+<?php
+namespace Mwwebinare\Mwwebinare\Controller;
+
+
+/***
+ *
+ * This file is part of the "Infoniqa Webinare" Extension for TYPO3 CMS.
+ *
+ * For the full copyright and license information, please read the
+ * LICENSE.txt file that was distributed with this source code.
+ *
+ *  (c) 2020 Martin Weymayer <office@weymayer.at>, Webagentur Weymayer
+ *
+ ***/
+
+/**
+ * WebinareController
+ */
+class WebinareController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
+{
+    /**
+     * webinareRepository
+     *
+     * @var \Mwwebinare\Mwwebinare\Domain\Repository\WebinareRepository
+     * @inject
+     */
+    protected $webinareRepository = null;
+	
+	/**
+     * kategorienRepository
+     *
+     * @var \Mwwebinare\Mwwebinare\Domain\Repository\KategorienRepository
+     * @inject
+     */
+    protected $kategorienRepository = null;
+	
+	/**
+     * termineRepository
+     *
+     * @var \Mwwebinare\Mwwebinare\Domain\Repository\TermineRepository
+     * @inject
+     */
+    protected $termineRepository = null;
+	
+	/**
+     * registrationaddressRepository
+     *
+     * @var \Mwwebinare\Mwwebinare\Domain\Repository\RegistrationaddressRepository
+     * @inject
+     */
+    protected $registrationaddressRepository = null;
+
+    /**
+     * action listwebinare
+     *
+     * @return void
+     */
+    public function listwebinareAction()
+    {
+		
+		$this->contentObj = $this->configurationManager->getContentObject();
+		$tt_contentUid = $this->contentObj->data['uid'];
+		$this->view->assign('ttcontentuid', $tt_contentUid);
+		$this->view->assign('pageId', $this->contentObj->data['pid']);
+		$this->view->assign('ttheader', $this->contentObj->data['header']);
+				
+        $webinares = $this->webinareRepository->findAllByDate($this->contentObj->data['pages']);
+		
+		foreach($webinares as $key => $value) {
+			 $webinare =  $this->webinareRepository->findByUid($value['uid']);
+			 $webinares[$key]['object'] = $webinare;
+		}
+		
+        $this->view->assign('webinares', $webinares);
+		
+		$kategoriens = $this->kategorienRepository->findAll();
+        $this->view->assign('kategoriens', $kategoriens);
+    }
+
+	
+	
+	/**
+     * action listvideo
+     *
+     * @return void
+     */
+    public function listvideoAction()
+    {
+		
+		$this->contentObj = $this->configurationManager->getContentObject();
+		$tt_contentUid = $this->contentObj->data['uid'];
+		$this->view->assign('ttcontentuid', $tt_contentUid);
+		$this->view->assign('pageId', $this->contentObj->data['pid']);
+		$this->view->assign('ttheader', $this->contentObj->data['header']);
+				
+        $webinares = $this->webinareRepository->findAllByVideo($this->contentObj->data['pages'], 999);
+		foreach($webinares as $key => $value) {
+			 $webinare =  $this->webinareRepository->findByUid($value['uid']);
+			 $webinares[$key]['object'] = $webinare;
+		}
+		#$webinares = $this->webinareRepository->findAll();
+        $this->view->assign('webinares', $webinares);
+		
+		$kategoriens = $this->kategorienRepository->findAll();
+        $this->view->assign('kategoriens', $kategoriens);
+    }
+	
+	/**
+     * action loadmore
+     *
+     * @return void
+     */
+    public function loadmoreAction()
+    {
+		
+		
+		
+		$this->contentObj = $this->configurationManager->getContentObject();
+		$tt_contentUid = $this->contentObj->data['uid'];
+		$this->view->assign('ttcontentuid', $tt_contentUid);
+		$this->view->assign('pageId', $this->contentObj->data['pid']);
+		$this->view->assign('ttheader', $this->contentObj->data['header']);
+				
+        $webinares = $this->webinareRepository->findAllByVideo($this->contentObj->data['pages'], 999, 4);
+		foreach($webinares as $key => $value) {
+			 $webinare =  $this->webinareRepository->findByUid($value['uid']);
+			 $webinares[$key]['object'] = $webinare;
+		}
+        $this->view->assign('webinares', $webinares);
+		
+		$kategoriens = $this->kategorienRepository->findAll();
+        $this->view->assign('kategoriens', $kategoriens);
+    }
+	
+    /**
+     * action show
+     *
+     * @param \Mwwebinare\Mwwebinare\Domain\Model\Webinare $webinare
+	 * @param \Mwwebinare\Mwwebinare\Domain\Model\Termine $termine
+     * @return void
+     */
+    public function showAction(\Mwwebinare\Mwwebinare\Domain\Model\Webinare $webinare, \Mwwebinare\Mwwebinare\Domain\Model\Termine $termine)
+    {
+        $this->view->assign('webinare', $webinare);
+		$this->view->assign('termine', $termine);
+		
+		$weiteretermines = $this->termineRepository->findAllWeitereTermine($webinare->getUid(), $termine->getUid());
+        $this->view->assign('weiteretermines', $weiteretermines);
+		
+		$GLOBALS['TSFE']->altPageTitle = $webinare->getTitel().' '.$termine->getBeginn()->format('d.m.Y');
+		$GLOBALS['TSFE']->indexedDocTitle = $webinare->getTitel().' '.$termine->getBeginn()->format('d.m.Y');
+		
+		$this->contentObj = $this->configurationManager->getContentObject();
+		$tt_contentUid = $this->contentObj->data['uid'];
+		$this->view->assign('ttcontentuid', $tt_contentUid);
+		$this->view->assign('pageId', $this->contentObj->data['pid']);
+		$this->view->assign('ttheader', $this->contentObj->data['header']);
+		
+		$webinares = $this->webinareRepository->findAllByDate($this->contentObj->data['pages']);
+        $this->view->assign('webinares', $webinares);
+		
+    }
+	
+	/**
+     * action createanfrage
+     * 
+     * @return void
+     */
+    public function createanfrageAction()
+	{
+			
+		
+		$args = $this->request->getArguments();
+		#print_r($args);
+		#exit;
+		
+		$this->view->assign('args', $args);
+		$vorname = htmlspecialchars($args['firstName']);
+		$nachname = htmlspecialchars($args['lastName']);
+		$email = htmlspecialchars($args['email']);
+
+		
+		
+		
+	
+		#print_r($args);
+		#exit;
+		
+		if($args['message'] != '') {
+			##spam
+			$this->addFlashMessage('Leider ist ein Fehler aufgetreten! Sie haben das Spamschutzfeld ausgefüllt und deshalb wird Ihre Anfrage NICHT übermittelt. Falls Sie eine Browserfunktion mit "autofill" für Formulare haben, schalten Sie dies bitte ab.', '', \TYPO3\CMS\Core\Messaging\AbstractMessage::WARNING);
+			$this->redirect('doubleoptinform');
+		}
+		else {
+			
+			$regristrationaddress = $this->registrationaddressRepository->findByUid(intval($args['addressuid']));
+			$EmailTodaten = array($regristrationaddress->getEmail() => $this->settings['emailabsenderto']);
+			
+			/** @var \TYPO3\CMS\Fluid\View\StandaloneView $emailView */
+			$emailViewInfoniquareceiver = $this->objectManager->get('TYPO3\\CMS\\Fluid\\View\\StandaloneView');
+			$extbaseFrameworkConfiguration = $this->configurationManager->getConfiguration(\TYPO3\CMS\Extbase\Configuration\ConfigurationManagerInterface::CONFIGURATION_TYPE_FRAMEWORK);
+		
+			$templateRootPath[] = \TYPO3\CMS\Core\Utility\GeneralUtility::getFileAbsFileName('EXT:form_double_opt_in/Resources/Private/Templates/');
+			$layoutRootPaths[] = \TYPO3\CMS\Core\Utility\GeneralUtility::getFileAbsFileName('EXT:form_double_opt_in/Resources/Private/Layouts/');
+			$partialRootPaths[] = \TYPO3\CMS\Core\Utility\GeneralUtility::getFileAbsFileName('EXT:form_double_opt_in/Resources/Private/Partials/');
+	
+			$emailViewInfoniquareceiver->setLayoutRootPaths($layoutRootPaths);
+			$emailViewInfoniquareceiver->setPartialRootPaths($partialRootPaths);
+			$emailViewInfoniquareceiver->setTemplatePathAndFilename('typo3conf/ext/mwwebinare/Resources/Private/Templates/Webinare/MailanInfoniqua.html');
+				
+			$emailViewInfoniquareceiver->assign('args', $args);
+			
+			$EmailFromdaten = array($this->settings['emailabsenderemail'] => $this->settings['emailabsender']);
+
+			$useremaildaten = array($email => $vorname.' '.$nachname);
+		
+			$subject = 'Anmeldung Webinar';
+				
+			$emailBody = $emailViewInfoniquareceiver->render();
+					
+			/** @var $message \TYPO3\CMS\Core\Mail\MailMessage */
+			$message = $this->objectManager->get('TYPO3\\CMS\\Core\\Mail\\MailMessage');
+			$message->setTo($EmailTodaten)
+			->setFrom($EmailFromdaten)
+			->setSubject($subject);
+	
+			$message->setReplyTo($useremaildaten);
+		
+					
+			// Plain text example
+			$message->setBody($emailBody, 'text/plain');
+				
+			// HTML Email
+			$message->setBody($emailBody, 'text/html');
+					
+			$message->send();
+			
+		
+			/** @var \TYPO3\CMS\Fluid\View\StandaloneView $emailView */
+			$emailViewUser = $this->objectManager->get('TYPO3\\CMS\\Fluid\\View\\StandaloneView');
+			$extbaseFrameworkConfiguration = $this->configurationManager->getConfiguration(\TYPO3\CMS\Extbase\Configuration\ConfigurationManagerInterface::CONFIGURATION_TYPE_FRAMEWORK);
+			
+			$emailViewUser->setLayoutRootPaths($layoutRootPaths);
+			$emailViewUser->setPartialRootPaths($partialRootPaths);
+			$emailViewUser->setTemplatePathAndFilename('typo3conf/ext/mwwebinare/Resources/Private/Templates/Webinare/Mailanuser.html');
+					
+			$emailViewUser->assign('args', $args);
+			
+			$subjectUser = 'Ihre Anmeldung zum Webinar';
+	
+			$emailBodyUser = $emailViewUser->render();
+					
+			/** @var $message \TYPO3\CMS\Core\Mail\MailMessage */
+			$messageUser = $this->objectManager->get('TYPO3\\CMS\\Core\\Mail\\MailMessage');
+			$messageUser->setTo($useremaildaten)
+			->setFrom($EmailFromdaten)
+			->setSubject($subjectUser);
+	
+			$messageUser->setReplyTo($EmailTodaten);
+					
+			// Plain text example
+			$messageUser->setBody($emailBodyUser, 'text/plain');
+				
+			// HTML Email
+			$messageUser->setBody($emailBodyUser, 'text/html');
+					
+			$messageUser->send();
+			#exit;
+
+
+
+			if($messageUser->isSent() == '1') {
+				if($this->settings['isajax'] == 'yes') {
+					return '<div class="clr h15"></div>
+							<p class="text-right"><strong>Ihre Nachricht wurde erfolgreich übermittelt!</strong></p>
+							';
+				}
+				else {
+					$uriBuilder = $this->controllerContext->getUriBuilder();
+					$uriBuilder->reset();
+					// specify the page ID for the link
+					$uriBuilder->setTargetPageUid($this->settings['anfragelisteredirect']);
+
+						#$uriBuilder->setArguments(array(
+						#	'DoubleOptIn' => $args['newAnfrage']['doubleoptinform']
+						#));
+					
+					$uri = $uriBuilder->build(); // ready, steady…
+					#exit;
+					$this->redirectToUri($uri); // …go!
+
+					#$this->redirect('list');
+				}
+
+			}
+			else {
+				return 'Leider ist ein fehler bei der Übermittlung aufgetreten. Bitte kontaktieren Sie unser Büro unter <a href="mailto:'.$this->settings['emailabsenderemail'].'">'.$this->settings['emailabsenderemail'].'</a>!';
+			}
+		}
+		
+
+		#$hotelsForGoogleClick
+    }
+}

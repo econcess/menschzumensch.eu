@@ -1,0 +1,28 @@
+<f:if condition="{newsRecordId}">
+	<div id="c{data.uid}" class="content-text">
+		<div class="container sectionindexcontainer">
+			<f:if condition="{data.header}">
+				<f:render partial="Content/Header/Header" arguments="{header:data.header, 
+					link: data.header_link, 
+					layout: data.header_layout, 
+					positionClass: data.header_position}" />
+			</f:if>  
+			<f:if condition="{myrecords}">			
+				<ol>   
+					<f:for each="{myrecords}" as="pagecontent">
+						<f:if condition="{pagecontent.data.header}">
+							<li>
+								<a 
+									title="{pagecontent.data.header}" 
+									href="<f:uri.page additionalParams="{tx_news_pi1: {action: 'detail',controller: 'News',news: newsRecordId}}"></f:uri.page>#c{pagecontent.data.uid}"
+								>
+									<span>{pagecontent.data.header}</span>
+								</a>
+							</li>
+						</f:if>
+					</f:for>
+				</ol>
+			</f:if>
+		</div>
+	</div>
+</f:if>

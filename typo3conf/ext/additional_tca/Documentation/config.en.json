@@ -1,0 +1,68 @@
+{
+    "title": "TYPO3 Additional-TCA",
+    "subtitle": "This extension helps you to keep your TCA tidy and easy to maintain.",
+    "logo": "../ext_icon.svg",
+    "markdown": "../Readme.en.md",
+    "features": [
+        "Provides methods for tab labels",
+        "Provides methods for recurring fields such as sys_language_uid, hidden, and more",
+        "Provides configuration presets for markdown t3editor, percent fields, currency fields, and more"
+    ],
+    "meta": {
+        "description": "TYPO3 Additional-TCA - This extension helps you to keep your TCA tidy and easy to maintain.",
+        "abstract": "Additional TCA fields and tools",
+        "keywords": "TYPO3, extension, TCA, Fields",
+        "og:title": "TYPO3 Additional-TCA",
+        "og:description": "TYPO3 Additional-TCA - This extension helps you to keep your TCA tidy and easy to maintain."
+    },
+    "links": {
+        "product": {
+            "link": "https://www.coding.ms/typo3-extensions/typo3-additional-tca/",
+            "name": "TYPO3 Additional-TCA"
+        }
+    },
+    "pages": [
+        {
+            "title": "Usage",
+            "pages": [
+                {
+                    "title": "Full configuration",
+                    "markdown": "Usage/FullConfiguration.en.md"
+                },
+                {
+                    "title": "Label",
+                    "markdown": "Usage/Label.en.md"
+                },
+                {
+                    "title": "Field configuration",
+                    "markdown": "Usage/FieldConfiguration.en.md"
+                },
+                {
+                    "title": "Custom field configuration",
+                    "markdown": "Usage/CustomFieldConfiguration.en.md"
+                },
+                {
+                    "title": "Information field",
+                    "markdown": "Usage/InformationField.en.md"
+                },
+                {
+                    "title": "Example TCA",
+                    "markdown": "Usage/ExampleTca.en.md"
+                },
+                {
+                    "title": "Migration tasks",
+                    "markdown": "Usage/MigrationTasks.en.md"
+                }
+            ]
+        },
+        {
+            "title": "Additional fields",
+            "pages": [
+                {
+                    "title": "Badge suggested",
+                    "markdown": "AdditionalFields/BadgeSuggested.en.md"
+                }
+            ]
+        }
+    ]
+}

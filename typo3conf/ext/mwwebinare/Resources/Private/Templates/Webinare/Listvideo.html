@@ -1,0 +1,116 @@
+<html xmlns:f="https://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+	<f:layout name="Default" />
+
+	This Template is responsible for creating a table of domain objects.
+
+	If you modify this template, do not forget to change the overwrite settings
+	in /Configuration/ExtensionBuilder/settings.yaml:
+	  Resources:
+		Private:
+		  Templates:
+			List.html: keep
+
+	Otherwise your changes will be overwritten the next time you save the extension in the extension builder
+	
+			<h1>Listing for Webinare</h1>
+
+		<f:flashMessages />
+
+		<table  class="tx_mwwebinare" >
+			<tr>
+				<th><f:translate key="tx_mwwebinare_domain_model_webinare.titel" /></th>
+				<th><f:translate key="tx_mwwebinare_domain_model_webinare.versionsschulung" /></th>
+				<th><f:translate key="tx_mwwebinare_domain_model_webinare.beschreibung" /></th>
+				<th><f:translate key="tx_mwwebinare_domain_model_webinare.link" /></th>
+				<th><f:translate key="tx_mwwebinare_domain_model_webinare.standort" /></th>
+				<th><f:translate key="tx_mwwebinare_domain_model_webinare.dauer" /></th>
+				<th><f:translate key="tx_mwwebinare_domain_model_webinare.grueneslabel" /></th>
+				<th><f:translate key="tx_mwwebinare_domain_model_webinare.status" /></th>
+				<th><f:translate key="tx_mwwebinare_domain_model_webinare.buttonbuchendeaktiv" /></th>
+				<th><f:translate key="tx_mwwebinare_domain_model_webinare.verfuegbarkeit" /></th>
+				<th><f:translate key="tx_mwwebinare_domain_model_webinare.ticket" /></th>
+				<th><f:translate key="tx_mwwebinare_domain_model_webinare.ticketverfuegbar" /></th>
+				<th><f:translate key="tx_mwwebinare_domain_model_webinare.bilder" /></th>
+				<th><f:translate key="tx_mwwebinare_domain_model_webinare.video" /></th>
+				<th><f:translate key="tx_mwwebinare_domain_model_webinare.youtubecode" /></th>
+				<th> </th>
+				<th> </th>
+			</tr>
+
+			<f:for each="{webinares}" as="webinare">
+				<tr>
+					<td><f:link.action action="show" arguments="{webinare : webinare}"> {webinare.titel}</f:link.action></td>
+					<td><f:link.action action="show" arguments="{webinare : webinare}"> {webinare.versionsschulung}</f:link.action></td>
+					<td><f:link.action action="show" arguments="{webinare : webinare}"> {webinare.beschreibung}</f:link.action></td>
+					<td><f:link.action action="show" arguments="{webinare : webinare}"> {webinare.link}</f:link.action></td>
+					<td><f:link.action action="show" arguments="{webinare : webinare}"> {webinare.standort}</f:link.action></td>
+					<td><f:link.action action="show" arguments="{webinare : webinare}"> {webinare.dauer}</f:link.action></td>
+					<td><f:link.action action="show" arguments="{webinare : webinare}"> {webinare.grueneslabel}</f:link.action></td>
+					<td><f:link.action action="show" arguments="{webinare : webinare}"> {webinare.status}</f:link.action></td>
+					<td><f:link.action action="show" arguments="{webinare : webinare}"> {webinare.buttonbuchendeaktiv}</f:link.action></td>
+					<td><f:link.action action="show" arguments="{webinare : webinare}"> {webinare.verfuegbarkeit}</f:link.action></td>
+					<td><f:link.action action="show" arguments="{webinare : webinare}"> {webinare.ticket}</f:link.action></td>
+					<td><f:link.action action="show" arguments="{webinare : webinare}"> {webinare.ticketverfuegbar}</f:link.action></td>
+					<td><f:link.action action="show" arguments="{webinare : webinare}"> {webinare.bilder}</f:link.action></td>
+					<td><f:link.action action="show" arguments="{webinare : webinare}"> {webinare.video.originalResource.name}</f:link.action></td>
+					<td><f:link.action action="show" arguments="{webinare : webinare}"> {webinare.youtubecode}</f:link.action></td>
+					<td><f:link.action action="edit" arguments="{webinare : webinare}">Edit</f:link.action></td>
+					<td><f:link.action action="delete" arguments="{webinare : webinare}">Delete</f:link.action></td>
+				</tr>
+			</f:for>
+		</table>
+
+		<f:link.action action="new">New Webinare</f:link.action>
+
+	<f:section name="content">
+		
+		<div id="c37x" class="content-text content-text-page-introduction-h1_ padtop84 bg-white "
+							data-content="text" data-layout="page-introduction-h1">
+							<div class="container">
+								<div class="body-text without-h1">
+									<h2 class="text-center">{ttheader}</h2>
+									
+									<div id="optionsiso">
+										<div id="filters" class="button-group">  
+											
+										<f:for each="{kategoriens}" as="kategorie">
+											<button class="buttonf" data-filter=".kat_{kategorie.uid}">{kategorie.kategorie}</button>
+										</f:for>
+										</div>
+									</div>
+
+									<div class="clr h24"></div>
+
+									
+									<div id="containerisotop">
+										<div class="grid row">	
+										<f:for each="{webinares}" as="webinare">
+											<f:if condition="{webinare.youtubecode} != ''">
+											<div class="element-item transition <f:for each="{webinare.object.kategorien}" as="kategorie">kat_{kategorie.uid} </f:for>">
+												<div class="webinar_videobox">
+													<div class="webi_video">
+														<div class="video-container">
+															<f:format.raw>{webinare.youtubecode}</f:format.raw>
+														</div>
+													</div>
+													<div class="webi_txt">
+														<div class="webi_name">{webinare.titel}</div>
+														<div class="webi_date">{f:format.date(date:webinare.beginn, format:'%d. %B %Y')}</div>
+													</div>
+												</div>
+											</div>
+											</f:if>
+										</f:for>
+											
+										</div>
+									</div>
+									
+									
+									
+									
+									
+								</div>
+							</div>
+						</div>
+	</f:section>
+</html>

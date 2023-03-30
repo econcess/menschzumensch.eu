@@ -1,0 +1,50 @@
+<?php
+namespace Mwwebinare\Mwwebinare\Controller;
+
+/***
+ *
+ * This file is part of the "Infoniqa Webinare" Extension for TYPO3 CMS.
+ *
+ * For the full copyright and license information, please read the
+ * LICENSE.txt file that was distributed with this source code.
+ *
+ *  (c) 2020 Martin Weymayer <office@weymayer.at>, Webagentur Weymayer
+ *
+ ***/
+
+/**
+ * RegistrationaddressController
+ */
+class RegistrationaddressController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
+{
+    /**
+     * registrationaddressRepository
+     *
+     * @var \Mwwebinare\Mwwebinare\Domain\Repository\RegistrationaddressRepository
+     * @inject
+     */
+    protected $registrationaddressRepository = null;
+
+    /**
+     * action list
+     *
+     * @return void
+     */
+    public function listAction()
+    {
+        $registrationaddress = $this->registrationaddressRepository->findAll();
+        $this->view->assign('registrationaddress', $registrationaddress);
+		
+    }
+
+    /**
+     * action show
+     *
+     * @param \Mwwebinare\Mwwebinare\Domain\Model\Registrationaddress $registrationaddress
+     * @return void
+     */
+    public function showAction(\Mwwebinare\Mwwebinare\Domain\Model\Registrationaddress $registrationaddress)
+    {
+        $this->view->assign('registrationaddress', $registrationaddress);
+    }
+}

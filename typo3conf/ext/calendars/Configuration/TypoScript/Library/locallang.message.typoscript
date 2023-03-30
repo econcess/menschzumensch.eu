@@ -1,0 +1,55 @@
+plugin.tx_calendars._LOCAL_LANG {
+	default {
+
+		tx_calendars_message.ok_event_deleted = Event was successfully deleted
+		tx_calendars_message.ok_event_edit_edited_successful = Event successfully saved
+
+		# controller:event:new
+		tx_calendars_message.error_please_select_an_upload_file_storage = Please select an upload file storage.
+		tx_calendars_message.error_please_select_a_valid_upload_file_storage = Please select a valid upload file storage.
+		tx_calendars_message.error_please_select_a_valid_upload_folder_from_storage = Please select a valid upload folder from storage
+
+		tx_calendars_message.error_event_new_title_empty = Please enter a file title!
+		tx_calendars_message.error_event_new_category_empty = Please choose at least one event category!
+		tx_calendars_message.error_event_new_description_empty = Please enter a file description!
+
+		tx_calendars_message.error_event_new_start_date_empty = Please choose a start time!
+		tx_calendars_message.error_event_new_end_date_empty = Please choose an end time!
+		tx_calendars_message.error_event_new_start_date_not_valid = Please choose a valid start time!
+		tx_calendars_message.error_event_new_end_date_not_valid = Please choose an valid end time!
+
+		tx_calendars_message.error_event_new_image_empty = Please select an image!
+		tx_calendars_message.error_event_new_image_failed = Image upload failed!
+		tx_calendars_message.error_event_new_form_validation_failed = Please check your input!
+		tx_calendars_message.ok_event_new_image_upload_successful = Image successfully uploaded!
+		tx_calendars_message.ok_event_new_created_successful = Event successfully created!
+
+	}
+	de {
+		tx_calendars_message.ok_event_deleted = Veranstaltung wurde gelöscht
+		tx_calendars_message.ok_event_edit_edited_successful = Veranstaltung wurde gespeichert
+
+
+		# controller:event:new
+		tx_calendars_message.error_please_select_an_upload_file_storage = Bitte wählen Sie eine Dateisammlung aus!
+		tx_calendars_message.error_please_select_a_valid_upload_file_storage = Bitte wählen Sie eine gültige Dateisammlung aus!
+		tx_calendars_message.error_please_select_a_valid_upload_folder_from_storage = Bitte wählen Sie ein gültiges Verzeichnis in der Dateisammlung aus!
+
+		tx_calendars_message.error_event_new_title_empty = Bitte geben Sie einen Veranstaltungstitel ein!
+		tx_calendars_message.error_event_new_category_empty = Bitte geben Sie mindestens eine Gruppe an!
+		tx_calendars_message.error_event_new_description_empty = Bitte geben Sie eine Veranstaltungsbeschreibung ein!
+
+		tx_calendars_message.error_event_new_start_date_empty = Bitte geben Sie ein Startdatum an!
+		tx_calendars_message.error_event_new_end_date_empty = Bitte geben Sie ein Enddatum an!
+		tx_calendars_message.error_event_new_start_date_not_valid = Bitte geben Sie ein gültiges Startdatum an!
+		tx_calendars_message.error_event_new_end_date_not_valid = Bitte geben Sie ein gültiges Enddatum an!
+
+		tx_calendars_message.error_event_new_image_empty = Bitte wählen Sie ein Bild aus!
+		tx_calendars_message.error_event_new_image_failed = Bild-Upload ist fehlgeschlagen!
+		tx_calendars_message.error_event_new_form_validation_failed = Bitte überprüfen Sie Ihre Eingaben!
+		tx_calendars_message.ok_event_new_image_upload_successful = Bild erfolgreich hochgeladen!
+		tx_calendars_message.ok_event_new_created_successful = Veranstaltung erfolgreich erstellt!
+
+
+	}
+}

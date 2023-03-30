@@ -1,0 +1,21 @@
+<div xmlns="http://www.w3.org/1999/xhtml" lang="en"
+	 xmlns:f="http://typo3.org/ns/fluid/ViewHelpers">
+	<f:section name="Default">
+
+		<f:if condition="{event.endDate} > {event.startDate}">
+			<f:then>
+				<span> <f:translate key="tx_calendars_label.from" /> </span>
+				<span class="date from"><f:format.date date="{event.startDate}" format="{settings.formatting.date.format}" /></span>
+				<span> <f:translate key="tx_calendars_label.to" /> </span>
+				<span class="date to"><f:format.date date="{event.endDate}" format="{settings.formatting.date.format}" /></span>
+				<br />
+			</f:then>
+			<f:else>
+				<span> <f:translate key="tx_calendars_label.date" /> </span>
+				<span class="date"><f:format.date date="{event.startDate}" format="{settings.formatting.date.format}" /></span>
+				<br />
+			</f:else>
+		</f:if>
+
+	</f:section>
+</div>

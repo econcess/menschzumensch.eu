@@ -1,0 +1,32 @@
+<div id="c{data.uid}" class="content-text">
+<f:comment>
+//+2406/econcess
+</f:comment>
+	<f:format.raw><script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "QAPage",
+		"mainEntity": {
+			"@type": "Question",
+			"answerCount": 1,
+			"name": "</f:format.raw><f:format.htmlentitiesDecode>{data.header}</f:format.htmlentitiesDecode><f:format.raw>",
+			"acceptedAnswer": {
+				"@type": "Answer",
+				"text": "</f:format.raw><f:format.htmlentities><f:format.html>{data.bodytext}</f:format.html></f:format.htmlentities><f:format.raw>"
+			}	
+		}
+	}
+	</script></f:format.raw>
+	<div class="container faqcontainer">
+		<f:if condition="{data.header}">
+		<f:render partial="Content/Header/Header" arguments="{header:data.header, 
+		link: data.header_link, 
+		layout: data.header_layout, 
+		positionClass: data.header_position}" />
+		</f:if>
+		<f:format.html>{data.bodytext}</f:format.html>
+	</div>
+</div>
+<f:comment>
+//-2406/econcess
+</f:comment>
