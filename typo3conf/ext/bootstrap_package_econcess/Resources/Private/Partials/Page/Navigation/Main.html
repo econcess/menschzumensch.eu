@@ -90,60 +90,41 @@
 															</span>
 															<span class="subheader">{child.data.subtitle}</span>
 														</a>
-														
-														
-														
-														
-														
-														
-														
-												
 														<f:if condition="{child.children}">
-												
-								
-									<ul class="dropdown-menu" aria-labelledby="nav-item-{child.data.uid}">
-										<f:for each="{child.children}" as="childchild">
-											<f:if condition="{childchild.spacer}">
-												<f:then>
-													<li class="dropdown-divider"></li>
-												</f:then>
-												<f:else>
-													<li>
-														<a href="{childchild.link}" class="dropdown-item{f:if(condition: childchild.active, then:' active')}"{f:if(condition: '{childchild.target}', then: ' target="{childchild.target}"')}{f:if(condition: '{childchild.target} == "_blank"', then: ' rel="noopener noreferrer"')} title="{childchild.title}">
-															<f:if condition="{theme.navigation.dropdown.icon.enable} && {childchild.icon}">
-																<span class="dropdown-icon">
-																	<bk2k:icon icon="{childchild.icon}" width="{theme.navigation.dropdown.icon.width}" height="{theme.navigation.dropdown.icon.height}" />
-																</span>
-															</f:if>
-															<span class="dropdown-text">
-																{childchild.title}
-																<f:if condition="{childchild.current}"> 
-																	<span class="visually-hidden">(current)</span>
-																</f:if>
-															</span>
-															<span class="subheader">{childchild.data.subtitle}</span>
-														</a>
-													</li>
-												</f:else>
-											</f:if>
-										</f:for>
-									</ul>
-						
-                            </f:if>
-							
-							
-							
-							
-							
-							
-							
+															<ul class="dropdown-menu" aria-labelledby="nav-item-{child.data.uid}">
+																<f:for each="{child.children}" as="childchild">
+																	<f:if condition="{childchild.spacer}">
+																		<f:then>
+																			<li class="dropdown-divider"></li>
+																		</f:then>
+																		<f:else>
+																			<li>
+																				<a href="{childchild.link}" class="dropdown-item{f:if(condition: childchild.active, then:' active')}"{f:if(condition: '{childchild.target}', then: ' target="{childchild.target}"')}{f:if(condition: '{childchild.target} == "_blank"', then: ' rel="noopener noreferrer"')} title="{childchild.title}">
+																					<f:if condition="{theme.navigation.dropdown.icon.enable} && {childchild.icon}">
+																						<span class="dropdown-icon">
+																							<bk2k:icon icon="{childchild.icon}" width="{theme.navigation.dropdown.icon.width}" height="{theme.navigation.dropdown.icon.height}" />
+																						</span>
+																					</f:if>
+																					<span class="dropdown-text">
+																						{childchild.title}
+																						<f:if condition="{childchild.current}"> 
+																							<span class="visually-hidden">(current)</span>
+																						</f:if>
+																					</span>
+																					<span class="subheader">{childchild.data.subtitle}</span>
+																				</a>
+																			</li>
+																		</f:else>
+																	</f:if>
+																</f:for>
+															</ul>
+														</f:if>
 													</li>
 												</f:else>
 											</f:if>
 										</f:for>
 									</ul>
 									<div class="record-holder">
-										Record RECHTS!
 										<f:if condition="{item.data.uid}=={theme.navigation.uid_people}"> 
 											<f:cObject typoscriptObjectPath="lib.fluidLoadRecordEco">{theme.navigation.record_id_people}</f:cObject>
 										</f:if>
