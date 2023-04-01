@@ -279,20 +279,7 @@ figcaption.caption {
 		order: 1;
 	}
 }
-
-
-
-
-
-
-
-
-
-
-@include media-breakpoint-down(md) { 
-
-
-
+@include media-breakpoint-down(xl) {
 	#mainnavigation {
 		box-shadow: 0px 10px 20px #0000000D;
 	}
@@ -359,7 +346,9 @@ figcaption.caption {
 		position:absolute;
 		opacity:1;
 	}
-	header.navbar-mainnavigation .navbar-nav>li>.nav-link:before {
+	header.navbar-mainnavigation .navbar-nav>li>.nav-link:before,
+	header.navbar-mainnavigation .navbar-nav>li.show>.nav-link:before
+	{
 		content: "";
 		width: 10px;
 		height: 2px;
@@ -386,7 +375,8 @@ figcaption.caption {
 		margin-left: -20px;
 		margin-right: -20px;
 	}
-	.dropdown.show .ul-and-record-holder a.dropdown-item
+	.dropdown.show .ul-and-record-holder a.dropdown-item,
+	.record-holder
 	{
 		padding-left: 20px;
 		padding-right: 20px;
@@ -409,24 +399,16 @@ figcaption.caption {
 	}
 
 
-
+	.record-holder .frame {
+		margin-top: var(--frame-outer-spacing-before);
+		margin-bottom: var(--frame-outer-spacing-after);
+		padding-left: var(--frame-spacing);
+		padding-right: var(--frame-spacing);
+	}
 
 
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 @include media-breakpoint-up(sm) {
 	.laenderauswahl {
 		margin-top:-55px;
@@ -501,6 +483,28 @@ figcaption.caption {
 	.footer-meta ul.mailaddresses.meta-menu>li {
 		padding-left:0;
 	}
+
+
+
+
+
+
+
+
+
+
+
+	.record-holder {
+		display:block;
+	}
+
+
+
+
+
+
+
+
 }
 @include media-breakpoint-up(lg) { 
 	.footer-section-meta {
