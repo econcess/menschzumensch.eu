@@ -38,7 +38,6 @@
                 <f:if condition="{item.spacer} && 1==2">
                     <f:then>
                         </ul>
-						gggggggggggggggggggggggggggggg
                         <ul class="navbar-nav">
                     </f:then>
                     <f:else>
@@ -68,6 +67,11 @@
 						</f:if>
                             <f:if condition="{item.children}">
 								<div class="ul-and-record-holder">
+									<div class="record-holder">
+										<f:if condition="{item.data.uid}=={theme.navigation.uid_people}">
+											<f:cObject typoscriptObjectPath="lib.fluidLoadRecordEco">{theme.navigation.record_id_people}</f:cObject>
+										</f:if>
+									</div>
 									<ul class="dropdown-menu" aria-labelledby="nav-item-{item.data.uid}">
 										<f:for each="{item.children}" as="child">
 											<f:if condition="{child.spacer}">
@@ -124,11 +128,6 @@
 											</f:if>
 										</f:for>
 									</ul>
-									<div class="record-holder">
-										<f:if condition="{item.data.uid}=={theme.navigation.uid_people}"> 
-											<f:cObject typoscriptObjectPath="lib.fluidLoadRecordEco">{theme.navigation.record_id_people}</f:cObject>
-										</f:if>
-									</div>
 								</div>
                             </f:if>
                         </li>
