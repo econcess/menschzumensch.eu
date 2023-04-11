@@ -1,0 +1,1959 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3RecordDocument>
+	<header type="array">
+		<XMLversion>1.0</XMLversion>
+		<meta type="array">
+			<title></title>
+			<description></description>
+			<notes></notes>
+			<packager_username>admin_3456_1</packager_username>
+			<packager_name></packager_name>
+			<packager_email>info@econcess.de</packager_email>
+			<TYPO3_version>11.5.24</TYPO3_version>
+			<created>Tuesday 11. April 2023</created>
+		</meta>
+		<static_tables index="relStaticTables" type="array"></static_tables>
+		<excludeMap type="array"></excludeMap>
+		<softrefCfg type="array"></softrefCfg>
+		<extensionDependencies type="array"></extensionDependencies>
+		<charset>utf-8</charset>
+		<pagetree type="array">
+			<node index="153" type="array">
+				<uid>153</uid>
+			</node>
+		</pagetree>
+		<records type="array">
+			<table index="pages" type="array">
+				<rec index="153" type="array">
+					<uid>153</uid>
+					<pid>168</pid>
+					<title>News &amp; Presse</title>
+					<relations index="rels" type="array"></relations>
+					<softrefs type="array"></softrefs>
+				</rec>
+			</table>
+			<table index="tx_news_domain_model_news" type="array">
+				<rec index="108" type="array">
+					<uid>108</uid>
+					<pid>153</pid>
+					<title>Infoniqa baut mit StoneData-Kauf die Pay...</title>
+					<relations index="rels" type="array">
+						<element index="tx_news_domain_model_tag:58" type="array">
+							<id>58</id>
+							<table>tx_news_domain_model_tag</table>
+						</element>
+					</relations>
+					<softrefs type="array">
+						<softref_element index="bodytext:typolink_tag:1" type="array">
+							<field>bodytext</field>
+							<spKey>typolink_tag</spKey>
+							<matchString>&lt;a href=&quot;t3://page?uid=666&quot; title=&quot;Befreien Sie sich von dem Druck der Lohn- und Gehaltsabrechnung. Jetzt auslagern!&quot;&gt;</matchString>
+							<subst type="array">
+								<type>db</type>
+								<recordRef>pages:666</recordRef>
+								<tokenID>4bb77d3528b0df6e62346f7a218d97ea</tokenID>
+								<tokenValue>666</tokenValue>
+							</subst>
+						</softref_element>
+						<softref_element index="bodytext:typolink_tag:3" type="array">
+							<field>bodytext</field>
+							<spKey>typolink_tag</spKey>
+							<matchString>&lt;a href=&quot;t3://page?uid=30&quot;&gt;</matchString>
+							<subst type="array">
+								<type>db</type>
+								<recordRef>pages:30</recordRef>
+								<tokenID>9337a49ae230887a38945570b4e868b5</tokenID>
+								<tokenValue>30</tokenValue>
+							</subst>
+						</softref_element>
+					</softrefs>
+				</rec>
+				<rec index="109" type="array">
+					<uid>109</uid>
+					<pid>153</pid>
+					<title>Infoniqa kauft haveldata und wird deutsc...</title>
+					<relations index="rels" type="array">
+						<element index="tx_news_domain_model_tag:58" type="array">
+							<id>58</id>
+							<table>tx_news_domain_model_tag</table>
+						</element>
+					</relations>
+					<softrefs type="array">
+						<softref_element index="bodytext:typolink_tag:1" type="array">
+							<field>bodytext</field>
+							<spKey>typolink_tag</spKey>
+							<matchString>&lt;a href=&quot;t3://page?uid=1&quot; target=&quot;_blank&quot;&gt;</matchString>
+							<subst type="array">
+								<type>db</type>
+								<recordRef>pages:1</recordRef>
+								<tokenID>22cad9601b1496dd92965bc0792c1a9d</tokenID>
+								<tokenValue>1</tokenValue>
+							</subst>
+						</softref_element>
+						<softref_element index="bodytext:typolink_tag:3" type="array">
+							<field>bodytext</field>
+							<spKey>typolink_tag</spKey>
+							<matchString>&lt;a href=&quot;t3://page?uid=17&quot; title=&quot;Umfassende Personalsoftware für die zentrale Steuerung der HR-Aktivitäten. Jetzt informieren!&quot;&gt;</matchString>
+							<subst type="array">
+								<type>db</type>
+								<recordRef>pages:17</recordRef>
+								<tokenID>6cdfc46730f771e6e6d18d1928dc8044</tokenID>
+								<tokenValue>17</tokenValue>
+							</subst>
+						</softref_element>
+						<softref_element index="bodytext:typolink_tag:5" type="array">
+							<field>bodytext</field>
+							<spKey>typolink_tag</spKey>
+							<matchString>&lt;a class=&quot;external-link&quot; href=&quot;https://www.haveldata.de/&quot; target=&quot;_blank&quot; title=&quot;Hier geht es zu haveldata →&quot;&gt;</matchString>
+							<subst type="array">
+								<type>external</type>
+								<tokenID>9fb7bd8113e55920bf7f54705d8faceb</tokenID>
+								<tokenValue>https://www.haveldata.de/</tokenValue>
+							</subst>
+						</softref_element>
+					</softrefs>
+				</rec>
+				<rec index="110" type="array">
+					<uid>110</uid>
+					<pid>153</pid>
+					<title>Tanja Ziegler neu in Geschäftsführung de...</title>
+					<relations index="rels" type="array">
+						<element index="tx_news_domain_model_tag:58" type="array">
+							<id>58</id>
+							<table>tx_news_domain_model_tag</table>
+						</element>
+					</relations>
+					<softrefs type="array">
+						<softref_element index="bodytext:typolink_tag:1" type="array">
+							<field>bodytext</field>
+							<spKey>typolink_tag</spKey>
+							<matchString>&lt;a href=&quot;t3://page?uid=72&quot; title=&quot;Zeitmanagement Software - endlich alles im Blick. Jetzt informieren!&quot;&gt;</matchString>
+							<subst type="array">
+								<type>db</type>
+								<recordRef>pages:72</recordRef>
+								<tokenID>bef20c5c435ce32f90f2786acd8390b9</tokenID>
+								<tokenValue>72</tokenValue>
+							</subst>
+						</softref_element>
+						<softref_element index="bodytext:typolink_tag:3" type="array">
+							<field>bodytext</field>
+							<spKey>typolink_tag</spKey>
+							<matchString>&lt;a href=&quot;t3://page?uid=66&quot; title=&quot;Lohn- und Gehaltsabrechnung mit einer Software, die mitdenkt. Jetzt entdecken!&quot;&gt;</matchString>
+							<subst type="array">
+								<type>db</type>
+								<recordRef>pages:66</recordRef>
+								<tokenID>3cc70873277a23b2aacd69783a800b32</tokenID>
+								<tokenValue>66</tokenValue>
+							</subst>
+						</softref_element>
+						<softref_element index="bodytext:typolink_tag:5" type="array">
+							<field>bodytext</field>
+							<spKey>typolink_tag</spKey>
+							<matchString>&lt;a href=&quot;t3://page?uid=72&quot; title=&quot;Zeitmanagement Software - endlich alles im Blick. Jetzt informieren!&quot;&gt;</matchString>
+							<subst type="array">
+								<type>db</type>
+								<recordRef>pages:72</recordRef>
+								<tokenID>48ca1a1b9784aa2fe90036298297f722</tokenID>
+								<tokenValue>72</tokenValue>
+							</subst>
+						</softref_element>
+						<softref_element index="bodytext:typolink_tag:7" type="array">
+							<field>bodytext</field>
+							<spKey>typolink_tag</spKey>
+							<matchString>&lt;a href=&quot;t3://page?uid=17&quot; title=&quot;Umfassende Personalsoftware für die zentrale Steuerung der HR-Aktivitäten. Jetzt informieren!&quot;&gt;</matchString>
+							<subst type="array">
+								<type>db</type>
+								<recordRef>pages:17</recordRef>
+								<tokenID>67e1753d8620f6e0fc9415248dca7cd9</tokenID>
+								<tokenValue>17</tokenValue>
+							</subst>
+						</softref_element>
+					</softrefs>
+				</rec>
+				<rec index="111" type="array">
+					<uid>111</uid>
+					<pid>153</pid>
+					<title>Infoniqa präsentiert neue HR-Suite auf d...</title>
+					<relations index="rels" type="array">
+						<element index="tx_news_domain_model_tag:58" type="array">
+							<id>58</id>
+							<table>tx_news_domain_model_tag</table>
+						</element>
+					</relations>
+					<softrefs type="array">
+						<softref_element index="bodytext:typolink_tag:1" type="array">
+							<field>bodytext</field>
+							<spKey>typolink_tag</spKey>
+							<matchString>&lt;a href=&quot;t3://page?uid=66&quot; title=&quot;Personalabrechnung mit einer Software, die mitdenkt. Jetzt entdecken!&quot;&gt;</matchString>
+							<subst type="array">
+								<type>db</type>
+								<recordRef>pages:66</recordRef>
+								<tokenID>ab58ef39f79051d365097dc6402de788</tokenID>
+								<tokenValue>66</tokenValue>
+							</subst>
+						</softref_element>
+						<softref_element index="bodytext:typolink_tag:3" type="array">
+							<field>bodytext</field>
+							<spKey>typolink_tag</spKey>
+							<matchString>&lt;a href=&quot;t3://page?uid=72&quot; title=&quot;Zeitwirtschaft Software - endlich alles im Blick. Jetzt informieren!&quot;&gt;</matchString>
+							<subst type="array">
+								<type>db</type>
+								<recordRef>pages:72</recordRef>
+								<tokenID>7db3aaf77f98e2a1db4856cfaf5e8fd8</tokenID>
+								<tokenValue>72</tokenValue>
+							</subst>
+						</softref_element>
+						<softref_element index="bodytext:typolink_tag:5" type="array">
+							<field>bodytext</field>
+							<spKey>typolink_tag</spKey>
+							<matchString>&lt;a href=&quot;t3://page?uid=17&quot; title=&quot;Umfassende Personalsoftware für die zentrale Steuerung der HR-Aktivitäten. Jetzt informieren!&quot;&gt;</matchString>
+							<subst type="array">
+								<type>db</type>
+								<recordRef>pages:17</recordRef>
+								<tokenID>ab3071aae2f6bffd11c9f6e19406b505</tokenID>
+								<tokenValue>17</tokenValue>
+							</subst>
+						</softref_element>
+						<softref_element index="bodytext:typolink_tag:7" type="array">
+							<field>bodytext</field>
+							<spKey>typolink_tag</spKey>
+							<matchString>&lt;a href=&quot;t3://page?uid=64&quot; title=&quot;Bewerbermanagement Software: erfolgreich Mitarbeiter finden! Mehr erfahren &amp;gt;&amp;gt;&quot;&gt;</matchString>
+							<subst type="array">
+								<type>db</type>
+								<recordRef>pages:64</recordRef>
+								<tokenID>6b3b008ce35e4663712419f446599896</tokenID>
+								<tokenValue>64</tokenValue>
+							</subst>
+						</softref_element>
+						<softref_element index="bodytext:typolink_tag:9" type="array">
+							<field>bodytext</field>
+							<spKey>typolink_tag</spKey>
+							<matchString>&lt;a href=&quot;t3://page?uid=62&quot; title=&quot;E-Learning neu gedacht - mit Software-Unterstützung keine Potentiale übersehen.&quot;&gt;</matchString>
+							<subst type="array">
+								<type>db</type>
+								<recordRef>pages:62</recordRef>
+								<tokenID>f29259052dac00068f7228dc16bdf6c9</tokenID>
+								<tokenValue>62</tokenValue>
+							</subst>
+						</softref_element>
+					</softrefs>
+				</rec>
+				<rec index="112" type="array">
+					<uid>112</uid>
+					<pid>153</pid>
+					<title>Neue HR-Suite Infoniqa ONE auf der Zukun...</title>
+					<relations index="rels" type="array">
+						<element index="tx_news_domain_model_tag:58" type="array">
+							<id>58</id>
+							<table>tx_news_domain_model_tag</table>
+						</element>
+					</relations>
+					<softrefs type="array">
+						<softref_element index="bodytext:typolink_tag:1" type="array">
+							<field>bodytext</field>
+							<spKey>typolink_tag</spKey>
+							<matchString>&lt;a href=&quot;t3://page?uid=66&quot; title=&quot;Lohn- und Gehaltsabrechnung mit einer Software, die mitdenkt. Jetzt entdecken!&quot;&gt;</matchString>
+							<subst type="array">
+								<type>db</type>
+								<recordRef>pages:66</recordRef>
+								<tokenID>a1edab9d2e2046d849946ebf3ae3d8e2</tokenID>
+								<tokenValue>66</tokenValue>
+							</subst>
+						</softref_element>
+						<softref_element index="bodytext:typolink_tag:3" type="array">
+							<field>bodytext</field>
+							<spKey>typolink_tag</spKey>
+							<matchString>&lt;a href=&quot;t3://page?uid=72&quot; title=&quot;Zeitwirtschaft Software - endlich alles im Blick. Jetzt informieren!&quot;&gt;</matchString>
+							<subst type="array">
+								<type>db</type>
+								<recordRef>pages:72</recordRef>
+								<tokenID>97486ac87c2001dbb2d394b5a8208f53</tokenID>
+								<tokenValue>72</tokenValue>
+							</subst>
+						</softref_element>
+						<softref_element index="bodytext:typolink_tag:5" type="array">
+							<field>bodytext</field>
+							<spKey>typolink_tag</spKey>
+							<matchString>&lt;a href=&quot;t3://page?uid=1&quot; title=&quot;Umfassende Personalsoftware für die zentrale Steuerung der HR-Aktivitäten. Jetzt informieren!&quot;&gt;</matchString>
+							<subst type="array">
+								<type>db</type>
+								<recordRef>pages:1</recordRef>
+								<tokenID>dcb33afb5f4e99e7be58e53167ffe9fc</tokenID>
+								<tokenValue>1</tokenValue>
+							</subst>
+						</softref_element>
+					</softrefs>
+				</rec>
+				<rec index="113" type="array">
+					<uid>113</uid>
+					<pid>153</pid>
+					<title>Infoniqa auf der Personal Süd</title>
+					<relations index="rels" type="array">
+						<element index="tx_news_domain_model_tag:58" type="array">
+							<id>58</id>
+							<table>tx_news_domain_model_tag</table>
+						</element>
+					</relations>
+					<softrefs type="array">
+						<softref_element index="bodytext:typolink_tag:1" type="array">
+							<field>bodytext</field>
+							<spKey>typolink_tag</spKey>
+							<matchString>&lt;a href=&quot;t3://page?uid=64&quot; title=&quot;Recruiting Software: erfolgreich Mitarbeiter finden! Mehr erfahren &amp;gt;&amp;gt;&quot;&gt;</matchString>
+							<subst type="array">
+								<type>db</type>
+								<recordRef>pages:64</recordRef>
+								<tokenID>c76061c5a16ff35c611192bc9119c1de</tokenID>
+								<tokenValue>64</tokenValue>
+							</subst>
+						</softref_element>
+						<softref_element index="bodytext:typolink_tag:3" type="array">
+							<field>bodytext</field>
+							<spKey>typolink_tag</spKey>
+							<matchString>&lt;a href=&quot;t3://page?uid=17&quot; title=&quot;Umfassende Personalsoftware für die zentrale Steuerung der HR-Aktivitäten. Jetzt informieren!&quot;&gt;</matchString>
+							<subst type="array">
+								<type>db</type>
+								<recordRef>pages:17</recordRef>
+								<tokenID>438825875620dac478e2c086019e798c</tokenID>
+								<tokenValue>17</tokenValue>
+							</subst>
+						</softref_element>
+						<softref_element index="bodytext:typolink_tag:5" type="array">
+							<field>bodytext</field>
+							<spKey>typolink_tag</spKey>
+							<matchString>&lt;a href=&quot;t3://page?uid=61&quot; title=&quot;Seminare erfolgreich verwalten mit minimalem Zeitaufwand.&quot;&gt;</matchString>
+							<subst type="array">
+								<type>db</type>
+								<recordRef>pages:61</recordRef>
+								<tokenID>bcdb908f38fc5371008e45cd973d4a5e</tokenID>
+								<tokenValue>61</tokenValue>
+							</subst>
+						</softref_element>
+						<softref_element index="bodytext:typolink_tag:7" type="array">
+							<field>bodytext</field>
+							<spKey>typolink_tag</spKey>
+							<matchString>&lt;a href=&quot;t3://page?uid=62&quot; title=&quot;E-Learning neu gedacht - mit Software-Unterstützung keine Potentiale übersehen.&quot;&gt;</matchString>
+							<subst type="array">
+								<type>db</type>
+								<recordRef>pages:62</recordRef>
+								<tokenID>21ea0efa61085d116d107dd90ac55e0b</tokenID>
+								<tokenValue>62</tokenValue>
+							</subst>
+						</softref_element>
+						<softref_element index="bodytext:typolink_tag:9" type="array">
+							<field>bodytext</field>
+							<spKey>typolink_tag</spKey>
+							<matchString>&lt;a href=&quot;t3://page?uid=63&quot; title=&quot;Talentmanagement Software von Infoniqa - so halten sie wichtige Mitarbeiter im Unternehmen.&quot;&gt;</matchString>
+							<subst type="array">
+								<type>db</type>
+								<recordRef>pages:63</recordRef>
+								<tokenID>2484a56962edbd5bcad335069b8130bf</tokenID>
+								<tokenValue>63</tokenValue>
+							</subst>
+						</softref_element>
+						<softref_element index="bodytext:typolink_tag:11" type="array">
+							<field>bodytext</field>
+							<spKey>typolink_tag</spKey>
+							<matchString>&lt;a href=&quot;t3://page?uid=666&quot; title=&quot;Lohnabrechnung auslagern an die Lohn-Experten von Infoniqa - jetzt mehr erfahren &amp;gt;&amp;gt;&quot;&gt;</matchString>
+							<subst type="array">
+								<type>db</type>
+								<recordRef>pages:666</recordRef>
+								<tokenID>4a8c04c91693efce863d2b5c42c1b073</tokenID>
+								<tokenValue>666</tokenValue>
+							</subst>
+						</softref_element>
+						<softref_element index="bodytext:typolink_tag:13" type="array">
+							<field>bodytext</field>
+							<spKey>typolink_tag</spKey>
+							<matchString>&lt;a href=&quot;t3://page?uid=68&quot;&gt;</matchString>
+							<subst type="array">
+								<type>db</type>
+								<recordRef>pages:68</recordRef>
+								<tokenID>78e07bb71627d740319ce0d4823552bd</tokenID>
+								<tokenValue>68</tokenValue>
+							</subst>
+						</softref_element>
+						<softref_element index="bodytext:typolink_tag:15" type="array">
+							<field>bodytext</field>
+							<spKey>typolink_tag</spKey>
+							<matchString>&lt;a href=&quot;t3://page?uid=399&quot; title=&quot;Lohnabrechnung auslagern an die Lohn-Experten von Infoniqa - jetzt mehr erfahren &amp;gt;&amp;gt;&quot;&gt;</matchString>
+							<subst type="array">
+								<type>db</type>
+								<recordRef>pages:399</recordRef>
+								<tokenID>086ed1920c592b846cec4e9b6e183a49</tokenID>
+								<tokenValue>399</tokenValue>
+							</subst>
+						</softref_element>
+					</softrefs>
+				</rec>
+				<rec index="114" type="array">
+					<uid>114</uid>
+					<pid>153</pid>
+					<title>Infoniqa investiert in Schweizer Portfol...</title>
+					<relations index="rels" type="array">
+						<element index="tx_news_domain_model_tag:58" type="array">
+							<id>58</id>
+							<table>tx_news_domain_model_tag</table>
+						</element>
+					</relations>
+					<softrefs type="array">
+						<softref_element index="bodytext:typolink_tag:1" type="array">
+							<field>bodytext</field>
+							<spKey>typolink_tag</spKey>
+							<matchString>&lt;a href=&quot;http://www.infoniqa.com&quot;&gt;</matchString>
+							<subst type="array">
+								<type>external</type>
+								<tokenID>30a707bf304cdcf8a427d907f41fc7e0</tokenID>
+								<tokenValue>http://www.infoniqa.com</tokenValue>
+							</subst>
+						</softref_element>
+					</softrefs>
+				</rec>
+				<rec index="115" type="array">
+					<uid>115</uid>
+					<pid>153</pid>
+					<title>Infoniqa baut mit Run my Accounts-Kauf P...</title>
+					<relations index="rels" type="array">
+						<element index="tx_news_domain_model_tag:58" type="array">
+							<id>58</id>
+							<table>tx_news_domain_model_tag</table>
+						</element>
+					</relations>
+					<softrefs type="array"></softrefs>
+				</rec>
+				<rec index="116" type="array">
+					<uid>116</uid>
+					<pid>153</pid>
+					<title>Infoniqa übernimmt Sage Schweiz AG: „Mei...</title>
+					<relations index="rels" type="array">
+						<element index="tx_news_domain_model_tag:58" type="array">
+							<id>58</id>
+							<table>tx_news_domain_model_tag</table>
+						</element>
+					</relations>
+					<softrefs type="array"></softrefs>
+				</rec>
+				<rec index="117" type="array">
+					<uid>117</uid>
+					<pid>153</pid>
+					<title>Infoniqa ist wiederholt Top-25-HR-Softwa...</title>
+					<relations index="rels" type="array">
+						<element index="tx_news_domain_model_tag:58" type="array">
+							<id>58</id>
+							<table>tx_news_domain_model_tag</table>
+						</element>
+					</relations>
+					<softrefs type="array">
+						<softref_element index="bodytext:typolink_tag:1" type="array">
+							<field>bodytext</field>
+							<spKey>typolink_tag</spKey>
+							<matchString>&lt;a class=&quot;external-link&quot; href=&quot;https://www.hr-konjunktur.de/top-25-liste-2020.html&quot; target=&quot;_blank&quot;&gt;</matchString>
+							<subst type="array">
+								<type>external</type>
+								<tokenID>e39f858ada78efe694bc92f0799f1e09</tokenID>
+								<tokenValue>https://www.hr-konjunktur.de/top-25-liste-2020.html</tokenValue>
+							</subst>
+						</softref_element>
+					</softrefs>
+				</rec>
+				<rec index="118" type="array">
+					<uid>118</uid>
+					<pid>153</pid>
+					<title>Erster Payroll-Spezialist mit TÜV-Zertif...</title>
+					<relations index="rels" type="array">
+						<element index="tx_news_domain_model_tag:58" type="array">
+							<id>58</id>
+							<table>tx_news_domain_model_tag</table>
+						</element>
+					</relations>
+					<softrefs type="array"></softrefs>
+				</rec>
+			</table>
+			<table index="tx_news_domain_model_tag" type="array">
+				<rec index="85" type="array">
+					<uid>85</uid>
+					<pid>153</pid>
+					<title>News</title>
+					<relations index="rels" type="array"></relations>
+					<softrefs type="array"></softrefs>
+				</rec>
+				<rec index="57" type="array">
+					<uid>57</uid>
+					<pid>153</pid>
+					<title>Presseclippings</title>
+					<relations index="rels" type="array"></relations>
+					<softrefs type="array"></softrefs>
+				</rec>
+				<rec index="58" type="array">
+					<uid>58</uid>
+					<pid>153</pid>
+					<title>Pressemeldungen</title>
+					<relations index="rels" type="array"></relations>
+					<softrefs type="array"></softrefs>
+				</rec>
+			</table>
+		</records>
+		<pid_lookup type="array">
+			<page_contents index="168" type="array">
+				<table index="pages" type="array">
+					<item index="153">1</item>
+				</table>
+			</page_contents>
+			<page_contents index="153" type="array">
+				<table index="tx_news_domain_model_news" type="array">
+					<item index="108">1</item>
+					<item index="109">1</item>
+					<item index="110">1</item>
+					<item index="111">1</item>
+					<item index="112">1</item>
+					<item index="113">1</item>
+					<item index="114">1</item>
+					<item index="115">1</item>
+					<item index="116">1</item>
+					<item index="117">1</item>
+					<item index="118">1</item>
+				</table>
+				<table index="tx_news_domain_model_tag" type="array">
+					<item index="85">1</item>
+					<item index="57">1</item>
+					<item index="58">1</item>
+				</table>
+			</page_contents>
+		</pid_lookup>
+	</header>
+	<records type="array">
+		<tablerow index="pages:153" type="array">
+			<fieldlist index="data" type="array">
+				<field index="uid" type="integer">153</field>
+				<field index="pid" type="integer">168</field>
+				<field index="tstamp" type="integer">1668156302</field>
+				<field index="crdate" type="integer">1664984801</field>
+				<field index="cruser_id" type="integer">3</field>
+				<field index="deleted" type="integer">0</field>
+				<field index="hidden" type="integer">0</field>
+				<field index="starttime" type="integer">0</field>
+				<field index="endtime" type="integer">0</field>
+				<field index="fe_group">0</field>
+				<field index="sorting" type="integer">512</field>
+				<field index="rowDescription" type="NULL"></field>
+				<field index="editlock" type="integer">0</field>
+				<field index="sys_language_uid" type="integer">0</field>
+				<field index="l10n_parent" type="integer">0</field>
+				<field index="l10n_source" type="integer">0</field>
+				<field index="l10n_state" type="NULL"></field>
+				<field index="t3_origuid" type="integer">0</field>
+				<field index="l10n_diffsource">{&quot;doktype&quot;:&quot;&quot;,&quot;title&quot;:&quot;&quot;,&quot;slug&quot;:&quot;&quot;,&quot;backend_layout&quot;:&quot;&quot;,&quot;backend_layout_next_level&quot;:&quot;&quot;,&quot;module&quot;:&quot;&quot;,&quot;media&quot;:&quot;&quot;,&quot;tsconfig_includes&quot;:&quot;&quot;,&quot;TSconfig&quot;:&quot;&quot;,&quot;hidden&quot;:&quot;&quot;,&quot;editlock&quot;:&quot;&quot;,&quot;categories&quot;:&quot;&quot;,&quot;rowDescription&quot;:&quot;&quot;}</field>
+				<field index="t3ver_oid" type="integer">0</field>
+				<field index="t3ver_wsid" type="integer">0</field>
+				<field index="t3ver_state" type="integer">0</field>
+				<field index="t3ver_stage" type="integer">0</field>
+				<field index="perms_userid" type="integer">3</field>
+				<field index="perms_groupid" type="integer">1</field>
+				<field index="perms_user" type="integer">31</field>
+				<field index="perms_group" type="integer">31</field>
+				<field index="perms_everybody" type="integer">0</field>
+				<field index="title">News &amp; Presse</field>
+				<field index="slug">/daten/news-presse</field>
+				<field index="doktype" type="integer">254</field>
+				<field index="TSconfig" type="NULL"></field>
+				<field index="is_siteroot" type="integer">0</field>
+				<field index="php_tree_stop" type="integer">0</field>
+				<field index="url"></field>
+				<field index="shortcut" type="integer">0</field>
+				<field index="shortcut_mode" type="integer">0</field>
+				<field index="subtitle"></field>
+				<field index="layout" type="integer">0</field>
+				<field index="target"></field>
+				<field index="media" type="integer">0</field>
+				<field index="lastUpdated" type="integer">0</field>
+				<field index="keywords" type="NULL"></field>
+				<field index="cache_timeout" type="integer">0</field>
+				<field index="cache_tags"></field>
+				<field index="newUntil" type="integer">0</field>
+				<field index="description" type="NULL"></field>
+				<field index="no_search" type="integer">0</field>
+				<field index="SYS_LASTCHANGED" type="integer">0</field>
+				<field index="abstract" type="NULL"></field>
+				<field index="module">news</field>
+				<field index="extendToSubpages" type="integer">0</field>
+				<field index="author"></field>
+				<field index="author_email"></field>
+				<field index="nav_title"></field>
+				<field index="nav_hide" type="integer">0</field>
+				<field index="content_from_pid" type="integer">0</field>
+				<field index="mount_pid" type="integer">0</field>
+				<field index="mount_pid_ol" type="integer">0</field>
+				<field index="l18n_cfg" type="integer">0</field>
+				<field index="fe_login_mode" type="integer">0</field>
+				<field index="backend_layout"></field>
+				<field index="backend_layout_next_level"></field>
+				<field index="tsconfig_includes" type="NULL"></field>
+				<field index="categories" type="integer">0</field>
+				<field index="tx_impexp_origuid" type="integer">0</field>
+				<field index="seo_title"></field>
+				<field index="no_index" type="integer">0</field>
+				<field index="no_follow" type="integer">0</field>
+				<field index="og_title"></field>
+				<field index="og_description" type="NULL"></field>
+				<field index="og_image" type="integer">0</field>
+				<field index="twitter_title"></field>
+				<field index="twitter_description" type="NULL"></field>
+				<field index="twitter_image" type="integer">0</field>
+				<field index="twitter_card">summary</field>
+				<field index="canonical_link"></field>
+				<field index="sitemap_priority">0.5</field>
+				<field index="sitemap_changefreq"></field>
+				<field index="nav_icon_set"></field>
+				<field index="nav_icon_identifier"></field>
+				<field index="nav_icon" type="integer">0</field>
+				<field index="thumbnail" type="integer">0</field>
+			</fieldlist>
+			<related index="rels" type="array"></related>
+		</tablerow>
+		<tablerow index="tx_news_domain_model_news:108" type="array">
+			<fieldlist index="data" type="array">
+				<field index="uid" type="integer">108</field>
+				<field index="pid" type="integer">153</field>
+				<field index="tstamp" type="integer">1668419219</field>
+				<field index="crdate" type="integer">1668416985</field>
+				<field index="cruser_id" type="integer">3</field>
+				<field index="t3ver_oid" type="integer">0</field>
+				<field index="t3ver_wsid" type="integer">0</field>
+				<field index="t3ver_state" type="integer">0</field>
+				<field index="t3ver_stage" type="integer">0</field>
+				<field index="t3_origuid" type="integer">0</field>
+				<field index="editlock" type="integer">0</field>
+				<field index="sys_language_uid" type="integer">-1</field>
+				<field index="l10n_parent" type="integer">0</field>
+				<field index="l10n_diffsource">{&quot;type&quot;:&quot;&quot;,&quot;istopnews&quot;:&quot;&quot;,&quot;title&quot;:&quot;&quot;,&quot;path_segment&quot;:&quot;&quot;,&quot;teaser&quot;:&quot;&quot;,&quot;datetime&quot;:&quot;&quot;,&quot;archive&quot;:&quot;&quot;,&quot;bodytext&quot;:&quot;&quot;,&quot;content_elements&quot;:&quot;&quot;,&quot;fal_media&quot;:&quot;&quot;,&quot;fal_related_files&quot;:&quot;&quot;,&quot;categories&quot;:&quot;&quot;,&quot;related&quot;:&quot;&quot;,&quot;related_links&quot;:&quot;&quot;,&quot;tags&quot;:&quot;&quot;,&quot;author&quot;:&quot;&quot;,&quot;author_email&quot;:&quot;&quot;,&quot;keywords&quot;:&quot;&quot;,&quot;description&quot;:&quot;&quot;,&quot;alternative_title&quot;:&quot;&quot;,&quot;sitemap_changefreq&quot;:&quot;&quot;,&quot;sitemap_priority&quot;:&quot;&quot;,&quot;sys_language_uid&quot;:&quot;&quot;,&quot;hidden&quot;:&quot;&quot;,&quot;starttime&quot;:&quot;&quot;,&quot;endtime&quot;:&quot;&quot;,&quot;fe_group&quot;:&quot;&quot;,&quot;editlock&quot;:&quot;&quot;,&quot;notes&quot;:&quot;&quot;}</field>
+				<field index="l10n_source" type="integer">0</field>
+				<field index="deleted" type="integer">0</field>
+				<field index="hidden" type="integer">0</field>
+				<field index="starttime" type="integer">0</field>
+				<field index="endtime" type="integer">0</field>
+				<field index="fe_group"></field>
+				<field index="notes"></field>
+				<field index="l10n_state" type="NULL"></field>
+				<field index="t3ver_id" type="integer">0</field>
+				<field index="t3ver_label"></field>
+				<field index="t3ver_count" type="integer">0</field>
+				<field index="t3ver_tstamp" type="integer">0</field>
+				<field index="t3ver_move_id" type="integer">0</field>
+				<field index="sorting" type="integer">0</field>
+				<field index="title">Infoniqa baut mit StoneData-Kauf die Payroll-Services aus</field>
+				<field index="teaser">Seit dem 12. Oktober 2020 ist Infoniqa um ein weiteres HR-Unternehmen reicher: StoneData gehört nun offiziell zu uns!</field>
+				<field index="bodytext">&lt;p&gt;&lt;strong&gt;StoneData gehört ab sofort zu Infoniqa, einem der führenden &lt;/strong&gt;&lt;strong&gt;Spezialisten für Personalsoftware und HR-Service-Lösungen in der &lt;/strong&gt;&lt;strong&gt;DACH&lt;/strong&gt;&lt;strong&gt;-Region. Mit dem Kauf werden der Abrechnungsservice und die Payroll-Expertise in Deutschland ausgebaut. &lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Seit dem 12. Oktober 2020 ist Infoniqa, Anbieter von Personalsoftware und -Services in der DACH-Region, um ein weiteres HR-Unternehmen reicher: Die in Neustadt am Rübenberge und Buxtehude ansässige StoneData GmbH ist ab sofort Teil von Infoniqa. Infoniqa gewinnt mit dem Zukauf wichtige Manpower im Wachstumsmarkt „&lt;a href=&quot;t3://page?uid=666&quot; title=&quot;Befreien Sie sich von dem Druck der Lohn- und Gehaltsabrechnung. Jetzt auslagern!&quot;&gt;Payroll-Outsourcing&lt;/a&gt;“.&lt;/p&gt;
+&lt;p&gt;„Payroll-Outsourcing gehört zu den am stärksten wachsenden Segmenten innerhalb von Infoniqa. Wir bauen diesen Zukunftsbereich seit Jahren mit aller Kraft aus, um die hohe Nachfrage nach zuverlässigen und sicheren Payroll-Services in Deutschland und Österreich bedienen zu können“, so Infoniqa-CEO Siegfried Milly. „Bei allem Wachstum legen wir nach wie vor größten Wert auf persönliche Ansprechpartner und höchste Qualitätsstandards. Entsprechend freuen wir uns, mit der Belegschaft von StoneData unser eigenes BPO-Team deutlich aufzustocken. Aufgrund der hohen Nachfrage werden wir das Payroll-Outsourcing-Team in den nächsten Monaten noch weiter ausbauen.“&lt;/p&gt;
+&lt;p&gt;StoneData und Infoniqa haben in den vergangenen Jahren bereits intensiv zusammengearbeitet, um verschiedene &lt;a href=&quot;t3://page?uid=30&quot;&gt;Payroll-Projekte namhafter Kunden&lt;/a&gt; in Deutschland umzusetzen. Nach den bisherigen sehr positiven Erfahrungen blicken Carina und Sascha Schmidt, Geschäftsführer von StoneData, ebenfalls zuversichtlich in die gemeinsame Zukunft: „Wir freuen uns sehr, künftig zu einem der TOP 25 HR-Unternehmen in DACH zu gehören und als Team von der hohen Agilität von Infoniqa zu profitieren. Infoniqa wiederum kann mit unserer Expertise den eingeschlagenen Weg noch konsequenter verfolgen. Der Merger ist so die perfekte Win-Win-Situation.“&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Über StoneData&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Die StoneData GmbH ist Spezialist für Lohn- und Gehaltsabrechnung. Das Angebotsportfolio umfasst die Durchführung der Lohn- und Gehaltsabrechnung im Kundenauftrag (BPO) sowie Implementierung, Beratung und Support der Softwareprodukte bei Endkunden. Aktuell kümmern sich 22 Mitarbeiter an den beiden Standorten Neustadt am Rübenberge und Buxtehude sorgfältig um die Belange der 175 Kunden. Seit Oktober 2020 ist die StoneData GmbH Teil von Infoniqa.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Pressemitteilung: Infoniqa baut mit StoneData-Kauf die Payroll-Services aus&lt;/strong&gt;&lt;/p&gt;</field>
+				<field index="datetime" type="integer">1604402400</field>
+				<field index="archive" type="integer">0</field>
+				<field index="author"></field>
+				<field index="author_email"></field>
+				<field index="categories" type="integer">0</field>
+				<field index="related" type="integer">0</field>
+				<field index="related_from" type="integer">0</field>
+				<field index="related_files" type="NULL"></field>
+				<field index="fal_related_files" type="integer">0</field>
+				<field index="related_links" type="integer">0</field>
+				<field index="type">0</field>
+				<field index="keywords"></field>
+				<field index="description">Infoniqa kauft StoneData mit zwei Standorten, um die Payroll-Sparte und die Payroll-Servies noch stärker auszubauen.</field>
+				<field index="tags" type="integer">1</field>
+				<field index="media" type="NULL"></field>
+				<field index="fal_media" type="integer">0</field>
+				<field index="internalurl" type="NULL"></field>
+				<field index="externalurl" type="NULL"></field>
+				<field index="istopnews" type="integer">0</field>
+				<field index="content_elements" type="integer">0</field>
+				<field index="path_segment">infoniqa-baut-mit-stonedata-kauf-die-payroll-services-aus</field>
+				<field index="alternative_title">Infoniqa baut mit StoneData-Kauf die Payroll-Services aus</field>
+				<field index="sitemap_changefreq"></field>
+				<field index="sitemap_priority">0.5</field>
+				<field index="import_id"></field>
+				<field index="import_source"></field>
+				<field index="news_author" type="integer">0</field>
+			</fieldlist>
+			<related index="rels" type="array">
+				<field index="bodytext" type="array">
+					<softrefs type="array">
+						<keys type="array">
+							<softref_key index="typolink_tag" type="array">
+								<softref_element index="1" type="array">
+									<matchString>&lt;a href=&quot;t3://page?uid=666&quot; title=&quot;Befreien Sie sich von dem Druck der Lohn- und Gehaltsabrechnung. Jetzt auslagern!&quot;&gt;</matchString>
+									<subst type="array">
+										<type>db</type>
+										<recordRef>pages:666</recordRef>
+										<tokenID>4bb77d3528b0df6e62346f7a218d97ea</tokenID>
+										<tokenValue>666</tokenValue>
+									</subst>
+								</softref_element>
+								<softref_element index="3" type="array">
+									<matchString>&lt;a href=&quot;t3://page?uid=30&quot;&gt;</matchString>
+									<subst type="array">
+										<type>db</type>
+										<recordRef>pages:30</recordRef>
+										<tokenID>9337a49ae230887a38945570b4e868b5</tokenID>
+										<tokenValue>30</tokenValue>
+									</subst>
+								</softref_element>
+							</softref_key>
+						</keys>
+						<tokenizedContent>&lt;p&gt;&lt;strong&gt;StoneData gehört ab sofort zu Infoniqa, einem der führenden &lt;/strong&gt;&lt;strong&gt;Spezialisten für Personalsoftware und HR-Service-Lösungen in der &lt;/strong&gt;&lt;strong&gt;DACH&lt;/strong&gt;&lt;strong&gt;-Region. Mit dem Kauf werden der Abrechnungsservice und die Payroll-Expertise in Deutschland ausgebaut. &lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Seit dem 12. Oktober 2020 ist Infoniqa, Anbieter von Personalsoftware und -Services in der DACH-Region, um ein weiteres HR-Unternehmen reicher: Die in Neustadt am Rübenberge und Buxtehude ansässige StoneData GmbH ist ab sofort Teil von Infoniqa. Infoniqa gewinnt mit dem Zukauf wichtige Manpower im Wachstumsmarkt „&lt;a href=&quot;{softref:4bb77d3528b0df6e62346f7a218d97ea}&quot; title=&quot;Befreien Sie sich von dem Druck der Lohn- und Gehaltsabrechnung. Jetzt auslagern!&quot;&gt;Payroll-Outsourcing&lt;/a&gt;“.&lt;/p&gt;
+&lt;p&gt;„Payroll-Outsourcing gehört zu den am stärksten wachsenden Segmenten innerhalb von Infoniqa. Wir bauen diesen Zukunftsbereich seit Jahren mit aller Kraft aus, um die hohe Nachfrage nach zuverlässigen und sicheren Payroll-Services in Deutschland und Österreich bedienen zu können“, so Infoniqa-CEO Siegfried Milly. „Bei allem Wachstum legen wir nach wie vor größten Wert auf persönliche Ansprechpartner und höchste Qualitätsstandards. Entsprechend freuen wir uns, mit der Belegschaft von StoneData unser eigenes BPO-Team deutlich aufzustocken. Aufgrund der hohen Nachfrage werden wir das Payroll-Outsourcing-Team in den nächsten Monaten noch weiter ausbauen.“&lt;/p&gt;
+&lt;p&gt;StoneData und Infoniqa haben in den vergangenen Jahren bereits intensiv zusammengearbeitet, um verschiedene &lt;a href=&quot;{softref:9337a49ae230887a38945570b4e868b5}&quot;&gt;Payroll-Projekte namhafter Kunden&lt;/a&gt; in Deutschland umzusetzen. Nach den bisherigen sehr positiven Erfahrungen blicken Carina und Sascha Schmidt, Geschäftsführer von StoneData, ebenfalls zuversichtlich in die gemeinsame Zukunft: „Wir freuen uns sehr, künftig zu einem der TOP 25 HR-Unternehmen in DACH zu gehören und als Team von der hohen Agilität von Infoniqa zu profitieren. Infoniqa wiederum kann mit unserer Expertise den eingeschlagenen Weg noch konsequenter verfolgen. Der Merger ist so die perfekte Win-Win-Situation.“&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Über StoneData&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Die StoneData GmbH ist Spezialist für Lohn- und Gehaltsabrechnung. Das Angebotsportfolio umfasst die Durchführung der Lohn- und Gehaltsabrechnung im Kundenauftrag (BPO) sowie Implementierung, Beratung und Support der Softwareprodukte bei Endkunden. Aktuell kümmern sich 22 Mitarbeiter an den beiden Standorten Neustadt am Rübenberge und Buxtehude sorgfältig um die Belange der 175 Kunden. Seit Oktober 2020 ist die StoneData GmbH Teil von Infoniqa.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Pressemitteilung: Infoniqa baut mit StoneData-Kauf die Payroll-Services aus&lt;/strong&gt;&lt;/p&gt;</tokenizedContent>
+					</softrefs>
+				</field>
+				<field index="tags" type="array">
+					<type>db</type>
+					<relations index="itemArray" type="array">
+						<element index="0" type="array">
+							<id>58</id>
+							<table>tx_news_domain_model_tag</table>
+						</element>
+					</relations>
+				</field>
+			</related>
+		</tablerow>
+		<tablerow index="tx_news_domain_model_news:109" type="array">
+			<fieldlist index="data" type="array">
+				<field index="uid" type="integer">109</field>
+				<field index="pid" type="integer">153</field>
+				<field index="tstamp" type="integer">1668419214</field>
+				<field index="crdate" type="integer">1668417096</field>
+				<field index="cruser_id" type="integer">3</field>
+				<field index="t3ver_oid" type="integer">0</field>
+				<field index="t3ver_wsid" type="integer">0</field>
+				<field index="t3ver_state" type="integer">0</field>
+				<field index="t3ver_stage" type="integer">0</field>
+				<field index="t3_origuid" type="integer">0</field>
+				<field index="editlock" type="integer">0</field>
+				<field index="sys_language_uid" type="integer">-1</field>
+				<field index="l10n_parent" type="integer">0</field>
+				<field index="l10n_diffsource">{&quot;type&quot;:&quot;&quot;,&quot;istopnews&quot;:&quot;&quot;,&quot;title&quot;:&quot;&quot;,&quot;path_segment&quot;:&quot;&quot;,&quot;teaser&quot;:&quot;&quot;,&quot;datetime&quot;:&quot;&quot;,&quot;archive&quot;:&quot;&quot;,&quot;bodytext&quot;:&quot;&quot;,&quot;content_elements&quot;:&quot;&quot;,&quot;fal_media&quot;:&quot;&quot;,&quot;fal_related_files&quot;:&quot;&quot;,&quot;categories&quot;:&quot;&quot;,&quot;related&quot;:&quot;&quot;,&quot;related_links&quot;:&quot;&quot;,&quot;tags&quot;:&quot;&quot;,&quot;author&quot;:&quot;&quot;,&quot;author_email&quot;:&quot;&quot;,&quot;keywords&quot;:&quot;&quot;,&quot;description&quot;:&quot;&quot;,&quot;alternative_title&quot;:&quot;&quot;,&quot;sitemap_changefreq&quot;:&quot;&quot;,&quot;sitemap_priority&quot;:&quot;&quot;,&quot;sys_language_uid&quot;:&quot;&quot;,&quot;hidden&quot;:&quot;&quot;,&quot;starttime&quot;:&quot;&quot;,&quot;endtime&quot;:&quot;&quot;,&quot;fe_group&quot;:&quot;&quot;,&quot;editlock&quot;:&quot;&quot;,&quot;notes&quot;:&quot;&quot;}</field>
+				<field index="l10n_source" type="integer">0</field>
+				<field index="deleted" type="integer">0</field>
+				<field index="hidden" type="integer">0</field>
+				<field index="starttime" type="integer">0</field>
+				<field index="endtime" type="integer">0</field>
+				<field index="fe_group"></field>
+				<field index="notes"></field>
+				<field index="l10n_state" type="NULL"></field>
+				<field index="t3ver_id" type="integer">0</field>
+				<field index="t3ver_label"></field>
+				<field index="t3ver_count" type="integer">0</field>
+				<field index="t3ver_tstamp" type="integer">0</field>
+				<field index="t3ver_move_id" type="integer">0</field>
+				<field index="sorting" type="integer">0</field>
+				<field index="title">Infoniqa kauft haveldata und wird deutscher Marktführer für Navision-Payroll</field>
+				<field index="teaser">Im Juni 2019 übernahm die Firma haveldata den Mitbewerber Lessor. Zum Jahreswechsel erwirbt Infoniqa haveldata und ist damit Nummer 1 für in MS Dynamics vollintegrierte Payroll-Software.</field>
+				<field index="bodytext">&lt;p&gt;&lt;strong&gt;Die deutschen Unternehmen haveldata GmbH und Lessor GmbH (umfirmiert in haveldata west GmbH) gehören seit Jahreswechsel zu &lt;a href=&quot;t3://page?uid=1&quot; target=&quot;_blank&quot;&gt;Infoniqa&lt;/a&gt;. Infoniqa zählt zu den wachstumsstärksten HR-Softwareunternehmen der DACH-Region: Mit dem Kauf der Spezialanbieter aus Brandenburg an der Havel und Ratingen wird der HR-Komplettanbieter nun zusätzlich zum deutschen Marktführer für voll in Microsoft Dynamics 365 Business Central integrierte Personalabrechnung. &lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Gemeinsam mit haveldata beschäftigt Infoniqa nun rund 250 Mitarbeiter an 10 Standorten in der DACH-Region. Etwa 3.500 Unternehmen mit mehr als 2,5 Mio. Anwendern setzen bei ihrer täglichen Personalarbeit auf die verschiedenen Softwarelösungen, die HR-Suite sowie Dienstleistungen von Infoniqa.&lt;/p&gt;
+&lt;p&gt;„Für unsere Kunden bedeutet das erweiterte Infoniqa-Portfolio spannende Möglichkeiten auf dem Weg zur digitalen Personalabteilung“, resümiert Christian Höher, Geschäftsführer von haveldata.&lt;/p&gt;
+&lt;p&gt;Die Lohnabrechnungslösung NAPA3 wird konsequent weiterentwickelt und ausgebaut. Dies gilt ebenso für die aktuellste haveldata-Lösung zum Employee Self Service „tESSa“ sowie für den Personalabrechnungsservice „mein-PERSONALBÜRO“. Für die NAPA3-Kunden und-Partner bedeutet der Zusammenschluss langfristig eine erhöhte Planungs- und Investitionssicherheit sowie eine breitere Auswahl an Software-Lösungen aus einer Hand.&lt;/p&gt;
+&lt;p&gt;„Infoniqa sichert sich mit der Übernahme eine Sonderstellung auf dem deutschen Markt. Wir verfügen bereits über mehrere Speziallösungen sowie mit Infoniqa ONE über eine integrierte HR-Suite, um die Anforderungen unserer Kunden punktgenau zu erfüllen. Dass wir &lt;a href=&quot;t3://page?uid=17&quot; title=&quot;Umfassende Personalsoftware für die zentrale Steuerung der HR-Aktivitäten. Jetzt informieren!&quot;&gt;vollintegrierte HR-Lösungen&lt;/a&gt; nun auch im Umfeld von Microsoft Dynamics Business Central anbieten können, macht die Angebotspalette von Infoniqa noch vielseitiger und attraktiver“, so Siegfried Milly, Vorstand und CEO von Infoniqa.&lt;/p&gt;
+&lt;p&gt;„Nach den Erfolgen der letzten Jahre nehmen wir so einen weiteren großen Meilenstein, um einer der führenden Anbieter für HR-Lösungen im deutschsprachigen Markt zu werden“, blickt Milly in die Zukunft.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a class=&quot;external-link&quot; href=&quot;https://www.haveldata.de/&quot; target=&quot;_blank&quot; title=&quot;Hier geht es zu haveldata →&quot;&gt;Hier geht es zu haveldata →&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p class=&quot;MsoCommentText&quot;&gt;&lt;strong&gt;Die vollständige Pressemitteilung können Sie hier herunterladen.&lt;/strong&gt;&lt;/p&gt;</field>
+				<field index="datetime" type="integer">1580204760</field>
+				<field index="archive" type="integer">0</field>
+				<field index="author">Infoniqa kauft haveldata mit Payroll Software für MS Dynamics</field>
+				<field index="author_email"></field>
+				<field index="categories" type="integer">0</field>
+				<field index="related" type="integer">0</field>
+				<field index="related_from" type="integer">0</field>
+				<field index="related_files" type="NULL"></field>
+				<field index="fal_related_files" type="integer">0</field>
+				<field index="related_links" type="integer">0</field>
+				<field index="type">0</field>
+				<field index="keywords"></field>
+				<field index="description">Zum Jahreswechsel erwirbt Infoniqa die haveldata GmbH und wird zur Nummer 1 für in MS Dynamics vollintegrierte Payroll-Software. Mehr erfahren &gt;&gt;</field>
+				<field index="tags" type="integer">1</field>
+				<field index="media" type="NULL"></field>
+				<field index="fal_media" type="integer">0</field>
+				<field index="internalurl" type="NULL"></field>
+				<field index="externalurl" type="NULL"></field>
+				<field index="istopnews" type="integer">0</field>
+				<field index="content_elements" type="integer">0</field>
+				<field index="path_segment">infoniqa-kauft-haveldata-und-wird-deutscher-marktfuehrer-fuer-navision-payroll</field>
+				<field index="alternative_title"></field>
+				<field index="sitemap_changefreq"></field>
+				<field index="sitemap_priority">0.5</field>
+				<field index="import_id"></field>
+				<field index="import_source"></field>
+				<field index="news_author" type="integer">0</field>
+			</fieldlist>
+			<related index="rels" type="array">
+				<field index="bodytext" type="array">
+					<softrefs type="array">
+						<keys type="array">
+							<softref_key index="typolink_tag" type="array">
+								<softref_element index="1" type="array">
+									<matchString>&lt;a href=&quot;t3://page?uid=1&quot; target=&quot;_blank&quot;&gt;</matchString>
+									<subst type="array">
+										<type>db</type>
+										<recordRef>pages:1</recordRef>
+										<tokenID>22cad9601b1496dd92965bc0792c1a9d</tokenID>
+										<tokenValue>1</tokenValue>
+									</subst>
+								</softref_element>
+								<softref_element index="3" type="array">
+									<matchString>&lt;a href=&quot;t3://page?uid=17&quot; title=&quot;Umfassende Personalsoftware für die zentrale Steuerung der HR-Aktivitäten. Jetzt informieren!&quot;&gt;</matchString>
+									<subst type="array">
+										<type>db</type>
+										<recordRef>pages:17</recordRef>
+										<tokenID>6cdfc46730f771e6e6d18d1928dc8044</tokenID>
+										<tokenValue>17</tokenValue>
+									</subst>
+								</softref_element>
+								<softref_element index="5" type="array">
+									<matchString>&lt;a class=&quot;external-link&quot; href=&quot;https://www.haveldata.de/&quot; target=&quot;_blank&quot; title=&quot;Hier geht es zu haveldata →&quot;&gt;</matchString>
+									<subst type="array">
+										<type>external</type>
+										<tokenID>9fb7bd8113e55920bf7f54705d8faceb</tokenID>
+										<tokenValue>https://www.haveldata.de/</tokenValue>
+									</subst>
+								</softref_element>
+							</softref_key>
+						</keys>
+						<tokenizedContent>&lt;p&gt;&lt;strong&gt;Die deutschen Unternehmen haveldata GmbH und Lessor GmbH (umfirmiert in haveldata west GmbH) gehören seit Jahreswechsel zu &lt;a href=&quot;{softref:22cad9601b1496dd92965bc0792c1a9d}&quot; target=&quot;_blank&quot;&gt;Infoniqa&lt;/a&gt;. Infoniqa zählt zu den wachstumsstärksten HR-Softwareunternehmen der DACH-Region: Mit dem Kauf der Spezialanbieter aus Brandenburg an der Havel und Ratingen wird der HR-Komplettanbieter nun zusätzlich zum deutschen Marktführer für voll in Microsoft Dynamics 365 Business Central integrierte Personalabrechnung. &lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Gemeinsam mit haveldata beschäftigt Infoniqa nun rund 250 Mitarbeiter an 10 Standorten in der DACH-Region. Etwa 3.500 Unternehmen mit mehr als 2,5 Mio. Anwendern setzen bei ihrer täglichen Personalarbeit auf die verschiedenen Softwarelösungen, die HR-Suite sowie Dienstleistungen von Infoniqa.&lt;/p&gt;
+&lt;p&gt;„Für unsere Kunden bedeutet das erweiterte Infoniqa-Portfolio spannende Möglichkeiten auf dem Weg zur digitalen Personalabteilung“, resümiert Christian Höher, Geschäftsführer von haveldata.&lt;/p&gt;
+&lt;p&gt;Die Lohnabrechnungslösung NAPA3 wird konsequent weiterentwickelt und ausgebaut. Dies gilt ebenso für die aktuellste haveldata-Lösung zum Employee Self Service „tESSa“ sowie für den Personalabrechnungsservice „mein-PERSONALBÜRO“. Für die NAPA3-Kunden und-Partner bedeutet der Zusammenschluss langfristig eine erhöhte Planungs- und Investitionssicherheit sowie eine breitere Auswahl an Software-Lösungen aus einer Hand.&lt;/p&gt;
+&lt;p&gt;„Infoniqa sichert sich mit der Übernahme eine Sonderstellung auf dem deutschen Markt. Wir verfügen bereits über mehrere Speziallösungen sowie mit Infoniqa ONE über eine integrierte HR-Suite, um die Anforderungen unserer Kunden punktgenau zu erfüllen. Dass wir &lt;a href=&quot;{softref:6cdfc46730f771e6e6d18d1928dc8044}&quot; title=&quot;Umfassende Personalsoftware für die zentrale Steuerung der HR-Aktivitäten. Jetzt informieren!&quot;&gt;vollintegrierte HR-Lösungen&lt;/a&gt; nun auch im Umfeld von Microsoft Dynamics Business Central anbieten können, macht die Angebotspalette von Infoniqa noch vielseitiger und attraktiver“, so Siegfried Milly, Vorstand und CEO von Infoniqa.&lt;/p&gt;
+&lt;p&gt;„Nach den Erfolgen der letzten Jahre nehmen wir so einen weiteren großen Meilenstein, um einer der führenden Anbieter für HR-Lösungen im deutschsprachigen Markt zu werden“, blickt Milly in die Zukunft.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a class=&quot;external-link&quot; href=&quot;{softref:9fb7bd8113e55920bf7f54705d8faceb}&quot; target=&quot;_blank&quot; title=&quot;Hier geht es zu haveldata →&quot;&gt;Hier geht es zu haveldata →&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p class=&quot;MsoCommentText&quot;&gt;&lt;strong&gt;Die vollständige Pressemitteilung können Sie hier herunterladen.&lt;/strong&gt;&lt;/p&gt;</tokenizedContent>
+					</softrefs>
+				</field>
+				<field index="tags" type="array">
+					<type>db</type>
+					<relations index="itemArray" type="array">
+						<element index="0" type="array">
+							<id>58</id>
+							<table>tx_news_domain_model_tag</table>
+						</element>
+					</relations>
+				</field>
+			</related>
+		</tablerow>
+		<tablerow index="tx_news_domain_model_news:110" type="array">
+			<fieldlist index="data" type="array">
+				<field index="uid" type="integer">110</field>
+				<field index="pid" type="integer">153</field>
+				<field index="tstamp" type="integer">1668419210</field>
+				<field index="crdate" type="integer">1668417152</field>
+				<field index="cruser_id" type="integer">3</field>
+				<field index="t3ver_oid" type="integer">0</field>
+				<field index="t3ver_wsid" type="integer">0</field>
+				<field index="t3ver_state" type="integer">0</field>
+				<field index="t3ver_stage" type="integer">0</field>
+				<field index="t3_origuid" type="integer">0</field>
+				<field index="editlock" type="integer">0</field>
+				<field index="sys_language_uid" type="integer">-1</field>
+				<field index="l10n_parent" type="integer">0</field>
+				<field index="l10n_diffsource">{&quot;type&quot;:&quot;&quot;,&quot;istopnews&quot;:&quot;&quot;,&quot;title&quot;:&quot;&quot;,&quot;path_segment&quot;:&quot;&quot;,&quot;teaser&quot;:&quot;&quot;,&quot;datetime&quot;:&quot;&quot;,&quot;archive&quot;:&quot;&quot;,&quot;bodytext&quot;:&quot;&quot;,&quot;content_elements&quot;:&quot;&quot;,&quot;fal_media&quot;:&quot;&quot;,&quot;fal_related_files&quot;:&quot;&quot;,&quot;categories&quot;:&quot;&quot;,&quot;related&quot;:&quot;&quot;,&quot;related_links&quot;:&quot;&quot;,&quot;tags&quot;:&quot;&quot;,&quot;author&quot;:&quot;&quot;,&quot;author_email&quot;:&quot;&quot;,&quot;keywords&quot;:&quot;&quot;,&quot;description&quot;:&quot;&quot;,&quot;alternative_title&quot;:&quot;&quot;,&quot;sitemap_changefreq&quot;:&quot;&quot;,&quot;sitemap_priority&quot;:&quot;&quot;,&quot;sys_language_uid&quot;:&quot;&quot;,&quot;hidden&quot;:&quot;&quot;,&quot;starttime&quot;:&quot;&quot;,&quot;endtime&quot;:&quot;&quot;,&quot;fe_group&quot;:&quot;&quot;,&quot;editlock&quot;:&quot;&quot;,&quot;notes&quot;:&quot;&quot;}</field>
+				<field index="l10n_source" type="integer">0</field>
+				<field index="deleted" type="integer">0</field>
+				<field index="hidden" type="integer">0</field>
+				<field index="starttime" type="integer">0</field>
+				<field index="endtime" type="integer">0</field>
+				<field index="fe_group"></field>
+				<field index="notes"></field>
+				<field index="l10n_state" type="NULL"></field>
+				<field index="t3ver_id" type="integer">0</field>
+				<field index="t3ver_label"></field>
+				<field index="t3ver_count" type="integer">0</field>
+				<field index="t3ver_tstamp" type="integer">0</field>
+				<field index="t3ver_move_id" type="integer">0</field>
+				<field index="sorting" type="integer">0</field>
+				<field index="title">Tanja Ziegler neu in Geschäftsführung der Infoniqa Deutschland GmbH</field>
+				<field index="teaser">Tanja Ziegler leitet künftig zusammen mit Patrick Attanasio Infoniqa Deutschland GmbH. </field>
+				<field index="bodytext">&lt;p&gt;Zum 01. Oktober 2019 tritt Tanja Ziegler (49) in die Geschäftsführung von Infoniqa Deutschland GmbH ein. Sie löst damit Robert Bastian ab, der sehr erfolgreich fünf Jahre lang die Geschäftsführung des HR-Softwareanbieters mit Sitz in Böblingen innehatte und sich ab sofort auf die Leitung des Infoniqa Classic Payroll Bereichs konzentriert.&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;„Mit Tanja Ziegler kommt eine ebenso erfahrene wie visionäre Persönlichkeit in unser deutsches Geschäftsführungsteam. Wir freuen uns, künftig ihre Expertise und ihre Tatkraft für gesamt Infoniqa Deutschland nutzen zu können“, so Infoniqa-Vorstand Siegfried Milly.&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;Vor ihrer Berufung in die Geschäftsführung war Tanja Ziegler als Prokuristin bei&amp;nbsp;Infoniqa für die &lt;a href=&quot;t3://page?uid=72&quot; title=&quot;Zeitmanagement Software - endlich alles im Blick. Jetzt informieren!&quot;&gt;Zeitwirtschaftslösung Infoniqa ONE Time&lt;/a&gt; verantwortlich. Zuvor durchlief sie Stationen als Bereichsleiterin von P&amp;amp;I TIME und Service-Managerin bei Gronemeyer Datentechnik.&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;„Ich freue mich, nun gemeinsam mit Patrick Attanasio den Marktanteil von Infoniqa weiter zu erhöhen und beizutragen, herausragende Softwareunterstützung und Dienstleistungsangebote weiterzuentwickeln. Infoniqa ist zwar bereits fest etabliert, doch die vorhandenen Potenziale sind noch längst nicht ausgeschöpft“, beschreibt Tanja Ziegler ihre Pläne.&lt;/p&gt;
+&lt;p&gt;Der wachstumsintensive und stark nachgefragte Produkt- und Servicebereich rund um die digitale &lt;a href=&quot;t3://page?uid=66&quot; title=&quot;Lohn- und Gehaltsabrechnung mit einer Software, die mitdenkt. Jetzt entdecken!&quot;&gt;Personalabrechnung&lt;/a&gt;, &lt;a href=&quot;t3://page?uid=72&quot; title=&quot;Zeitmanagement Software - endlich alles im Blick. Jetzt informieren!&quot;&gt;Zeiterfassung&lt;/a&gt; und &lt;a href=&quot;t3://page?uid=17&quot; title=&quot;Umfassende Personalsoftware für die zentrale Steuerung der HR-Aktivitäten. Jetzt informieren!&quot;&gt;HCM&lt;/a&gt; wuchs bei Infoniqa alleine in 2018 doppelt so schnell wie der HR-Marktdurchschnitt.&lt;/p&gt;
+
+&lt;p&gt;Hier finden Sie die vollständige Pressemitteilung zum Download.&amp;nbsp;&lt;/p&gt;</field>
+				<field index="datetime" type="integer">1570628400</field>
+				<field index="archive" type="integer">0</field>
+				<field index="author"></field>
+				<field index="author_email"></field>
+				<field index="categories" type="integer">0</field>
+				<field index="related" type="integer">0</field>
+				<field index="related_from" type="integer">0</field>
+				<field index="related_files" type="NULL"></field>
+				<field index="fal_related_files" type="integer">0</field>
+				<field index="related_links" type="integer">0</field>
+				<field index="type">0</field>
+				<field index="keywords"></field>
+				<field index="description">Tanja Ziegler ist neu in der Geschäftsführung der Infoniqa Deutschland GmbH</field>
+				<field index="tags" type="integer">1</field>
+				<field index="media" type="NULL"></field>
+				<field index="fal_media" type="integer">0</field>
+				<field index="internalurl" type="NULL"></field>
+				<field index="externalurl" type="NULL"></field>
+				<field index="istopnews" type="integer">0</field>
+				<field index="content_elements" type="integer">0</field>
+				<field index="path_segment">tanja-ziegler-neu-in-geschaeftsfuehrung-der-infoniqa-deutschland-gmbh</field>
+				<field index="alternative_title">Tanja Ziegler neu in Geschäftsführung der Infoniqa Deutschland GmbH</field>
+				<field index="sitemap_changefreq"></field>
+				<field index="sitemap_priority">0.5</field>
+				<field index="import_id"></field>
+				<field index="import_source"></field>
+				<field index="news_author" type="integer">0</field>
+			</fieldlist>
+			<related index="rels" type="array">
+				<field index="bodytext" type="array">
+					<softrefs type="array">
+						<keys type="array">
+							<softref_key index="typolink_tag" type="array">
+								<softref_element index="1" type="array">
+									<matchString>&lt;a href=&quot;t3://page?uid=72&quot; title=&quot;Zeitmanagement Software - endlich alles im Blick. Jetzt informieren!&quot;&gt;</matchString>
+									<subst type="array">
+										<type>db</type>
+										<recordRef>pages:72</recordRef>
+										<tokenID>bef20c5c435ce32f90f2786acd8390b9</tokenID>
+										<tokenValue>72</tokenValue>
+									</subst>
+								</softref_element>
+								<softref_element index="3" type="array">
+									<matchString>&lt;a href=&quot;t3://page?uid=66&quot; title=&quot;Lohn- und Gehaltsabrechnung mit einer Software, die mitdenkt. Jetzt entdecken!&quot;&gt;</matchString>
+									<subst type="array">
+										<type>db</type>
+										<recordRef>pages:66</recordRef>
+										<tokenID>3cc70873277a23b2aacd69783a800b32</tokenID>
+										<tokenValue>66</tokenValue>
+									</subst>
+								</softref_element>
+								<softref_element index="5" type="array">
+									<matchString>&lt;a href=&quot;t3://page?uid=72&quot; title=&quot;Zeitmanagement Software - endlich alles im Blick. Jetzt informieren!&quot;&gt;</matchString>
+									<subst type="array">
+										<type>db</type>
+										<recordRef>pages:72</recordRef>
+										<tokenID>48ca1a1b9784aa2fe90036298297f722</tokenID>
+										<tokenValue>72</tokenValue>
+									</subst>
+								</softref_element>
+								<softref_element index="7" type="array">
+									<matchString>&lt;a href=&quot;t3://page?uid=17&quot; title=&quot;Umfassende Personalsoftware für die zentrale Steuerung der HR-Aktivitäten. Jetzt informieren!&quot;&gt;</matchString>
+									<subst type="array">
+										<type>db</type>
+										<recordRef>pages:17</recordRef>
+										<tokenID>67e1753d8620f6e0fc9415248dca7cd9</tokenID>
+										<tokenValue>17</tokenValue>
+									</subst>
+								</softref_element>
+							</softref_key>
+						</keys>
+						<tokenizedContent>&lt;p&gt;Zum 01. Oktober 2019 tritt Tanja Ziegler (49) in die Geschäftsführung von Infoniqa Deutschland GmbH ein. Sie löst damit Robert Bastian ab, der sehr erfolgreich fünf Jahre lang die Geschäftsführung des HR-Softwareanbieters mit Sitz in Böblingen innehatte und sich ab sofort auf die Leitung des Infoniqa Classic Payroll Bereichs konzentriert.&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;„Mit Tanja Ziegler kommt eine ebenso erfahrene wie visionäre Persönlichkeit in unser deutsches Geschäftsführungsteam. Wir freuen uns, künftig ihre Expertise und ihre Tatkraft für gesamt Infoniqa Deutschland nutzen zu können“, so Infoniqa-Vorstand Siegfried Milly.&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;Vor ihrer Berufung in die Geschäftsführung war Tanja Ziegler als Prokuristin bei&amp;nbsp;Infoniqa für die &lt;a href=&quot;{softref:bef20c5c435ce32f90f2786acd8390b9}&quot; title=&quot;Zeitmanagement Software - endlich alles im Blick. Jetzt informieren!&quot;&gt;Zeitwirtschaftslösung Infoniqa ONE Time&lt;/a&gt; verantwortlich. Zuvor durchlief sie Stationen als Bereichsleiterin von P&amp;amp;I TIME und Service-Managerin bei Gronemeyer Datentechnik.&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;„Ich freue mich, nun gemeinsam mit Patrick Attanasio den Marktanteil von Infoniqa weiter zu erhöhen und beizutragen, herausragende Softwareunterstützung und Dienstleistungsangebote weiterzuentwickeln. Infoniqa ist zwar bereits fest etabliert, doch die vorhandenen Potenziale sind noch längst nicht ausgeschöpft“, beschreibt Tanja Ziegler ihre Pläne.&lt;/p&gt;
+&lt;p&gt;Der wachstumsintensive und stark nachgefragte Produkt- und Servicebereich rund um die digitale &lt;a href=&quot;{softref:3cc70873277a23b2aacd69783a800b32}&quot; title=&quot;Lohn- und Gehaltsabrechnung mit einer Software, die mitdenkt. Jetzt entdecken!&quot;&gt;Personalabrechnung&lt;/a&gt;, &lt;a href=&quot;{softref:48ca1a1b9784aa2fe90036298297f722}&quot; title=&quot;Zeitmanagement Software - endlich alles im Blick. Jetzt informieren!&quot;&gt;Zeiterfassung&lt;/a&gt; und &lt;a href=&quot;{softref:67e1753d8620f6e0fc9415248dca7cd9}&quot; title=&quot;Umfassende Personalsoftware für die zentrale Steuerung der HR-Aktivitäten. Jetzt informieren!&quot;&gt;HCM&lt;/a&gt; wuchs bei Infoniqa alleine in 2018 doppelt so schnell wie der HR-Marktdurchschnitt.&lt;/p&gt;
+
+&lt;p&gt;Hier finden Sie die vollständige Pressemitteilung zum Download.&amp;nbsp;&lt;/p&gt;</tokenizedContent>
+					</softrefs>
+				</field>
+				<field index="tags" type="array">
+					<type>db</type>
+					<relations index="itemArray" type="array">
+						<element index="0" type="array">
+							<id>58</id>
+							<table>tx_news_domain_model_tag</table>
+						</element>
+					</relations>
+				</field>
+			</related>
+		</tablerow>
+		<tablerow index="tx_news_domain_model_news:111" type="array">
+			<fieldlist index="data" type="array">
+				<field index="uid" type="integer">111</field>
+				<field index="pid" type="integer">153</field>
+				<field index="tstamp" type="integer">1668419206</field>
+				<field index="crdate" type="integer">1668417916</field>
+				<field index="cruser_id" type="integer">3</field>
+				<field index="t3ver_oid" type="integer">0</field>
+				<field index="t3ver_wsid" type="integer">0</field>
+				<field index="t3ver_state" type="integer">0</field>
+				<field index="t3ver_stage" type="integer">0</field>
+				<field index="t3_origuid" type="integer">0</field>
+				<field index="editlock" type="integer">0</field>
+				<field index="sys_language_uid" type="integer">-1</field>
+				<field index="l10n_parent" type="integer">0</field>
+				<field index="l10n_diffsource">{&quot;type&quot;:&quot;&quot;,&quot;istopnews&quot;:&quot;&quot;,&quot;title&quot;:&quot;&quot;,&quot;path_segment&quot;:&quot;&quot;,&quot;teaser&quot;:&quot;&quot;,&quot;datetime&quot;:&quot;&quot;,&quot;archive&quot;:&quot;&quot;,&quot;bodytext&quot;:&quot;&quot;,&quot;content_elements&quot;:&quot;&quot;,&quot;fal_media&quot;:&quot;&quot;,&quot;fal_related_files&quot;:&quot;&quot;,&quot;categories&quot;:&quot;&quot;,&quot;related&quot;:&quot;&quot;,&quot;related_links&quot;:&quot;&quot;,&quot;tags&quot;:&quot;&quot;,&quot;author&quot;:&quot;&quot;,&quot;author_email&quot;:&quot;&quot;,&quot;keywords&quot;:&quot;&quot;,&quot;description&quot;:&quot;&quot;,&quot;alternative_title&quot;:&quot;&quot;,&quot;sitemap_changefreq&quot;:&quot;&quot;,&quot;sitemap_priority&quot;:&quot;&quot;,&quot;sys_language_uid&quot;:&quot;&quot;,&quot;hidden&quot;:&quot;&quot;,&quot;starttime&quot;:&quot;&quot;,&quot;endtime&quot;:&quot;&quot;,&quot;fe_group&quot;:&quot;&quot;,&quot;editlock&quot;:&quot;&quot;,&quot;notes&quot;:&quot;&quot;}</field>
+				<field index="l10n_source" type="integer">0</field>
+				<field index="deleted" type="integer">0</field>
+				<field index="hidden" type="integer">0</field>
+				<field index="starttime" type="integer">0</field>
+				<field index="endtime" type="integer">0</field>
+				<field index="fe_group"></field>
+				<field index="notes"></field>
+				<field index="l10n_state" type="NULL"></field>
+				<field index="t3ver_id" type="integer">0</field>
+				<field index="t3ver_label"></field>
+				<field index="t3ver_count" type="integer">0</field>
+				<field index="t3ver_tstamp" type="integer">0</field>
+				<field index="t3ver_move_id" type="integer">0</field>
+				<field index="sorting" type="integer">0</field>
+				<field index="title">Infoniqa präsentiert neue HR-Suite auf der Zukunft Personal Europe</field>
+				<field index="teaser">Infoniqa stellt auf der Zukunft Personal Europe in Köln die neue HR-Suite Infoniqa ONE vor. Dabei handelt es sich um ein modulares Komplettsystem, das den Employee Lifecycle vollständig abbildet.</field>
+				<field index="bodytext">&lt;p&gt;Infoniqa stellt auf der Zukunft Personal Europe in Köln die &lt;strong&gt;neue HR-Suite Infoniqa ONE&lt;/strong&gt; vor. Dabei handelt es sich um ein &lt;strong&gt;modulares Komplettsystem&lt;/strong&gt;, das den &lt;strong&gt;Employee Lifecycle&lt;/strong&gt; vollständig abbildet.&lt;/p&gt;
+&lt;p&gt;Infoniqa ONE umfasst &lt;a href=&quot;t3://page?uid=66&quot; title=&quot;Personalabrechnung mit einer Software, die mitdenkt. Jetzt entdecken!&quot;&gt;Payroll&lt;/a&gt;-, &lt;a href=&quot;t3://page?uid=72&quot; title=&quot;Zeitwirtschaft Software - endlich alles im Blick. Jetzt informieren!&quot;&gt;Zeitwirtschaft&lt;/a&gt;- sowie HCM-Software. Als &lt;strong&gt;integrierte Softwarelösung&lt;/strong&gt; deckt die HR-Suite alle Personalbereiche ab, von der Administration bis zum strategischen &lt;a href=&quot;t3://page?uid=17&quot; title=&quot;Umfassende Personalsoftware für die zentrale Steuerung der HR-Aktivitäten. Jetzt informieren!&quot;&gt;Personalmanagement&lt;/a&gt;. Gleichzeitig werden auch zentrale Themen wie &lt;a href=&quot;t3://page?uid=64&quot; title=&quot;Bewerbermanagement Software: erfolgreich Mitarbeiter finden! Mehr erfahren &amp;gt;&amp;gt;&quot;&gt;Recruiting&lt;/a&gt;, &lt;a href=&quot;t3://page?uid=62&quot; title=&quot;E-Learning neu gedacht - mit Software-Unterstützung keine Potentiale übersehen.&quot;&gt;Learning &lt;/a&gt;(digital, mobil sowie vor Ort), Mitarbeiterführung unter geänderten Rahmenbedingungen oder auch &lt;strong&gt;Karriereplanung &lt;/strong&gt;bedient.&lt;/p&gt;
+&lt;p&gt;Die Komplettlösung bildet alle Prozesse ab, die in einer HR-Abteilung anfallen können. Je nach individueller Anforderung können Anwender die benötigten &lt;strong&gt;Module flexibel auswählen&lt;/strong&gt; und sich sowohl für die vollintegrierte Gesamtlösung als auch für Einzelmodule entscheiden. Infoniqa ONE lässt sich &lt;strong&gt;in bestehende Systemstrukturen einfügen&lt;/strong&gt; und ermöglicht ein reibungsloses Zusammenspiel mit vorhandenen HR-Systemen. Der Leistungsumfang ist &lt;strong&gt;jederzeit bedarfsgerecht erweiterbar&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Vorgestellt werden am&amp;nbsp;&lt;strong&gt;Infoniqa Messestand in Halle 3.2, Stand B.07&lt;/strong&gt;&amp;nbsp;zudem weitere neue Features der HR-Software-Spezialisten. Dazu gehören zum Beispiel eine neue windowsbasierte Software zur Personalabrechnung, eine komplett neue Software zur Personaleinsatzplanung sowie ein Preview des neuen Infoniqa TIME WebClients zur Zeiterfassung. Mit diesen innovativen Neuentwicklungen antwortet Infoniqa unter anderem auf allgemeine HR-Trends rund um Wissenskultur, Konnektivität, Individualisierung und Mobilität.&lt;/p&gt;
+&lt;p&gt;Infoniqa präsentiert neue HR-Suite auf der Zukunft Personal Europe&lt;/p&gt;</field>
+				<field index="datetime" type="integer">1527697740</field>
+				<field index="archive" type="integer">0</field>
+				<field index="author"></field>
+				<field index="author_email"></field>
+				<field index="categories" type="integer">0</field>
+				<field index="related" type="integer">0</field>
+				<field index="related_from" type="integer">0</field>
+				<field index="related_files" type="NULL"></field>
+				<field index="fal_related_files" type="integer">0</field>
+				<field index="related_links" type="integer">0</field>
+				<field index="type">0</field>
+				<field index="keywords"></field>
+				<field index="description">Infoniqa stellt auf der Zukunft Personal Europe in Köln die neue HR-Suite Infoniqa ONE, ein modulares Komplettsystem, vor.</field>
+				<field index="tags" type="integer">1</field>
+				<field index="media" type="NULL"></field>
+				<field index="fal_media" type="integer">0</field>
+				<field index="internalurl" type="NULL"></field>
+				<field index="externalurl" type="NULL"></field>
+				<field index="istopnews" type="integer">0</field>
+				<field index="content_elements" type="integer">0</field>
+				<field index="path_segment">infoniqa-praesentiert-neue-hr-suite-auf-der-zukunft-personal-europe</field>
+				<field index="alternative_title">Infoniqa präsentiert neue HR-Suite auf der Zukunft Personal Europe</field>
+				<field index="sitemap_changefreq"></field>
+				<field index="sitemap_priority">0.5</field>
+				<field index="import_id"></field>
+				<field index="import_source"></field>
+				<field index="news_author" type="integer">0</field>
+			</fieldlist>
+			<related index="rels" type="array">
+				<field index="bodytext" type="array">
+					<softrefs type="array">
+						<keys type="array">
+							<softref_key index="typolink_tag" type="array">
+								<softref_element index="1" type="array">
+									<matchString>&lt;a href=&quot;t3://page?uid=66&quot; title=&quot;Personalabrechnung mit einer Software, die mitdenkt. Jetzt entdecken!&quot;&gt;</matchString>
+									<subst type="array">
+										<type>db</type>
+										<recordRef>pages:66</recordRef>
+										<tokenID>ab58ef39f79051d365097dc6402de788</tokenID>
+										<tokenValue>66</tokenValue>
+									</subst>
+								</softref_element>
+								<softref_element index="3" type="array">
+									<matchString>&lt;a href=&quot;t3://page?uid=72&quot; title=&quot;Zeitwirtschaft Software - endlich alles im Blick. Jetzt informieren!&quot;&gt;</matchString>
+									<subst type="array">
+										<type>db</type>
+										<recordRef>pages:72</recordRef>
+										<tokenID>7db3aaf77f98e2a1db4856cfaf5e8fd8</tokenID>
+										<tokenValue>72</tokenValue>
+									</subst>
+								</softref_element>
+								<softref_element index="5" type="array">
+									<matchString>&lt;a href=&quot;t3://page?uid=17&quot; title=&quot;Umfassende Personalsoftware für die zentrale Steuerung der HR-Aktivitäten. Jetzt informieren!&quot;&gt;</matchString>
+									<subst type="array">
+										<type>db</type>
+										<recordRef>pages:17</recordRef>
+										<tokenID>ab3071aae2f6bffd11c9f6e19406b505</tokenID>
+										<tokenValue>17</tokenValue>
+									</subst>
+								</softref_element>
+								<softref_element index="7" type="array">
+									<matchString>&lt;a href=&quot;t3://page?uid=64&quot; title=&quot;Bewerbermanagement Software: erfolgreich Mitarbeiter finden! Mehr erfahren &amp;gt;&amp;gt;&quot;&gt;</matchString>
+									<subst type="array">
+										<type>db</type>
+										<recordRef>pages:64</recordRef>
+										<tokenID>6b3b008ce35e4663712419f446599896</tokenID>
+										<tokenValue>64</tokenValue>
+									</subst>
+								</softref_element>
+								<softref_element index="9" type="array">
+									<matchString>&lt;a href=&quot;t3://page?uid=62&quot; title=&quot;E-Learning neu gedacht - mit Software-Unterstützung keine Potentiale übersehen.&quot;&gt;</matchString>
+									<subst type="array">
+										<type>db</type>
+										<recordRef>pages:62</recordRef>
+										<tokenID>f29259052dac00068f7228dc16bdf6c9</tokenID>
+										<tokenValue>62</tokenValue>
+									</subst>
+								</softref_element>
+							</softref_key>
+						</keys>
+						<tokenizedContent>&lt;p&gt;Infoniqa stellt auf der Zukunft Personal Europe in Köln die &lt;strong&gt;neue HR-Suite Infoniqa ONE&lt;/strong&gt; vor. Dabei handelt es sich um ein &lt;strong&gt;modulares Komplettsystem&lt;/strong&gt;, das den &lt;strong&gt;Employee Lifecycle&lt;/strong&gt; vollständig abbildet.&lt;/p&gt;
+&lt;p&gt;Infoniqa ONE umfasst &lt;a href=&quot;{softref:ab58ef39f79051d365097dc6402de788}&quot; title=&quot;Personalabrechnung mit einer Software, die mitdenkt. Jetzt entdecken!&quot;&gt;Payroll&lt;/a&gt;-, &lt;a href=&quot;{softref:7db3aaf77f98e2a1db4856cfaf5e8fd8}&quot; title=&quot;Zeitwirtschaft Software - endlich alles im Blick. Jetzt informieren!&quot;&gt;Zeitwirtschaft&lt;/a&gt;- sowie HCM-Software. Als &lt;strong&gt;integrierte Softwarelösung&lt;/strong&gt; deckt die HR-Suite alle Personalbereiche ab, von der Administration bis zum strategischen &lt;a href=&quot;{softref:ab3071aae2f6bffd11c9f6e19406b505}&quot; title=&quot;Umfassende Personalsoftware für die zentrale Steuerung der HR-Aktivitäten. Jetzt informieren!&quot;&gt;Personalmanagement&lt;/a&gt;. Gleichzeitig werden auch zentrale Themen wie &lt;a href=&quot;{softref:6b3b008ce35e4663712419f446599896}&quot; title=&quot;Bewerbermanagement Software: erfolgreich Mitarbeiter finden! Mehr erfahren &amp;gt;&amp;gt;&quot;&gt;Recruiting&lt;/a&gt;, &lt;a href=&quot;{softref:f29259052dac00068f7228dc16bdf6c9}&quot; title=&quot;E-Learning neu gedacht - mit Software-Unterstützung keine Potentiale übersehen.&quot;&gt;Learning &lt;/a&gt;(digital, mobil sowie vor Ort), Mitarbeiterführung unter geänderten Rahmenbedingungen oder auch &lt;strong&gt;Karriereplanung &lt;/strong&gt;bedient.&lt;/p&gt;
+&lt;p&gt;Die Komplettlösung bildet alle Prozesse ab, die in einer HR-Abteilung anfallen können. Je nach individueller Anforderung können Anwender die benötigten &lt;strong&gt;Module flexibel auswählen&lt;/strong&gt; und sich sowohl für die vollintegrierte Gesamtlösung als auch für Einzelmodule entscheiden. Infoniqa ONE lässt sich &lt;strong&gt;in bestehende Systemstrukturen einfügen&lt;/strong&gt; und ermöglicht ein reibungsloses Zusammenspiel mit vorhandenen HR-Systemen. Der Leistungsumfang ist &lt;strong&gt;jederzeit bedarfsgerecht erweiterbar&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Vorgestellt werden am&amp;nbsp;&lt;strong&gt;Infoniqa Messestand in Halle 3.2, Stand B.07&lt;/strong&gt;&amp;nbsp;zudem weitere neue Features der HR-Software-Spezialisten. Dazu gehören zum Beispiel eine neue windowsbasierte Software zur Personalabrechnung, eine komplett neue Software zur Personaleinsatzplanung sowie ein Preview des neuen Infoniqa TIME WebClients zur Zeiterfassung. Mit diesen innovativen Neuentwicklungen antwortet Infoniqa unter anderem auf allgemeine HR-Trends rund um Wissenskultur, Konnektivität, Individualisierung und Mobilität.&lt;/p&gt;
+&lt;p&gt;Infoniqa präsentiert neue HR-Suite auf der Zukunft Personal Europe&lt;/p&gt;</tokenizedContent>
+					</softrefs>
+				</field>
+				<field index="tags" type="array">
+					<type>db</type>
+					<relations index="itemArray" type="array">
+						<element index="0" type="array">
+							<id>58</id>
+							<table>tx_news_domain_model_tag</table>
+						</element>
+					</relations>
+				</field>
+			</related>
+		</tablerow>
+		<tablerow index="tx_news_domain_model_news:112" type="array">
+			<fieldlist index="data" type="array">
+				<field index="uid" type="integer">112</field>
+				<field index="pid" type="integer">153</field>
+				<field index="tstamp" type="integer">1668419203</field>
+				<field index="crdate" type="integer">1668418050</field>
+				<field index="cruser_id" type="integer">3</field>
+				<field index="t3ver_oid" type="integer">0</field>
+				<field index="t3ver_wsid" type="integer">0</field>
+				<field index="t3ver_state" type="integer">0</field>
+				<field index="t3ver_stage" type="integer">0</field>
+				<field index="t3_origuid" type="integer">0</field>
+				<field index="editlock" type="integer">0</field>
+				<field index="sys_language_uid" type="integer">-1</field>
+				<field index="l10n_parent" type="integer">0</field>
+				<field index="l10n_diffsource">{&quot;type&quot;:&quot;&quot;,&quot;istopnews&quot;:&quot;&quot;,&quot;title&quot;:&quot;&quot;,&quot;path_segment&quot;:&quot;&quot;,&quot;teaser&quot;:&quot;&quot;,&quot;datetime&quot;:&quot;&quot;,&quot;archive&quot;:&quot;&quot;,&quot;bodytext&quot;:&quot;&quot;,&quot;content_elements&quot;:&quot;&quot;,&quot;fal_media&quot;:&quot;&quot;,&quot;fal_related_files&quot;:&quot;&quot;,&quot;categories&quot;:&quot;&quot;,&quot;related&quot;:&quot;&quot;,&quot;related_links&quot;:&quot;&quot;,&quot;tags&quot;:&quot;&quot;,&quot;author&quot;:&quot;&quot;,&quot;author_email&quot;:&quot;&quot;,&quot;keywords&quot;:&quot;&quot;,&quot;description&quot;:&quot;&quot;,&quot;alternative_title&quot;:&quot;&quot;,&quot;sitemap_changefreq&quot;:&quot;&quot;,&quot;sitemap_priority&quot;:&quot;&quot;,&quot;sys_language_uid&quot;:&quot;&quot;,&quot;hidden&quot;:&quot;&quot;,&quot;starttime&quot;:&quot;&quot;,&quot;endtime&quot;:&quot;&quot;,&quot;fe_group&quot;:&quot;&quot;,&quot;editlock&quot;:&quot;&quot;,&quot;notes&quot;:&quot;&quot;}</field>
+				<field index="l10n_source" type="integer">0</field>
+				<field index="deleted" type="integer">0</field>
+				<field index="hidden" type="integer">0</field>
+				<field index="starttime" type="integer">0</field>
+				<field index="endtime" type="integer">0</field>
+				<field index="fe_group"></field>
+				<field index="notes"></field>
+				<field index="l10n_state" type="NULL"></field>
+				<field index="t3ver_id" type="integer">0</field>
+				<field index="t3ver_label"></field>
+				<field index="t3ver_count" type="integer">0</field>
+				<field index="t3ver_tstamp" type="integer">0</field>
+				<field index="t3ver_move_id" type="integer">0</field>
+				<field index="sorting" type="integer">0</field>
+				<field index="title">Neue HR-Suite Infoniqa ONE auf der Zukunft Personal Süd</field>
+				<field index="teaser">Ab sofort ist die HR-Suite Infoniqa ONE erhältlich. Für Personalabteilungen heißt das: Payroll-, Zeitwirtschaft- und HCM-Software kommen aus einer Hand.</field>
+				<field index="bodytext">&lt;p&gt;Mit einer neuen windowsbasierten &lt;a href=&quot;t3://page?uid=66&quot; title=&quot;Lohn- und Gehaltsabrechnung mit einer Software, die mitdenkt. Jetzt entdecken!&quot;&gt;Software zur Personalabrechnung&lt;/a&gt; vervollständigt der Spezialist für Personalsoftware sein Komplettangebot für HR-Abteilungen. Ab sofort ist damit die HR-Suite Infoniqa ONE erhältlich. Für Personalabteilungen heißt das: Payroll-, &lt;a href=&quot;t3://page?uid=72&quot; title=&quot;Zeitwirtschaft Software - endlich alles im Blick. Jetzt informieren!&quot;&gt;Zeitwirtschaft&lt;/a&gt;- und HCM-Software kommen aus einer Hand. So bildet das modulare &lt;a href=&quot;t3://page?uid=1&quot; title=&quot;Umfassende Personalsoftware für die zentrale Steuerung der HR-Aktivitäten. Jetzt informieren!&quot;&gt;Komplettsystem &lt;/a&gt;alle Prozesse ab, die in einer HR-Abteilung anfallen können.&lt;/p&gt;
+&lt;p&gt;Der Vorteil: Kunden können die benötigten Module flexibel auswählen und sich sowohl für die vollintegrierte Gesamtlösung als auch für Einzelmodule entscheiden. Der Leistungsumfang ist jederzeit bedarfsgerecht erweiterbar. Infoniqa ONE lässt sich so in bestehende Systemstrukturen einfügen und ermöglicht ein reibungsloses Zusammenspiel mit vorhandenen HR-Lösungen.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Infoniqa ONE inklusive des neuen windowsbasierten Payroll-Moduls wird der Fachöffentlichkeit erstmals am 24. und 25. April 2018 vorgestellt.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Darüber hinaus präsentieren die HR-Spezialisten in Stuttgart ihr neues Tool für die effiziente Personaleinsatzplanung. Besucher haben zudem die Chance auf ein Pre-view des mit Spannung erwarteten Infoniqa TIME WebClients zur Zeiterfassung. Zahlreiche neue Features der Infoniqa Personalsoftware sorgen für weitere Überraschungen.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Infoniqa auf der Zukunft Personal Süd in Stuttgart: Halle A, Stand D.21&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Pressemitteilung Infoniqa ONE&lt;/p&gt;</field>
+				<field index="datetime" type="integer">1526488140</field>
+				<field index="archive" type="integer">0</field>
+				<field index="author"></field>
+				<field index="author_email"></field>
+				<field index="categories" type="integer">0</field>
+				<field index="related" type="integer">0</field>
+				<field index="related_from" type="integer">0</field>
+				<field index="related_files" type="NULL"></field>
+				<field index="fal_related_files" type="integer">0</field>
+				<field index="related_links" type="integer">0</field>
+				<field index="type">0</field>
+				<field index="keywords"></field>
+				<field index="description">HR-Suite Infoniqa ONE: für Personalabteilungen heißt das: Payroll-, Zeitwirtschaft- und HCM-Software kommen aus einer Hand.</field>
+				<field index="tags" type="integer">1</field>
+				<field index="media" type="NULL"></field>
+				<field index="fal_media" type="integer">0</field>
+				<field index="internalurl" type="NULL"></field>
+				<field index="externalurl" type="NULL"></field>
+				<field index="istopnews" type="integer">0</field>
+				<field index="content_elements" type="integer">0</field>
+				<field index="path_segment">neue-hr-suite-infoniqa-one-auf-der-zukunft-personal-sued</field>
+				<field index="alternative_title">Neue HR-Suite Infoniqa ONE auf der Zukunft Personal Süd</field>
+				<field index="sitemap_changefreq"></field>
+				<field index="sitemap_priority">0.5</field>
+				<field index="import_id"></field>
+				<field index="import_source"></field>
+				<field index="news_author" type="integer">0</field>
+			</fieldlist>
+			<related index="rels" type="array">
+				<field index="bodytext" type="array">
+					<softrefs type="array">
+						<keys type="array">
+							<softref_key index="typolink_tag" type="array">
+								<softref_element index="1" type="array">
+									<matchString>&lt;a href=&quot;t3://page?uid=66&quot; title=&quot;Lohn- und Gehaltsabrechnung mit einer Software, die mitdenkt. Jetzt entdecken!&quot;&gt;</matchString>
+									<subst type="array">
+										<type>db</type>
+										<recordRef>pages:66</recordRef>
+										<tokenID>a1edab9d2e2046d849946ebf3ae3d8e2</tokenID>
+										<tokenValue>66</tokenValue>
+									</subst>
+								</softref_element>
+								<softref_element index="3" type="array">
+									<matchString>&lt;a href=&quot;t3://page?uid=72&quot; title=&quot;Zeitwirtschaft Software - endlich alles im Blick. Jetzt informieren!&quot;&gt;</matchString>
+									<subst type="array">
+										<type>db</type>
+										<recordRef>pages:72</recordRef>
+										<tokenID>97486ac87c2001dbb2d394b5a8208f53</tokenID>
+										<tokenValue>72</tokenValue>
+									</subst>
+								</softref_element>
+								<softref_element index="5" type="array">
+									<matchString>&lt;a href=&quot;t3://page?uid=1&quot; title=&quot;Umfassende Personalsoftware für die zentrale Steuerung der HR-Aktivitäten. Jetzt informieren!&quot;&gt;</matchString>
+									<subst type="array">
+										<type>db</type>
+										<recordRef>pages:1</recordRef>
+										<tokenID>dcb33afb5f4e99e7be58e53167ffe9fc</tokenID>
+										<tokenValue>1</tokenValue>
+									</subst>
+								</softref_element>
+							</softref_key>
+						</keys>
+						<tokenizedContent>&lt;p&gt;Mit einer neuen windowsbasierten &lt;a href=&quot;{softref:a1edab9d2e2046d849946ebf3ae3d8e2}&quot; title=&quot;Lohn- und Gehaltsabrechnung mit einer Software, die mitdenkt. Jetzt entdecken!&quot;&gt;Software zur Personalabrechnung&lt;/a&gt; vervollständigt der Spezialist für Personalsoftware sein Komplettangebot für HR-Abteilungen. Ab sofort ist damit die HR-Suite Infoniqa ONE erhältlich. Für Personalabteilungen heißt das: Payroll-, &lt;a href=&quot;{softref:97486ac87c2001dbb2d394b5a8208f53}&quot; title=&quot;Zeitwirtschaft Software - endlich alles im Blick. Jetzt informieren!&quot;&gt;Zeitwirtschaft&lt;/a&gt;- und HCM-Software kommen aus einer Hand. So bildet das modulare &lt;a href=&quot;{softref:dcb33afb5f4e99e7be58e53167ffe9fc}&quot; title=&quot;Umfassende Personalsoftware für die zentrale Steuerung der HR-Aktivitäten. Jetzt informieren!&quot;&gt;Komplettsystem &lt;/a&gt;alle Prozesse ab, die in einer HR-Abteilung anfallen können.&lt;/p&gt;
+&lt;p&gt;Der Vorteil: Kunden können die benötigten Module flexibel auswählen und sich sowohl für die vollintegrierte Gesamtlösung als auch für Einzelmodule entscheiden. Der Leistungsumfang ist jederzeit bedarfsgerecht erweiterbar. Infoniqa ONE lässt sich so in bestehende Systemstrukturen einfügen und ermöglicht ein reibungsloses Zusammenspiel mit vorhandenen HR-Lösungen.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Infoniqa ONE inklusive des neuen windowsbasierten Payroll-Moduls wird der Fachöffentlichkeit erstmals am 24. und 25. April 2018 vorgestellt.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Darüber hinaus präsentieren die HR-Spezialisten in Stuttgart ihr neues Tool für die effiziente Personaleinsatzplanung. Besucher haben zudem die Chance auf ein Pre-view des mit Spannung erwarteten Infoniqa TIME WebClients zur Zeiterfassung. Zahlreiche neue Features der Infoniqa Personalsoftware sorgen für weitere Überraschungen.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Infoniqa auf der Zukunft Personal Süd in Stuttgart: Halle A, Stand D.21&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Pressemitteilung Infoniqa ONE&lt;/p&gt;</tokenizedContent>
+					</softrefs>
+				</field>
+				<field index="tags" type="array">
+					<type>db</type>
+					<relations index="itemArray" type="array">
+						<element index="0" type="array">
+							<id>58</id>
+							<table>tx_news_domain_model_tag</table>
+						</element>
+					</relations>
+				</field>
+			</related>
+		</tablerow>
+		<tablerow index="tx_news_domain_model_news:113" type="array">
+			<fieldlist index="data" type="array">
+				<field index="uid" type="integer">113</field>
+				<field index="pid" type="integer">153</field>
+				<field index="tstamp" type="integer">1668419199</field>
+				<field index="crdate" type="integer">1668418089</field>
+				<field index="cruser_id" type="integer">3</field>
+				<field index="t3ver_oid" type="integer">0</field>
+				<field index="t3ver_wsid" type="integer">0</field>
+				<field index="t3ver_state" type="integer">0</field>
+				<field index="t3ver_stage" type="integer">0</field>
+				<field index="t3_origuid" type="integer">0</field>
+				<field index="editlock" type="integer">0</field>
+				<field index="sys_language_uid" type="integer">-1</field>
+				<field index="l10n_parent" type="integer">0</field>
+				<field index="l10n_diffsource">{&quot;type&quot;:&quot;&quot;,&quot;istopnews&quot;:&quot;&quot;,&quot;title&quot;:&quot;&quot;,&quot;path_segment&quot;:&quot;&quot;,&quot;teaser&quot;:&quot;&quot;,&quot;datetime&quot;:&quot;&quot;,&quot;archive&quot;:&quot;&quot;,&quot;bodytext&quot;:&quot;&quot;,&quot;content_elements&quot;:&quot;&quot;,&quot;fal_media&quot;:&quot;&quot;,&quot;fal_related_files&quot;:&quot;&quot;,&quot;categories&quot;:&quot;&quot;,&quot;related&quot;:&quot;&quot;,&quot;related_links&quot;:&quot;&quot;,&quot;tags&quot;:&quot;&quot;,&quot;author&quot;:&quot;&quot;,&quot;author_email&quot;:&quot;&quot;,&quot;keywords&quot;:&quot;&quot;,&quot;description&quot;:&quot;&quot;,&quot;alternative_title&quot;:&quot;&quot;,&quot;sitemap_changefreq&quot;:&quot;&quot;,&quot;sitemap_priority&quot;:&quot;&quot;,&quot;sys_language_uid&quot;:&quot;&quot;,&quot;hidden&quot;:&quot;&quot;,&quot;starttime&quot;:&quot;&quot;,&quot;endtime&quot;:&quot;&quot;,&quot;fe_group&quot;:&quot;&quot;,&quot;editlock&quot;:&quot;&quot;,&quot;notes&quot;:&quot;&quot;}</field>
+				<field index="l10n_source" type="integer">0</field>
+				<field index="deleted" type="integer">0</field>
+				<field index="hidden" type="integer">0</field>
+				<field index="starttime" type="integer">0</field>
+				<field index="endtime" type="integer">0</field>
+				<field index="fe_group"></field>
+				<field index="notes"></field>
+				<field index="l10n_state" type="NULL"></field>
+				<field index="t3ver_id" type="integer">0</field>
+				<field index="t3ver_label"></field>
+				<field index="t3ver_count" type="integer">0</field>
+				<field index="t3ver_tstamp" type="integer">0</field>
+				<field index="t3ver_move_id" type="integer">0</field>
+				<field index="sorting" type="integer">0</field>
+				<field index="title">Infoniqa auf der Personal Süd</field>
+				<field index="teaser">Unter dem Motto „Focus on you“ präsentiert Infoniqa auf der Personal Süd das erweiterte Komplettangebot für Human Resources Management. </field>
+				<field index="bodytext">&lt;p&gt;&lt;strong&gt;Unter dem Motto „Focus on you“ präsentiert Infoniqa auf der Fachmesse Personal Süd (Halle 1, Stand C.18) das erweiterte Komplettangebot für Human Resources Management, Zeitwirtschaft und Payroll inklusive den dazugehörigen Outsourcing-Services. Infoniqa zählt zu den wenigen Anbietern am Markt, die Personalverantwortliche vollumfänglich in allen HR-Bereichen mit Beratung, Software und Services unterstützen können. „Ziel ist es, Personalabteilungen in ihrem Arbeitsalltag bestmöglich zu entlasten und ihnen als kompetenter Partner zur Seite zu stehen. Bei der Fachmesse Personal Süd präsentieren wir den Besuchern nicht nur unser Lösungsportfolio, sondern machen vor allem die Partnerschaft mit uns greifbar,“ erläutert Siegfried Milly, Vorstand der Infoniqa HR Gruppe.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Mit der konsequenten Erweiterung des Lösungs- und Dienstleistungsangebots ist Infoniqa einer der wenigen HR-Komplettanbieter, die vom &lt;a href=&quot;t3://page?uid=64&quot; title=&quot;Recruiting Software: erfolgreich Mitarbeiter finden! Mehr erfahren &amp;gt;&amp;gt;&quot;&gt;Recruiting neuer Mitarbeiter&lt;/a&gt; über die vollständige &lt;a href=&quot;t3://page?uid=17&quot; title=&quot;Umfassende Personalsoftware für die zentrale Steuerung der HR-Aktivitäten. Jetzt informieren!&quot;&gt;Personaladministration&lt;/a&gt; bis zum Austritt aus dem Unternehmen den gesamten Mitarbeiterlebenszyklus abdecken. Das Portfolio umfasst unter anderem bewährte Zeiterfassungssysteme, Payroll-Lösungen, HRM-Software und die dazugehörigen Outsourcing-Services. „Unser Fokus liegt ganz klar auf den Anwendern, mit denen wir uns konstant austauschen. Unser Ziel ist es, unsere Kunden so weit wie möglich zu unterstützen, damit sie sich ganz auf ihr Kerngeschäft konzentrieren können“, argumentiert Milly.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;HRM-Lösung mit neuen Tools&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Im Rahmen der Personal Süd zeigt Infoniqa die hauseigene HRM-Software, die den Anwendern ein benutzerfreundliches Werkzeug an die Hand gibt. Die funktionsreiche Lösung bildet alle HR-Aufgaben ab – von Bewerber- und Personalmanagement über &lt;a href=&quot;t3://page?uid=61&quot; title=&quot;Seminare erfolgreich verwalten mit minimalem Zeitaufwand.&quot;&gt;Seminarmanagement &lt;/a&gt;und &lt;a href=&quot;t3://page?uid=62&quot; title=&quot;E-Learning neu gedacht - mit Software-Unterstützung keine Potentiale übersehen.&quot;&gt;e-Learning&lt;/a&gt; bis zum &lt;a href=&quot;t3://page?uid=63&quot; title=&quot;Talentmanagement Software von Infoniqa - so halten sie wichtige Mitarbeiter im Unternehmen.&quot;&gt;Talentmanagement&lt;/a&gt;. Zu den neuesten Entwicklungen zählen responsive Elemente für den mobilen Bewerberprozess sowie der Ausbau des Self Service im Seminarmanagement-Modul, um Mitarbeiter noch stärker in die Geschäftsprozesse einzubinden und die Personalabteilungen so zusätzlich zu entlastet. Mit den neuen Funktionen können Mitarbeiter zum Beispiel Kursteilnahmen mittels Web-App auf Computer, Tablet oder Smartphone selbst verwalten. „Mit dem laufenden Feedback der Anwender entwickeln wir die Software beständig weiter, um sie noch genauer auf die Anforderungen im HR-Alltag zuschneiden zu können. Das schafft den größtmöglichen Nutzen für unsere Kunden“, so Milly.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Payroll-Outsourcing und Software-Hosting als Service-Trend&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Am Infoniqa-Stand können sich die Besucher auch über die aktuellen Lösungspakete zu &lt;a href=&quot;t3://page?uid=666&quot; title=&quot;Lohnabrechnung auslagern an die Lohn-Experten von Infoniqa - jetzt mehr erfahren &amp;gt;&amp;gt;&quot;&gt;Lohn-Outsourcing&lt;/a&gt; und &lt;a href=&quot;t3://page?uid=68&quot;&gt;Software-Hosting&lt;/a&gt; informieren. Dabei übernimmt Infoniqa die Lohnabrechnung komplett im Outsourcing-Betrieb oder installiert die Lohnanwendung im externen Rechenzentrum – Software-Updates und sämtliche Sicherheitsmaßnahmen gehören damit der Vergangenheit an. Kunden greifen online – und damit orts- und zeitunabhängig – auf ihre Daten und die Software zu. So reduziert sich der Aufwand für die Personalverantwortlichen, die sich verstärkt auf strategische und wertschöpfende Aufgaben konzentrieren können. „Die Nachfrage nach &lt;a href=&quot;t3://page?uid=399&quot; title=&quot;Lohnabrechnung auslagern an die Lohn-Experten von Infoniqa - jetzt mehr erfahren &amp;gt;&amp;gt;&quot;&gt;Lohn-Outsourcing&lt;/a&gt; nimmt massiv zu und bietet ein hohes Potenzial für weiteres Wachstum“, so Milly. Bisher haben rund 150 Unternehmen ihre gesamte Abrechnung an Infoniqa übergeben.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Eine ausführliche Beratung zum gesamten Portfolio bietet Infoniqa vom 09.-10. Mai 2017 auf der Personal Süd in der Halle 1 am Stand C.18.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Pressemeldung_Infoniqa auf der Personal Süd 2017 (PDF)&lt;/p&gt;</field>
+				<field index="datetime" type="integer">1525796940</field>
+				<field index="archive" type="integer">0</field>
+				<field index="author"></field>
+				<field index="author_email"></field>
+				<field index="categories" type="integer">0</field>
+				<field index="related" type="integer">0</field>
+				<field index="related_from" type="integer">0</field>
+				<field index="related_files" type="NULL"></field>
+				<field index="fal_related_files" type="integer">0</field>
+				<field index="related_links" type="integer">0</field>
+				<field index="type">0</field>
+				<field index="keywords"></field>
+				<field index="description"></field>
+				<field index="tags" type="integer">1</field>
+				<field index="media" type="NULL"></field>
+				<field index="fal_media" type="integer">0</field>
+				<field index="internalurl" type="NULL"></field>
+				<field index="externalurl" type="NULL"></field>
+				<field index="istopnews" type="integer">0</field>
+				<field index="content_elements" type="integer">0</field>
+				<field index="path_segment">infoniqa-auf-der-personal-sued</field>
+				<field index="alternative_title">Infoniqa auf der Personal Süd</field>
+				<field index="sitemap_changefreq"></field>
+				<field index="sitemap_priority">0.5</field>
+				<field index="import_id"></field>
+				<field index="import_source"></field>
+				<field index="news_author" type="integer">0</field>
+			</fieldlist>
+			<related index="rels" type="array">
+				<field index="bodytext" type="array">
+					<softrefs type="array">
+						<keys type="array">
+							<softref_key index="typolink_tag" type="array">
+								<softref_element index="1" type="array">
+									<matchString>&lt;a href=&quot;t3://page?uid=64&quot; title=&quot;Recruiting Software: erfolgreich Mitarbeiter finden! Mehr erfahren &amp;gt;&amp;gt;&quot;&gt;</matchString>
+									<subst type="array">
+										<type>db</type>
+										<recordRef>pages:64</recordRef>
+										<tokenID>c76061c5a16ff35c611192bc9119c1de</tokenID>
+										<tokenValue>64</tokenValue>
+									</subst>
+								</softref_element>
+								<softref_element index="3" type="array">
+									<matchString>&lt;a href=&quot;t3://page?uid=17&quot; title=&quot;Umfassende Personalsoftware für die zentrale Steuerung der HR-Aktivitäten. Jetzt informieren!&quot;&gt;</matchString>
+									<subst type="array">
+										<type>db</type>
+										<recordRef>pages:17</recordRef>
+										<tokenID>438825875620dac478e2c086019e798c</tokenID>
+										<tokenValue>17</tokenValue>
+									</subst>
+								</softref_element>
+								<softref_element index="5" type="array">
+									<matchString>&lt;a href=&quot;t3://page?uid=61&quot; title=&quot;Seminare erfolgreich verwalten mit minimalem Zeitaufwand.&quot;&gt;</matchString>
+									<subst type="array">
+										<type>db</type>
+										<recordRef>pages:61</recordRef>
+										<tokenID>bcdb908f38fc5371008e45cd973d4a5e</tokenID>
+										<tokenValue>61</tokenValue>
+									</subst>
+								</softref_element>
+								<softref_element index="7" type="array">
+									<matchString>&lt;a href=&quot;t3://page?uid=62&quot; title=&quot;E-Learning neu gedacht - mit Software-Unterstützung keine Potentiale übersehen.&quot;&gt;</matchString>
+									<subst type="array">
+										<type>db</type>
+										<recordRef>pages:62</recordRef>
+										<tokenID>21ea0efa61085d116d107dd90ac55e0b</tokenID>
+										<tokenValue>62</tokenValue>
+									</subst>
+								</softref_element>
+								<softref_element index="9" type="array">
+									<matchString>&lt;a href=&quot;t3://page?uid=63&quot; title=&quot;Talentmanagement Software von Infoniqa - so halten sie wichtige Mitarbeiter im Unternehmen.&quot;&gt;</matchString>
+									<subst type="array">
+										<type>db</type>
+										<recordRef>pages:63</recordRef>
+										<tokenID>2484a56962edbd5bcad335069b8130bf</tokenID>
+										<tokenValue>63</tokenValue>
+									</subst>
+								</softref_element>
+								<softref_element index="11" type="array">
+									<matchString>&lt;a href=&quot;t3://page?uid=666&quot; title=&quot;Lohnabrechnung auslagern an die Lohn-Experten von Infoniqa - jetzt mehr erfahren &amp;gt;&amp;gt;&quot;&gt;</matchString>
+									<subst type="array">
+										<type>db</type>
+										<recordRef>pages:666</recordRef>
+										<tokenID>4a8c04c91693efce863d2b5c42c1b073</tokenID>
+										<tokenValue>666</tokenValue>
+									</subst>
+								</softref_element>
+								<softref_element index="13" type="array">
+									<matchString>&lt;a href=&quot;t3://page?uid=68&quot;&gt;</matchString>
+									<subst type="array">
+										<type>db</type>
+										<recordRef>pages:68</recordRef>
+										<tokenID>78e07bb71627d740319ce0d4823552bd</tokenID>
+										<tokenValue>68</tokenValue>
+									</subst>
+								</softref_element>
+								<softref_element index="15" type="array">
+									<matchString>&lt;a href=&quot;t3://page?uid=399&quot; title=&quot;Lohnabrechnung auslagern an die Lohn-Experten von Infoniqa - jetzt mehr erfahren &amp;gt;&amp;gt;&quot;&gt;</matchString>
+									<subst type="array">
+										<type>db</type>
+										<recordRef>pages:399</recordRef>
+										<tokenID>086ed1920c592b846cec4e9b6e183a49</tokenID>
+										<tokenValue>399</tokenValue>
+									</subst>
+								</softref_element>
+							</softref_key>
+						</keys>
+						<tokenizedContent>&lt;p&gt;&lt;strong&gt;Unter dem Motto „Focus on you“ präsentiert Infoniqa auf der Fachmesse Personal Süd (Halle 1, Stand C.18) das erweiterte Komplettangebot für Human Resources Management, Zeitwirtschaft und Payroll inklusive den dazugehörigen Outsourcing-Services. Infoniqa zählt zu den wenigen Anbietern am Markt, die Personalverantwortliche vollumfänglich in allen HR-Bereichen mit Beratung, Software und Services unterstützen können. „Ziel ist es, Personalabteilungen in ihrem Arbeitsalltag bestmöglich zu entlasten und ihnen als kompetenter Partner zur Seite zu stehen. Bei der Fachmesse Personal Süd präsentieren wir den Besuchern nicht nur unser Lösungsportfolio, sondern machen vor allem die Partnerschaft mit uns greifbar,“ erläutert Siegfried Milly, Vorstand der Infoniqa HR Gruppe.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Mit der konsequenten Erweiterung des Lösungs- und Dienstleistungsangebots ist Infoniqa einer der wenigen HR-Komplettanbieter, die vom &lt;a href=&quot;{softref:c76061c5a16ff35c611192bc9119c1de}&quot; title=&quot;Recruiting Software: erfolgreich Mitarbeiter finden! Mehr erfahren &amp;gt;&amp;gt;&quot;&gt;Recruiting neuer Mitarbeiter&lt;/a&gt; über die vollständige &lt;a href=&quot;{softref:438825875620dac478e2c086019e798c}&quot; title=&quot;Umfassende Personalsoftware für die zentrale Steuerung der HR-Aktivitäten. Jetzt informieren!&quot;&gt;Personaladministration&lt;/a&gt; bis zum Austritt aus dem Unternehmen den gesamten Mitarbeiterlebenszyklus abdecken. Das Portfolio umfasst unter anderem bewährte Zeiterfassungssysteme, Payroll-Lösungen, HRM-Software und die dazugehörigen Outsourcing-Services. „Unser Fokus liegt ganz klar auf den Anwendern, mit denen wir uns konstant austauschen. Unser Ziel ist es, unsere Kunden so weit wie möglich zu unterstützen, damit sie sich ganz auf ihr Kerngeschäft konzentrieren können“, argumentiert Milly.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;HRM-Lösung mit neuen Tools&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Im Rahmen der Personal Süd zeigt Infoniqa die hauseigene HRM-Software, die den Anwendern ein benutzerfreundliches Werkzeug an die Hand gibt. Die funktionsreiche Lösung bildet alle HR-Aufgaben ab – von Bewerber- und Personalmanagement über &lt;a href=&quot;{softref:bcdb908f38fc5371008e45cd973d4a5e}&quot; title=&quot;Seminare erfolgreich verwalten mit minimalem Zeitaufwand.&quot;&gt;Seminarmanagement &lt;/a&gt;und &lt;a href=&quot;{softref:21ea0efa61085d116d107dd90ac55e0b}&quot; title=&quot;E-Learning neu gedacht - mit Software-Unterstützung keine Potentiale übersehen.&quot;&gt;e-Learning&lt;/a&gt; bis zum &lt;a href=&quot;{softref:2484a56962edbd5bcad335069b8130bf}&quot; title=&quot;Talentmanagement Software von Infoniqa - so halten sie wichtige Mitarbeiter im Unternehmen.&quot;&gt;Talentmanagement&lt;/a&gt;. Zu den neuesten Entwicklungen zählen responsive Elemente für den mobilen Bewerberprozess sowie der Ausbau des Self Service im Seminarmanagement-Modul, um Mitarbeiter noch stärker in die Geschäftsprozesse einzubinden und die Personalabteilungen so zusätzlich zu entlastet. Mit den neuen Funktionen können Mitarbeiter zum Beispiel Kursteilnahmen mittels Web-App auf Computer, Tablet oder Smartphone selbst verwalten. „Mit dem laufenden Feedback der Anwender entwickeln wir die Software beständig weiter, um sie noch genauer auf die Anforderungen im HR-Alltag zuschneiden zu können. Das schafft den größtmöglichen Nutzen für unsere Kunden“, so Milly.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Payroll-Outsourcing und Software-Hosting als Service-Trend&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Am Infoniqa-Stand können sich die Besucher auch über die aktuellen Lösungspakete zu &lt;a href=&quot;{softref:4a8c04c91693efce863d2b5c42c1b073}&quot; title=&quot;Lohnabrechnung auslagern an die Lohn-Experten von Infoniqa - jetzt mehr erfahren &amp;gt;&amp;gt;&quot;&gt;Lohn-Outsourcing&lt;/a&gt; und &lt;a href=&quot;{softref:78e07bb71627d740319ce0d4823552bd}&quot;&gt;Software-Hosting&lt;/a&gt; informieren. Dabei übernimmt Infoniqa die Lohnabrechnung komplett im Outsourcing-Betrieb oder installiert die Lohnanwendung im externen Rechenzentrum – Software-Updates und sämtliche Sicherheitsmaßnahmen gehören damit der Vergangenheit an. Kunden greifen online – und damit orts- und zeitunabhängig – auf ihre Daten und die Software zu. So reduziert sich der Aufwand für die Personalverantwortlichen, die sich verstärkt auf strategische und wertschöpfende Aufgaben konzentrieren können. „Die Nachfrage nach &lt;a href=&quot;{softref:086ed1920c592b846cec4e9b6e183a49}&quot; title=&quot;Lohnabrechnung auslagern an die Lohn-Experten von Infoniqa - jetzt mehr erfahren &amp;gt;&amp;gt;&quot;&gt;Lohn-Outsourcing&lt;/a&gt; nimmt massiv zu und bietet ein hohes Potenzial für weiteres Wachstum“, so Milly. Bisher haben rund 150 Unternehmen ihre gesamte Abrechnung an Infoniqa übergeben.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Eine ausführliche Beratung zum gesamten Portfolio bietet Infoniqa vom 09.-10. Mai 2017 auf der Personal Süd in der Halle 1 am Stand C.18.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Pressemeldung_Infoniqa auf der Personal Süd 2017 (PDF)&lt;/p&gt;</tokenizedContent>
+					</softrefs>
+				</field>
+				<field index="tags" type="array">
+					<type>db</type>
+					<relations index="itemArray" type="array">
+						<element index="0" type="array">
+							<id>58</id>
+							<table>tx_news_domain_model_tag</table>
+						</element>
+					</relations>
+				</field>
+			</related>
+		</tablerow>
+		<tablerow index="tx_news_domain_model_news:114" type="array">
+			<fieldlist index="data" type="array">
+				<field index="uid" type="integer">114</field>
+				<field index="pid" type="integer">153</field>
+				<field index="tstamp" type="integer">1668419231</field>
+				<field index="crdate" type="integer">1668418147</field>
+				<field index="cruser_id" type="integer">3</field>
+				<field index="t3ver_oid" type="integer">0</field>
+				<field index="t3ver_wsid" type="integer">0</field>
+				<field index="t3ver_state" type="integer">0</field>
+				<field index="t3ver_stage" type="integer">0</field>
+				<field index="t3_origuid" type="integer">0</field>
+				<field index="editlock" type="integer">0</field>
+				<field index="sys_language_uid" type="integer">-1</field>
+				<field index="l10n_parent" type="integer">0</field>
+				<field index="l10n_diffsource">{&quot;type&quot;:&quot;&quot;,&quot;istopnews&quot;:&quot;&quot;,&quot;title&quot;:&quot;&quot;,&quot;path_segment&quot;:&quot;&quot;,&quot;teaser&quot;:&quot;&quot;,&quot;datetime&quot;:&quot;&quot;,&quot;archive&quot;:&quot;&quot;,&quot;bodytext&quot;:&quot;&quot;,&quot;content_elements&quot;:&quot;&quot;,&quot;fal_media&quot;:&quot;&quot;,&quot;fal_related_files&quot;:&quot;&quot;,&quot;categories&quot;:&quot;&quot;,&quot;related&quot;:&quot;&quot;,&quot;related_links&quot;:&quot;&quot;,&quot;tags&quot;:&quot;&quot;,&quot;author&quot;:&quot;&quot;,&quot;author_email&quot;:&quot;&quot;,&quot;keywords&quot;:&quot;&quot;,&quot;description&quot;:&quot;&quot;,&quot;alternative_title&quot;:&quot;&quot;,&quot;sitemap_changefreq&quot;:&quot;&quot;,&quot;sitemap_priority&quot;:&quot;&quot;,&quot;sys_language_uid&quot;:&quot;&quot;,&quot;hidden&quot;:&quot;&quot;,&quot;starttime&quot;:&quot;&quot;,&quot;endtime&quot;:&quot;&quot;,&quot;fe_group&quot;:&quot;&quot;,&quot;editlock&quot;:&quot;&quot;,&quot;notes&quot;:&quot;&quot;}</field>
+				<field index="l10n_source" type="integer">0</field>
+				<field index="deleted" type="integer">0</field>
+				<field index="hidden" type="integer">0</field>
+				<field index="starttime" type="integer">0</field>
+				<field index="endtime" type="integer">0</field>
+				<field index="fe_group"></field>
+				<field index="notes"></field>
+				<field index="l10n_state" type="NULL"></field>
+				<field index="t3ver_id" type="integer">0</field>
+				<field index="t3ver_label"></field>
+				<field index="t3ver_count" type="integer">0</field>
+				<field index="t3ver_tstamp" type="integer">0</field>
+				<field index="t3ver_move_id" type="integer">0</field>
+				<field index="sorting" type="integer">0</field>
+				<field index="title">Infoniqa investiert in Schweizer Portfolio</field>
+				<field index="teaser">Infoniqa investiert in die Weiterentwicklung des neu erworbenen Portfolios und setzt für die bei KMU sowie bei Steuerberatern und Wirtschaftsprüfern eingesetzten Produkte Sage 50 Extra und Sage 200 Extra erste Akzente mit Neuerungen und Basisarbeiten.</field>
+				<field index="bodytext">&lt;p&gt;&lt;strong&gt;Infoniqa (&lt;/strong&gt;&lt;a href=&quot;http://www.infoniqa.com&quot;&gt;&lt;strong&gt;www.infoniqa.com&lt;/strong&gt;&lt;/a&gt;&lt;strong&gt;) investiert in die Weiterentwicklung des neu erworbenen Portfolios. Das Unternehmen setzt für die bei KMU sowie bei Steuerberatern und Wirtschaftsprüfern eingesetzten Produkte Sage 50 Extra und Sage 200 Extra erste Akzente mit Neuerungen und Basisarbeiten auf dem Weg zum vollintegrierten Anbieter cloudbasierter Business-Software und -Services. &lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Wie bei der Übernahme des Schweizer Geschäfts von Sage am 1. Dezember 2021 angekündigt, investiert Infoniqa aktiv in die Weiterentwicklung der lokalen Software-Produkte und Dienstleistungen. Für die neuen Versionen der Schweizer Produkte Sage 50 Extra und Sage 200 Extra werden eine Reihe neuer Funktionen und Basisarbeiten realisiert. Der Markenauftritt wird schrittweise angepasst.&lt;/p&gt;
+&lt;p&gt;„Mit den Investitionen erweitern wir langfristig die Möglichkeiten unserer Kunden, ihr Unternehmen noch schlanker und einfacher zu führen. Wir ebnen jetzt den Weg für innovative Weiterentwicklungen, die mehr Transparenz, mehr Automatisierung und weniger Administration bedeuten“, sagt Thomas Hersche, Geschäftsführer der Infoniqa Switzerland Software and Services AG.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Erster Schritt zur HCM-Integration&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Infoniqa hat für Sage 200 Extra und Infoniqa ONE HCM eine erste Integration entwickelt. Diese macht Personalstammdaten, Personalabrechnungen und Lohnsteuerbescheinigungen aus Sage 200 Extra in Infoniqa ONE HCM verfügbar. Weitere Ausbauschritte hin zu einer vollwertigen Integration werden zusammen mit Pilotkunden entwickelt und kommen in den nächsten Updates. Infoniqa ONE HCM ist eine modulare, cloudbasierte Lösung für Human Capital Management (HCM), die Unternehmen eine 360°-Sicht auf die Belegschaft ermöglicht und alle Bereiche der Personalarbeit vom Recruiting bis zum E-Learning digitalisiert.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Neue Funktionen und Weiterentwicklungen für Schweizer Infoniqa-Produkte&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Bei Sage 50 Extra werden neue Webservices für das Rechnungswesen lanciert, um sämtliche Finanzdaten mit Drittlösungen, mobilen Apps und Webapplikationen bidirektional austauschen zu können. Diese Neuerung bildet die Basis für weitere Ausbauschritte zusammen mit Run my Accounts für Steuerberater und Wirtschaftsprüfer.&lt;/p&gt;
+&lt;p&gt;Eine neue Funktion für Sage 200 Extra erleichtert künftig die Spesenerfassung und die Auszahlung der Spesen direkt via Kreditorenbuchhaltung. Bereits in Arbeit ist eine mobile Spesen-App, die voraussichtlich im Februar verfügbar sein soll.&lt;br /&gt; Für Sage 50 Extra Kunden steht diese Erweiterung ebenfalls für 2022 auf der Roadmap.&lt;/p&gt;
+&lt;p&gt;Für Sage 200 Extra wird außerdem ein Standard-Finanz-Modell mit eigenen Tabellen und Scripts für eine Anbindung an Microsoft Power BI ausgeliefert – eine entsprechende Lizenz vorausgesetzt. So lassen sich eigene Finanzreports auf Basis der Unternehmensdaten erstellen oder mit wenigen Klicks erste vordefinierte Finanz- und Kostenstellen-Reports generieren.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Rebranding bisheriger Sage-Lösungen&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Mit dem abgeschlossenen Kauf startete eine Übergangsphase für den neuen Markenauftritt von Sage zu Infoniqa. Dieser Übergang wird Ende April 2022 komplett vollzogen sein.&lt;/p&gt;
+&lt;p&gt;Die Lösungen werden neu gebrandet: Sage Start wird zu Infoniqa ONE Start, Sage 50 Extra zu Infoniqa ONE 50 und Sage 200 Extra zu Infoniqa ONE 200 werden.&lt;/p&gt;
+&lt;p&gt;Pressemitteilung als PDF herunterladen &amp;gt;&amp;gt;&lt;/p&gt;</field>
+				<field index="datetime" type="integer">1641979800</field>
+				<field index="archive" type="integer">0</field>
+				<field index="author"></field>
+				<field index="author_email"></field>
+				<field index="categories" type="integer">0</field>
+				<field index="related" type="integer">0</field>
+				<field index="related_from" type="integer">0</field>
+				<field index="related_files" type="NULL"></field>
+				<field index="fal_related_files" type="integer">0</field>
+				<field index="related_links" type="integer">0</field>
+				<field index="type">0</field>
+				<field index="keywords"></field>
+				<field index="description">Infoniqa setzt erste Akzente mit Neuerungen und Basisarbeiten im neu erworbenen Schweizer Portfolio um. Jetzt mehr lesen &gt;&gt;</field>
+				<field index="tags" type="integer">1</field>
+				<field index="media" type="NULL"></field>
+				<field index="fal_media" type="integer">0</field>
+				<field index="internalurl" type="NULL"></field>
+				<field index="externalurl" type="NULL"></field>
+				<field index="istopnews" type="integer">0</field>
+				<field index="content_elements" type="integer">0</field>
+				<field index="path_segment">infoniqa-investiert-in-schweizer-portfolio</field>
+				<field index="alternative_title">Infoniqa investiert in Schweizer Portfolio</field>
+				<field index="sitemap_changefreq"></field>
+				<field index="sitemap_priority">0.5</field>
+				<field index="import_id"></field>
+				<field index="import_source"></field>
+				<field index="news_author" type="integer">0</field>
+			</fieldlist>
+			<related index="rels" type="array">
+				<field index="bodytext" type="array">
+					<softrefs type="array">
+						<keys type="array">
+							<softref_key index="typolink_tag" type="array">
+								<softref_element index="1" type="array">
+									<matchString>&lt;a href=&quot;http://www.infoniqa.com&quot;&gt;</matchString>
+									<subst type="array">
+										<type>external</type>
+										<tokenID>30a707bf304cdcf8a427d907f41fc7e0</tokenID>
+										<tokenValue>http://www.infoniqa.com</tokenValue>
+									</subst>
+								</softref_element>
+							</softref_key>
+						</keys>
+						<tokenizedContent>&lt;p&gt;&lt;strong&gt;Infoniqa (&lt;/strong&gt;&lt;a href=&quot;{softref:30a707bf304cdcf8a427d907f41fc7e0}&quot;&gt;&lt;strong&gt;www.infoniqa.com&lt;/strong&gt;&lt;/a&gt;&lt;strong&gt;) investiert in die Weiterentwicklung des neu erworbenen Portfolios. Das Unternehmen setzt für die bei KMU sowie bei Steuerberatern und Wirtschaftsprüfern eingesetzten Produkte Sage 50 Extra und Sage 200 Extra erste Akzente mit Neuerungen und Basisarbeiten auf dem Weg zum vollintegrierten Anbieter cloudbasierter Business-Software und -Services. &lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Wie bei der Übernahme des Schweizer Geschäfts von Sage am 1. Dezember 2021 angekündigt, investiert Infoniqa aktiv in die Weiterentwicklung der lokalen Software-Produkte und Dienstleistungen. Für die neuen Versionen der Schweizer Produkte Sage 50 Extra und Sage 200 Extra werden eine Reihe neuer Funktionen und Basisarbeiten realisiert. Der Markenauftritt wird schrittweise angepasst.&lt;/p&gt;
+&lt;p&gt;„Mit den Investitionen erweitern wir langfristig die Möglichkeiten unserer Kunden, ihr Unternehmen noch schlanker und einfacher zu führen. Wir ebnen jetzt den Weg für innovative Weiterentwicklungen, die mehr Transparenz, mehr Automatisierung und weniger Administration bedeuten“, sagt Thomas Hersche, Geschäftsführer der Infoniqa Switzerland Software and Services AG.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Erster Schritt zur HCM-Integration&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Infoniqa hat für Sage 200 Extra und Infoniqa ONE HCM eine erste Integration entwickelt. Diese macht Personalstammdaten, Personalabrechnungen und Lohnsteuerbescheinigungen aus Sage 200 Extra in Infoniqa ONE HCM verfügbar. Weitere Ausbauschritte hin zu einer vollwertigen Integration werden zusammen mit Pilotkunden entwickelt und kommen in den nächsten Updates. Infoniqa ONE HCM ist eine modulare, cloudbasierte Lösung für Human Capital Management (HCM), die Unternehmen eine 360°-Sicht auf die Belegschaft ermöglicht und alle Bereiche der Personalarbeit vom Recruiting bis zum E-Learning digitalisiert.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Neue Funktionen und Weiterentwicklungen für Schweizer Infoniqa-Produkte&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Bei Sage 50 Extra werden neue Webservices für das Rechnungswesen lanciert, um sämtliche Finanzdaten mit Drittlösungen, mobilen Apps und Webapplikationen bidirektional austauschen zu können. Diese Neuerung bildet die Basis für weitere Ausbauschritte zusammen mit Run my Accounts für Steuerberater und Wirtschaftsprüfer.&lt;/p&gt;
+&lt;p&gt;Eine neue Funktion für Sage 200 Extra erleichtert künftig die Spesenerfassung und die Auszahlung der Spesen direkt via Kreditorenbuchhaltung. Bereits in Arbeit ist eine mobile Spesen-App, die voraussichtlich im Februar verfügbar sein soll.&lt;br /&gt; Für Sage 50 Extra Kunden steht diese Erweiterung ebenfalls für 2022 auf der Roadmap.&lt;/p&gt;
+&lt;p&gt;Für Sage 200 Extra wird außerdem ein Standard-Finanz-Modell mit eigenen Tabellen und Scripts für eine Anbindung an Microsoft Power BI ausgeliefert – eine entsprechende Lizenz vorausgesetzt. So lassen sich eigene Finanzreports auf Basis der Unternehmensdaten erstellen oder mit wenigen Klicks erste vordefinierte Finanz- und Kostenstellen-Reports generieren.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Rebranding bisheriger Sage-Lösungen&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Mit dem abgeschlossenen Kauf startete eine Übergangsphase für den neuen Markenauftritt von Sage zu Infoniqa. Dieser Übergang wird Ende April 2022 komplett vollzogen sein.&lt;/p&gt;
+&lt;p&gt;Die Lösungen werden neu gebrandet: Sage Start wird zu Infoniqa ONE Start, Sage 50 Extra zu Infoniqa ONE 50 und Sage 200 Extra zu Infoniqa ONE 200 werden.&lt;/p&gt;
+&lt;p&gt;Pressemitteilung als PDF herunterladen &amp;gt;&amp;gt;&lt;/p&gt;</tokenizedContent>
+					</softrefs>
+				</field>
+				<field index="tags" type="array">
+					<type>db</type>
+					<relations index="itemArray" type="array">
+						<element index="0" type="array">
+							<id>58</id>
+							<table>tx_news_domain_model_tag</table>
+						</element>
+					</relations>
+				</field>
+			</related>
+		</tablerow>
+		<tablerow index="tx_news_domain_model_news:115" type="array">
+			<fieldlist index="data" type="array">
+				<field index="uid" type="integer">115</field>
+				<field index="pid" type="integer">153</field>
+				<field index="tstamp" type="integer">1668419226</field>
+				<field index="crdate" type="integer">1668418188</field>
+				<field index="cruser_id" type="integer">3</field>
+				<field index="t3ver_oid" type="integer">0</field>
+				<field index="t3ver_wsid" type="integer">0</field>
+				<field index="t3ver_state" type="integer">0</field>
+				<field index="t3ver_stage" type="integer">0</field>
+				<field index="t3_origuid" type="integer">0</field>
+				<field index="editlock" type="integer">0</field>
+				<field index="sys_language_uid" type="integer">-1</field>
+				<field index="l10n_parent" type="integer">0</field>
+				<field index="l10n_diffsource">{&quot;type&quot;:&quot;&quot;,&quot;istopnews&quot;:&quot;&quot;,&quot;title&quot;:&quot;&quot;,&quot;path_segment&quot;:&quot;&quot;,&quot;teaser&quot;:&quot;&quot;,&quot;datetime&quot;:&quot;&quot;,&quot;archive&quot;:&quot;&quot;,&quot;bodytext&quot;:&quot;&quot;,&quot;content_elements&quot;:&quot;&quot;,&quot;fal_media&quot;:&quot;&quot;,&quot;fal_related_files&quot;:&quot;&quot;,&quot;categories&quot;:&quot;&quot;,&quot;related&quot;:&quot;&quot;,&quot;related_links&quot;:&quot;&quot;,&quot;tags&quot;:&quot;&quot;,&quot;author&quot;:&quot;&quot;,&quot;author_email&quot;:&quot;&quot;,&quot;keywords&quot;:&quot;&quot;,&quot;description&quot;:&quot;&quot;,&quot;alternative_title&quot;:&quot;&quot;,&quot;sitemap_changefreq&quot;:&quot;&quot;,&quot;sitemap_priority&quot;:&quot;&quot;,&quot;sys_language_uid&quot;:&quot;&quot;,&quot;hidden&quot;:&quot;&quot;,&quot;starttime&quot;:&quot;&quot;,&quot;endtime&quot;:&quot;&quot;,&quot;fe_group&quot;:&quot;&quot;,&quot;editlock&quot;:&quot;&quot;,&quot;notes&quot;:&quot;&quot;}</field>
+				<field index="l10n_source" type="integer">0</field>
+				<field index="deleted" type="integer">0</field>
+				<field index="hidden" type="integer">0</field>
+				<field index="starttime" type="integer">0</field>
+				<field index="endtime" type="integer">0</field>
+				<field index="fe_group"></field>
+				<field index="notes"></field>
+				<field index="l10n_state" type="NULL"></field>
+				<field index="t3ver_id" type="integer">0</field>
+				<field index="t3ver_label"></field>
+				<field index="t3ver_count" type="integer">0</field>
+				<field index="t3ver_tstamp" type="integer">0</field>
+				<field index="t3ver_move_id" type="integer">0</field>
+				<field index="sorting" type="integer">0</field>
+				<field index="title">Infoniqa baut mit Run my Accounts-Kauf Produktportfolio in Richtung volldigitale Buchhaltung aus</field>
+				<field index="teaser">Infoniqa übernimmt den Schweizer Online-Buchhaltungs-Anbieter Run my Accounts und komplettiert so das Portfolio auf dem Weg zum vollintegrierten Anbieter für Business-Software und -Services.</field>
+				<field index="bodytext">&lt;p&gt;Zum 1. Dezember 2021 übernimmt Infoniqa, Anbieter von HCM-Software und Payroll-Services, 100 Prozent der in der Schweiz und in Deutschland tätigen Run my Accounts AG. Durch den Zukauf ergänzt Infoniqa das Gesamtportfolio um eine Accounting-Plattform mit zugehörigen Outsourcing-Dienstleistungen für Steuerberater und Wirtschaftsprüfer.&lt;/p&gt;
+&lt;p&gt;Nach dem im Frühjahr 2021 angekündigten Kauf der Sage Schweiz AG ist die heutige Akquisition von Run my Accounts ein weiterer Meilenstein für Infoniqa auf dem Weg zum vollintegrierten Anbieter cloudbasierter Business-Software und -Services.&lt;/p&gt;
+&lt;p&gt;Mit den Übernahmen baut Infoniqa auch die Präsenz in der Schweiz weiter aus. Insbesondere Steuerberater, Wirtschaftsprüfer sowie kleine und mittelständische Unternehmen profitieren von einem breiteren Angebot und der Investition in das bestehende Portfolio sowie in den Kundenservice. Die Tools und Dienstleistungen von Run my Accounts bilden dabei mit dem neu erworbenen Produktportfolio in der Schweiz starke Synergien.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Entwicklung neuer Produkte und Dienstleistungen&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Als vollständig digitaler Online-Buchhaltungs-Dienstleister nimmt Run my Accounts eine Pole-Position rund um die Digitalisierung und Automatisierung administrativer Business-Prozesse ein. Zusammen mit Infoniqa wird Run my Accounts weitere digitale Produkte und Dienstleistungen anbieten, welche speziell für Steuerberater und Wirtschaftsprüfer ein effizienteres Kerngeschäft und für Endkunden eine Buchhaltung in der Cloud ermöglichen.&lt;/p&gt;
+&lt;p&gt;Léon Vergnes, CEO von Infoniqa: &quot;Run my Accounts hat uns besonders mit dem digitalen Service-Ansatz überzeugt. Mit der innovativen Plattform wird die Buchhaltung stark automatisiert und weitere Services im Hintergrund reduzieren den Aufwand rund um Rechnungen und Steuern auf ein Minimum. Gemeinsam machen wir Buchhaltung so einfach wie Online-Shopping. Das ist ein entscheidender Benefit, der auch über Ländergrenzen hinaus explizit für Steuerberater und Wirtschaftsprüfer sowie deren Kunden relevant ist.&quot;&lt;/p&gt;
+&lt;p&gt;Infoniqa wird alle Lösungen und Services von Run my Accounts übernehmen, weiterführen und aktiv weiterentwickeln.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Synergien aus dem Kauf der Sage Schweiz AG&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Im April 2021 gab Infoniqa bekannt, dass sie das Schweizer Geschäft der Sage Gruppe mit den lokalen Produkten übernimmt.&lt;/p&gt;
+&lt;p&gt;Nach dem finalen Abschluss des Kaufs am 30. November 2021 wird Infoniqa zu einem gewichtigen Marktteilnehmer rund um ERP-Lösungen sowie HR- und Finanzmanagement-Software in der Schweiz. Besonders vielversprechend erachtet Léon Vergnes die Synergien zwischen den beiden Zukäufen: &quot;Die Technologien, Tools und Dienstleistungen von Run my Accounts ergänzen unser neu erworbenes Produkt-Portfolio in der Schweiz optimal. Gemeinsam können wir künftig die Produktivität unserer Partner und Treuhänder auf ein völlig neues Level heben.&quot;&lt;/p&gt;
+&lt;p&gt;Die Integration von Run my Accounts wird es Sage 50 Extra-Treuhändern ermöglichen, ihren KMU-Kunden cloudbasierte Dienste und ERP-Tools anzubieten. Dies erhöht die Effizienz und den Qualitätsstandard sowohl für Steuerberater und Wirtschaftsprüfer als auch für Endkunden.&lt;/p&gt;
+&lt;p&gt;Thomas Hersche wird die Sage Schweiz AG unter dem neuen Namen “Infoniqa Switzerland Software and Services AG” weiterhin als Geschäftsführer leiten: &quot;Ich freue mich außerordentlich, dass das gesamte Team ein Teil der Infoniqa Familie wird und wir unser Angebot weiterhin anbieten sowie mit neuer Stärke weiterentwickeln und erweitern können.&quot;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;„Run my Accounts“-Gründer bleibt mit an Bord&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Auch „Run my Accounts“-Gründer Thomas Brändle bleibt seiner Position treu und wird Run my Accounts nach wie vor als Geschäftsführer leiten. Thomas Brändle zur Transaktion: &quot;Durch die Zusammenarbeit mit Infoniqa können wir die Vertriebskanäle unserer Produkte und Dienstleistungen massiv erweitern und künftig gemeinsam noch schneller wachsen. Wir erhalten die Möglichkeit, mit Infoniqa unsere Vision einer volldigitalen Buchhaltung umzusetzen.&quot;&lt;/p&gt;
+&lt;p&gt;Mit der Übernahme von Run my Accounts und Sage Schweiz AG wächst Infoniqa auf eine Unternehmensgruppe mit 510 Mitarbeitenden an 15 Standorten in Deutschland, Österreich und der Schweiz.&lt;/p&gt;
+&lt;p class=&quot;Paragraph SCXW211178845 BCX2&quot;&gt;Hier geht es zur vollständigen Pressemeldung &amp;gt;&amp;gt;&lt;/p&gt;</field>
+				<field index="datetime" type="integer">1638199800</field>
+				<field index="archive" type="integer">0</field>
+				<field index="author"></field>
+				<field index="author_email"></field>
+				<field index="categories" type="integer">0</field>
+				<field index="related" type="integer">0</field>
+				<field index="related_from" type="integer">0</field>
+				<field index="related_files" type="NULL"></field>
+				<field index="fal_related_files" type="integer">0</field>
+				<field index="related_links" type="integer">0</field>
+				<field index="type">0</field>
+				<field index="keywords"></field>
+				<field index="description">Infoniqa übernimmt den Schweizer Online-Buchhaltungs-Anbieter Run my Accounts. So wird das starke Wachstum fortgeführt. Jetzt mehr lesen &gt;&gt;</field>
+				<field index="tags" type="integer">1</field>
+				<field index="media" type="NULL"></field>
+				<field index="fal_media" type="integer">0</field>
+				<field index="internalurl" type="NULL"></field>
+				<field index="externalurl" type="NULL"></field>
+				<field index="istopnews" type="integer">0</field>
+				<field index="content_elements" type="integer">0</field>
+				<field index="path_segment">uebernahme-run-my-accounts</field>
+				<field index="alternative_title">Infoniqa kauft Run my Accounts</field>
+				<field index="sitemap_changefreq"></field>
+				<field index="sitemap_priority">0.5</field>
+				<field index="import_id"></field>
+				<field index="import_source"></field>
+				<field index="news_author" type="integer">0</field>
+			</fieldlist>
+			<related index="rels" type="array">
+				<field index="tags" type="array">
+					<type>db</type>
+					<relations index="itemArray" type="array">
+						<element index="0" type="array">
+							<id>58</id>
+							<table>tx_news_domain_model_tag</table>
+						</element>
+					</relations>
+				</field>
+			</related>
+		</tablerow>
+		<tablerow index="tx_news_domain_model_news:116" type="array">
+			<fieldlist index="data" type="array">
+				<field index="uid" type="integer">116</field>
+				<field index="pid" type="integer">153</field>
+				<field index="tstamp" type="integer">1668419223</field>
+				<field index="crdate" type="integer">1668418314</field>
+				<field index="cruser_id" type="integer">3</field>
+				<field index="t3ver_oid" type="integer">0</field>
+				<field index="t3ver_wsid" type="integer">0</field>
+				<field index="t3ver_state" type="integer">0</field>
+				<field index="t3ver_stage" type="integer">0</field>
+				<field index="t3_origuid" type="integer">0</field>
+				<field index="editlock" type="integer">0</field>
+				<field index="sys_language_uid" type="integer">-1</field>
+				<field index="l10n_parent" type="integer">0</field>
+				<field index="l10n_diffsource">{&quot;type&quot;:&quot;&quot;,&quot;istopnews&quot;:&quot;&quot;,&quot;title&quot;:&quot;&quot;,&quot;path_segment&quot;:&quot;&quot;,&quot;teaser&quot;:&quot;&quot;,&quot;datetime&quot;:&quot;&quot;,&quot;archive&quot;:&quot;&quot;,&quot;bodytext&quot;:&quot;&quot;,&quot;content_elements&quot;:&quot;&quot;,&quot;fal_media&quot;:&quot;&quot;,&quot;fal_related_files&quot;:&quot;&quot;,&quot;categories&quot;:&quot;&quot;,&quot;related&quot;:&quot;&quot;,&quot;related_links&quot;:&quot;&quot;,&quot;tags&quot;:&quot;&quot;,&quot;author&quot;:&quot;&quot;,&quot;author_email&quot;:&quot;&quot;,&quot;keywords&quot;:&quot;&quot;,&quot;description&quot;:&quot;&quot;,&quot;alternative_title&quot;:&quot;&quot;,&quot;sitemap_changefreq&quot;:&quot;&quot;,&quot;sitemap_priority&quot;:&quot;&quot;,&quot;sys_language_uid&quot;:&quot;&quot;,&quot;hidden&quot;:&quot;&quot;,&quot;starttime&quot;:&quot;&quot;,&quot;endtime&quot;:&quot;&quot;,&quot;fe_group&quot;:&quot;&quot;,&quot;editlock&quot;:&quot;&quot;,&quot;notes&quot;:&quot;&quot;}</field>
+				<field index="l10n_source" type="integer">0</field>
+				<field index="deleted" type="integer">0</field>
+				<field index="hidden" type="integer">0</field>
+				<field index="starttime" type="integer">0</field>
+				<field index="endtime" type="integer">0</field>
+				<field index="fe_group"></field>
+				<field index="notes"></field>
+				<field index="l10n_state" type="NULL"></field>
+				<field index="t3ver_id" type="integer">0</field>
+				<field index="t3ver_label"></field>
+				<field index="t3ver_count" type="integer">0</field>
+				<field index="t3ver_tstamp" type="integer">0</field>
+				<field index="t3ver_move_id" type="integer">0</field>
+				<field index="sorting" type="integer">0</field>
+				<field index="title">Infoniqa übernimmt Sage Schweiz AG: „Meilenstein unserer internationalen Expansion“ </field>
+				<field index="teaser">Infoniqa gibt die Übernahme des Schweizer Geschäfts der Sage Gruppe bekannt (inklusive der lokalen Produkte Sage Start, Sage 50 Extra und Sage 200 Extra).</field>
+				<field index="bodytext">&lt;p class=&quot;Paragraph SCXW211178845 BCX2&quot;&gt;Infoniqa gehört seit Jahren zu den am schnellsten wachsenden &lt;strong&gt;HR-Software-Unternehmen&lt;/strong&gt; in der DACH-Region und stärkt mit der Übernahme der auf HR-und ERP-Software spezialisierten Sage Schweiz AG ihre Präsenz in der Schweiz.&lt;/p&gt;
+&lt;p class=&quot;Paragraph SCXW211178845 BCX2&quot;&gt;Durch die Übernahme der Sage Schweiz AG wird sich der Umsatz der Infoniqa Gruppe auf insgesamt &lt;strong&gt;60 Millionen Euro jährlich nahezu verdoppeln &lt;/strong&gt;und die&lt;strong&gt; Mitarbeiteranzahl auf insgesamt 410 steigen&lt;/strong&gt;. Der Zukauf stärkt insbesondere die Positionierung im strategisch wichtigen Segment der kleinen und mittelständischen Unternehmen. Das Produktportfolio wird um ERP-Lösungen, Finanzmanagement-Software sowie auf Schweizer Anforderungen spezialisierte Payroll- und HCM-Lösungen ergänzt. Aufgrund der hohen Produktkompatibilität ergeben sich attraktive Synergiepotenziale.&amp;nbsp;&lt;/p&gt;
+&lt;p class=&quot;Paragraph SCXW211178845 BCX2&quot;&gt;&quot;Wir freuen uns sehr, mit der Unterstützung unserer Eigentümer Warburg Pincus Global Growth und Elvaston Capital unsere nächste Akquisition bekannt zu geben. Mit der Übernahme der Sage Schweiz AG setzen wir unsere Wachstumsstrategie konsequent fort und treiben die internationale Expansion der Infoniqa Gruppe weiter voran. Gemeinsam mit der bewährten und führenden Sage Schweiz AG werden wir für alle Schweizer Kunden und Partner noch konsequenter in die Weiterentwicklung der Produkte sowie in einen exzellenten Kundenservice investieren können&quot;, fasst Léon Vergnes, Geschäftsführer von Infoniqa, zusammen.&amp;nbsp;&lt;/p&gt;
+&lt;p class=&quot;Paragraph SCXW211178845 BCX2&quot;&gt;Der Kauf umfasst die Produkte Sage Start, Sage 50 Extra und Sage 200 Extra, die auch in Zukunft kontinuierlich weiterentwickelt und von erfahrenen Mitarbeitern lokal betreut werden.&amp;nbsp;&amp;nbsp;&lt;/p&gt;
+&lt;p class=&quot;Paragraph SCXW211178845 BCX2&quot;&gt;&quot;Die Übernahme der Sage Schweiz AG durch Infoniqa ist eine große Chance für unsere Mitarbeiter, Kunden und Partner. Als Teil der Infoniqa Gruppe mit einem starken Investor im Hintergrund bietet uns dieser Schritt starke Zukunftsaussichten und die Möglichkeit, als Teil eines stark wachstumsorientierten Lösungsanbieters in der DACH-Region auch in Zukunft höchste Softwarequalität und maximale Kundenzufriedenheit zu bieten. Infoniqa hat in den letzten 30 Jahren gezeigt, dass ihr exzellenter Service und starke Kundenorientierung Kunden und Partner gleichermaßen begeistern“, fügt Thomas Hersche, Geschäftsführer der Sage Schweiz AG hinzu.&amp;nbsp;&lt;/p&gt;
+&lt;p class=&quot;Paragraph SCXW211178845 BCX2&quot;&gt;Nach dem Kauf der haveldata GmbH Ende 2019 und der StoneData GmbH Anfang 2020 setzt Infoniqa mit dem Kauf der Sage Schweiz AG ihren Wachstumskurs in der DACH-Region konsequent fort.&amp;nbsp;&lt;/p&gt;
+&lt;p class=&quot;Paragraph SCXW211178845 BCX2&quot;&gt;Hier geht es zur vollständigen Pressemeldung&lt;/p&gt;</field>
+				<field index="datetime" type="integer">1617719400</field>
+				<field index="archive" type="integer">0</field>
+				<field index="author"></field>
+				<field index="author_email"></field>
+				<field index="categories" type="integer">0</field>
+				<field index="related" type="integer">0</field>
+				<field index="related_from" type="integer">0</field>
+				<field index="related_files" type="NULL"></field>
+				<field index="fal_related_files" type="integer">0</field>
+				<field index="related_links" type="integer">0</field>
+				<field index="type">0</field>
+				<field index="keywords"></field>
+				<field index="description">Infoniqa gibt die Übernahme der Sage Schweiz AG bekannt. Damit stärkt Infoniqa ihre Präsenz in der Schweiz. Jetzt mehr lesen &gt;&gt;</field>
+				<field index="tags" type="integer">1</field>
+				<field index="media" type="NULL"></field>
+				<field index="fal_media" type="integer">0</field>
+				<field index="internalurl" type="NULL"></field>
+				<field index="externalurl" type="NULL"></field>
+				<field index="istopnews" type="integer">0</field>
+				<field index="content_elements" type="integer">0</field>
+				<field index="path_segment">uebernahme-sage-ch</field>
+				<field index="alternative_title">Infoniqa kauft Sage Schweiz AG</field>
+				<field index="sitemap_changefreq"></field>
+				<field index="sitemap_priority">0.5</field>
+				<field index="import_id"></field>
+				<field index="import_source"></field>
+				<field index="news_author" type="integer">0</field>
+			</fieldlist>
+			<related index="rels" type="array">
+				<field index="tags" type="array">
+					<type>db</type>
+					<relations index="itemArray" type="array">
+						<element index="0" type="array">
+							<id>58</id>
+							<table>tx_news_domain_model_tag</table>
+						</element>
+					</relations>
+				</field>
+			</related>
+		</tablerow>
+		<tablerow index="tx_news_domain_model_news:117" type="array">
+			<fieldlist index="data" type="array">
+				<field index="uid" type="integer">117</field>
+				<field index="pid" type="integer">153</field>
+				<field index="tstamp" type="integer">1668419235</field>
+				<field index="crdate" type="integer">1668418588</field>
+				<field index="cruser_id" type="integer">3</field>
+				<field index="t3ver_oid" type="integer">0</field>
+				<field index="t3ver_wsid" type="integer">0</field>
+				<field index="t3ver_state" type="integer">0</field>
+				<field index="t3ver_stage" type="integer">0</field>
+				<field index="t3_origuid" type="integer">0</field>
+				<field index="editlock" type="integer">0</field>
+				<field index="sys_language_uid" type="integer">-1</field>
+				<field index="l10n_parent" type="integer">0</field>
+				<field index="l10n_diffsource">{&quot;type&quot;:&quot;&quot;,&quot;istopnews&quot;:&quot;&quot;,&quot;title&quot;:&quot;&quot;,&quot;path_segment&quot;:&quot;&quot;,&quot;teaser&quot;:&quot;&quot;,&quot;datetime&quot;:&quot;&quot;,&quot;archive&quot;:&quot;&quot;,&quot;bodytext&quot;:&quot;&quot;,&quot;content_elements&quot;:&quot;&quot;,&quot;fal_media&quot;:&quot;&quot;,&quot;fal_related_files&quot;:&quot;&quot;,&quot;categories&quot;:&quot;&quot;,&quot;related&quot;:&quot;&quot;,&quot;related_links&quot;:&quot;&quot;,&quot;tags&quot;:&quot;&quot;,&quot;author&quot;:&quot;&quot;,&quot;author_email&quot;:&quot;&quot;,&quot;keywords&quot;:&quot;&quot;,&quot;description&quot;:&quot;&quot;,&quot;alternative_title&quot;:&quot;&quot;,&quot;sitemap_changefreq&quot;:&quot;&quot;,&quot;sitemap_priority&quot;:&quot;&quot;,&quot;sys_language_uid&quot;:&quot;&quot;,&quot;hidden&quot;:&quot;&quot;,&quot;starttime&quot;:&quot;&quot;,&quot;endtime&quot;:&quot;&quot;,&quot;fe_group&quot;:&quot;&quot;,&quot;editlock&quot;:&quot;&quot;,&quot;notes&quot;:&quot;&quot;}</field>
+				<field index="l10n_source" type="integer">0</field>
+				<field index="deleted" type="integer">0</field>
+				<field index="hidden" type="integer">0</field>
+				<field index="starttime" type="integer">0</field>
+				<field index="endtime" type="integer">0</field>
+				<field index="fe_group"></field>
+				<field index="notes"></field>
+				<field index="l10n_state" type="NULL"></field>
+				<field index="t3ver_id" type="integer">0</field>
+				<field index="t3ver_label"></field>
+				<field index="t3ver_count" type="integer">0</field>
+				<field index="t3ver_tstamp" type="integer">0</field>
+				<field index="t3ver_move_id" type="integer">0</field>
+				<field index="sorting" type="integer">0</field>
+				<field index="title">Infoniqa ist wiederholt Top-25-HR-Software-Anbieter</field>
+				<field index="teaser">Infoniqa wird zum fünften Mal in Folge unter den Top 25 HR-Software-Anbietern gelistet. Das Unternehmen mit Hauptsitz im österreichischen Wels wächst 2020 im Vergleich zum Vorjahr um 11,8 Prozent und zählt damit zu den Wachstums-Champions der HR-Branche.</field>
+				<field index="bodytext">&lt;p&gt;Den eingeschlagenen Wachstumskurs setzt Infoniqa das fünfte Jahr in Folge fort: Laut Top 25 Liste 2020 des Wirtschaftsinstituts Wolfgang Witte zählt der Software- und Service-Anbieter ein weiteres Mal zu den umsatzstärksten sowie am schnellsten wachsenden Unternehmen in der gesamten DACH-Region. Trotz Corona-Pandemie steigerte Infoniqa das HR-Geschäft im Jahr 2020 um 11,8 Prozentpunkte.&lt;br /&gt; &lt;br /&gt; „Das starke Umsatzwachstum 2020 ist auf unsere immer höhere Bekanntheit und Marktdurchdringung zurückzuführen, aber auch auf die zunehmende Akzeptanz von Outsourcing-Dienstleistungen im Human-Resources-Sektor. Während uns die Bestandskunden treu bleiben und wir zahlreiche Neukunden hinzugewinnen konnten, gehören zu unseren Wachstumserfolgen 2020 auch die Zukäufe von haveldata und Stonedata, durch die wir unser Angebot von Payroll-Lösungen erweitert und bis zur Marktführerschaft ausgebaut haben“, erklärt Léon Vergnes, CEO von Infoniqa.&lt;br /&gt; &lt;br /&gt; &lt;strong&gt;Das Infoniqa-Wachstum geht weiter&lt;/strong&gt;&lt;br /&gt; &lt;br /&gt; Nach dem beständig starken Wachstum der letzten Jahre weitet Infoniqa die Wachstumsambitionen auch international aus: Erst im April 2021 sicherte sich der HR-Spezialist das Schweizer Accounting- und Auftragswesen-Geschäft von Sage, im Dezember 2021 folgte mit Run my Accounts ein Anbieter von cloudbasierten Accounting-Lösungen in der Schweiz und in Deutschland.&lt;br /&gt; &lt;br /&gt; Mit diesem Schritt etabliert sich Infoniqa nicht nur stärker im Schweizer Markt für digitale Lösungen und Business Process Outsourcing, sondern ergänzt das eigene Angebotsportfolio um völlig neue, strategisch ineinandergreifende Business-Bereiche.&lt;/p&gt;
+&lt;p&gt;Pressemitteilung als PDF herunterladen &amp;gt;&amp;gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&quot;external-link&quot; href=&quot;https://www.hr-konjunktur.de/top-25-liste-2020.html&quot; target=&quot;_blank&quot;&gt;Top 25 Liste 2020 vom Wirtschaftsinstitut Wolfgang Witte einsehen&lt;/a&gt; &amp;gt;&amp;gt;&lt;/p&gt;</field>
+				<field index="datetime" type="integer">1642681800</field>
+				<field index="archive" type="integer">0</field>
+				<field index="author"></field>
+				<field index="author_email"></field>
+				<field index="categories" type="integer">0</field>
+				<field index="related" type="integer">0</field>
+				<field index="related_from" type="integer">0</field>
+				<field index="related_files" type="NULL"></field>
+				<field index="fal_related_files" type="integer">0</field>
+				<field index="related_links" type="integer">0</field>
+				<field index="type">0</field>
+				<field index="keywords"></field>
+				<field index="description">Ein weiteres Mal zählt Infoniqa zu den Wachstums-Champions unter den HR-Software-Anbietern in DACH. Jetzt mehr lesen &gt;&gt;</field>
+				<field index="tags" type="integer">1</field>
+				<field index="media" type="NULL"></field>
+				<field index="fal_media" type="integer">0</field>
+				<field index="internalurl" type="NULL"></field>
+				<field index="externalurl" type="NULL"></field>
+				<field index="istopnews" type="integer">0</field>
+				<field index="content_elements" type="integer">0</field>
+				<field index="path_segment">infoniqa-ist-wiederholt-top-25-hr-software-anbieter</field>
+				<field index="alternative_title">Infoniqa ist wiederholt Top-25-HR-Software-Anbieter</field>
+				<field index="sitemap_changefreq"></field>
+				<field index="sitemap_priority">0.5</field>
+				<field index="import_id"></field>
+				<field index="import_source"></field>
+				<field index="news_author" type="integer">0</field>
+			</fieldlist>
+			<related index="rels" type="array">
+				<field index="bodytext" type="array">
+					<softrefs type="array">
+						<keys type="array">
+							<softref_key index="typolink_tag" type="array">
+								<softref_element index="1" type="array">
+									<matchString>&lt;a class=&quot;external-link&quot; href=&quot;https://www.hr-konjunktur.de/top-25-liste-2020.html&quot; target=&quot;_blank&quot;&gt;</matchString>
+									<subst type="array">
+										<type>external</type>
+										<tokenID>e39f858ada78efe694bc92f0799f1e09</tokenID>
+										<tokenValue>https://www.hr-konjunktur.de/top-25-liste-2020.html</tokenValue>
+									</subst>
+								</softref_element>
+							</softref_key>
+						</keys>
+						<tokenizedContent>&lt;p&gt;Den eingeschlagenen Wachstumskurs setzt Infoniqa das fünfte Jahr in Folge fort: Laut Top 25 Liste 2020 des Wirtschaftsinstituts Wolfgang Witte zählt der Software- und Service-Anbieter ein weiteres Mal zu den umsatzstärksten sowie am schnellsten wachsenden Unternehmen in der gesamten DACH-Region. Trotz Corona-Pandemie steigerte Infoniqa das HR-Geschäft im Jahr 2020 um 11,8 Prozentpunkte.&lt;br /&gt; &lt;br /&gt; „Das starke Umsatzwachstum 2020 ist auf unsere immer höhere Bekanntheit und Marktdurchdringung zurückzuführen, aber auch auf die zunehmende Akzeptanz von Outsourcing-Dienstleistungen im Human-Resources-Sektor. Während uns die Bestandskunden treu bleiben und wir zahlreiche Neukunden hinzugewinnen konnten, gehören zu unseren Wachstumserfolgen 2020 auch die Zukäufe von haveldata und Stonedata, durch die wir unser Angebot von Payroll-Lösungen erweitert und bis zur Marktführerschaft ausgebaut haben“, erklärt Léon Vergnes, CEO von Infoniqa.&lt;br /&gt; &lt;br /&gt; &lt;strong&gt;Das Infoniqa-Wachstum geht weiter&lt;/strong&gt;&lt;br /&gt; &lt;br /&gt; Nach dem beständig starken Wachstum der letzten Jahre weitet Infoniqa die Wachstumsambitionen auch international aus: Erst im April 2021 sicherte sich der HR-Spezialist das Schweizer Accounting- und Auftragswesen-Geschäft von Sage, im Dezember 2021 folgte mit Run my Accounts ein Anbieter von cloudbasierten Accounting-Lösungen in der Schweiz und in Deutschland.&lt;br /&gt; &lt;br /&gt; Mit diesem Schritt etabliert sich Infoniqa nicht nur stärker im Schweizer Markt für digitale Lösungen und Business Process Outsourcing, sondern ergänzt das eigene Angebotsportfolio um völlig neue, strategisch ineinandergreifende Business-Bereiche.&lt;/p&gt;
+&lt;p&gt;Pressemitteilung als PDF herunterladen &amp;gt;&amp;gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&quot;external-link&quot; href=&quot;{softref:e39f858ada78efe694bc92f0799f1e09}&quot; target=&quot;_blank&quot;&gt;Top 25 Liste 2020 vom Wirtschaftsinstitut Wolfgang Witte einsehen&lt;/a&gt; &amp;gt;&amp;gt;&lt;/p&gt;</tokenizedContent>
+					</softrefs>
+				</field>
+				<field index="tags" type="array">
+					<type>db</type>
+					<relations index="itemArray" type="array">
+						<element index="0" type="array">
+							<id>58</id>
+							<table>tx_news_domain_model_tag</table>
+						</element>
+					</relations>
+				</field>
+			</related>
+		</tablerow>
+		<tablerow index="tx_news_domain_model_news:118" type="array">
+			<fieldlist index="data" type="array">
+				<field index="uid" type="integer">118</field>
+				<field index="pid" type="integer">153</field>
+				<field index="tstamp" type="integer">1668419196</field>
+				<field index="crdate" type="integer">1668418646</field>
+				<field index="cruser_id" type="integer">3</field>
+				<field index="t3ver_oid" type="integer">0</field>
+				<field index="t3ver_wsid" type="integer">0</field>
+				<field index="t3ver_state" type="integer">0</field>
+				<field index="t3ver_stage" type="integer">0</field>
+				<field index="t3_origuid" type="integer">0</field>
+				<field index="editlock" type="integer">0</field>
+				<field index="sys_language_uid" type="integer">-1</field>
+				<field index="l10n_parent" type="integer">0</field>
+				<field index="l10n_diffsource">{&quot;type&quot;:&quot;&quot;,&quot;istopnews&quot;:&quot;&quot;,&quot;title&quot;:&quot;&quot;,&quot;path_segment&quot;:&quot;&quot;,&quot;teaser&quot;:&quot;&quot;,&quot;datetime&quot;:&quot;&quot;,&quot;archive&quot;:&quot;&quot;,&quot;bodytext&quot;:&quot;&quot;,&quot;content_elements&quot;:&quot;&quot;,&quot;fal_media&quot;:&quot;&quot;,&quot;fal_related_files&quot;:&quot;&quot;,&quot;categories&quot;:&quot;&quot;,&quot;related&quot;:&quot;&quot;,&quot;related_links&quot;:&quot;&quot;,&quot;tags&quot;:&quot;&quot;,&quot;author&quot;:&quot;&quot;,&quot;author_email&quot;:&quot;&quot;,&quot;keywords&quot;:&quot;&quot;,&quot;description&quot;:&quot;&quot;,&quot;alternative_title&quot;:&quot;&quot;,&quot;sitemap_changefreq&quot;:&quot;&quot;,&quot;sitemap_priority&quot;:&quot;&quot;,&quot;sys_language_uid&quot;:&quot;&quot;,&quot;hidden&quot;:&quot;&quot;,&quot;starttime&quot;:&quot;&quot;,&quot;endtime&quot;:&quot;&quot;,&quot;fe_group&quot;:&quot;&quot;,&quot;editlock&quot;:&quot;&quot;,&quot;notes&quot;:&quot;&quot;}</field>
+				<field index="l10n_source" type="integer">0</field>
+				<field index="deleted" type="integer">0</field>
+				<field index="hidden" type="integer">0</field>
+				<field index="starttime" type="integer">0</field>
+				<field index="endtime" type="integer">0</field>
+				<field index="fe_group"></field>
+				<field index="notes"></field>
+				<field index="l10n_state" type="NULL"></field>
+				<field index="t3ver_id" type="integer">0</field>
+				<field index="t3ver_label"></field>
+				<field index="t3ver_count" type="integer">0</field>
+				<field index="t3ver_tstamp" type="integer">0</field>
+				<field index="t3ver_move_id" type="integer">0</field>
+				<field index="sorting" type="integer">0</field>
+				<field index="title">Erster Payroll-Spezialist mit TÜV-Zertifizierung</field>
+				<field index="teaser">Als erstes Unternehmen erhält die Infoniqa Payroll GmbH in Böblingen das TÜV Süd Sec- IT Prüfzeichen „Zertifizierte Auftragsdatenverarbeitung&quot;.</field>
+				<field index="bodytext">&lt;p&gt;&lt;strong&gt;TÜV Süd vergibt Sec-IT Prüfzeichen für zertifizierte Auftragsdatenverarbeitung&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Als erstes Unternehmen erhält die Infoniqa Payroll GmbH in Böblingen das TÜV Süd Sec- IT Prüfzeichen „Zertifizierte Auftragsdatenverarbeitung&quot;. Der Dienstleistungsspezialist für die Lohn- und Gehaltsabrechnung erfüllt damit die strengen Standards bei der Prüfung und Bewertung von Auftragsdatenverarbeitungen. Dabei werden die Eignung und Angemessenheit von leistungs- und auftragsbezogenen Dokumentationen, allgemeinen sowie technischen und organisatorischen Maßnahmen zum Datenschutz geprüft. Die Anforderungen des TÜV Süd orientieren sich am Bundesdatenschutzgesetz und übertreffen dessen Bestimmungen sogar. „Mit der Prüfung haben wir die Verfahrenssicherheit für unsere internen Prozesse bestätigt bekommen. Die Kunden profitieren nun von der zertifizierten Sicherheit, dass ihre sensiblen, personenbezogenen Daten bei uns in besten Händen sind&quot;, erklärt Robert Bastian, Geschäftsführer Infoniqa Payroll GmbH.&lt;/p&gt;
+&lt;p&gt;Im März 2013 beauftragte Infoniqa Payroll den TÜV Süd, das Outsourcing-Rechenzentrum auf die Einhaltung der Standards für den Umgang mit personenbezogenen Daten im Bereich der Auftragsdatenverarbeitung zu überprüfen. Das Prüfzeichen für „geprüfte Auftragsdatenverarbeitung“ wurde ohne Beanstandungen erteilt. Seit Mai 2015 bietet der TÜV Süd das neue Prüfzei-chen „Zertifizierte Auftragsdatenverarbeitung“ an. Dabei erfolgt eine Dokumentenprüfung und ein Audit vor Ort. Wenn personenbezogene Daten im Rahmen der Auftragsdatenverarbeitung elektronisch übermittelt werden, führt der TÜV Süd zusätzlich einen Schwachstellen-Scan durch. Infoniqa stellte sich auch diesem verschärften Prüfverfahren und bestand alle Tests – inklusive Schwachstellen-Scan – ohne Probleme. „Das Zertifikat bietet den Kunden ein schlag-kräftiges Argument, um das Payroll Outsourcing gegenüber Mitarbeitervertretungen, einzelnen Mitarbeitern oder auch Datenschutzbeauftragten zu vertreten“, so Robert Bastian.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Datenschutz muss gewährleistet werden&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Nach § 11 Bundesdatenschutzgesetz müssen Auftraggeber regelmäßig die Einhaltung techni-scher und organisatorischer Maßnahmen zum Datenschutz beim Dienstleister prüfen und be-werten, wenn personenbezogene Daten durch den Dienstleister erhoben oder verarbeitet wer-den. Das neue Prüfzeichen von TÜV SÜD „Zertifizierte Auftragsdatenverarbeitung“ erleichtert und bestätigt diese Pflicht. Die Zertifizierung richtet sich an Dienstleister in den Bereichen Lohn- und Gehaltsabrechnung, Hosting, Cloud, Backup, Datensicherung, Datenträgervernichtung, aber auch an Anbieter von CRM- oder Kundenverwaltungssystemen, Service-/Callcenter, Mar-ketingagenturen und Lettershops.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Sicherheit wird oft vernachlässigt&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Die Befragungsergebnisse des TÜV Süd Datenschutzindikators (DSI) zeigen auf, dass sich viele Unternehmen unzureichend mit der Sicherheit von personenbezogenen Daten auseinan-dersetzen, wenn sie deren Verarbeitung an externe Auftragnehmer weitergeben. So überprüfen und dokumentieren nur 23 Prozent der Befragten die gesetzlich geforderte Einhaltung der Da-tenschutzpflichten bei ihren Dienstleistern. Um ihnen die Orientierung zu erleichtern und den Schutz personenbezogener Daten zu verbessern, bietet TÜV Süd die Zertifizierung für Unter-nehmen an, die Auftragsdaten verarbeiten.&lt;/p&gt;
+&lt;p&gt;Presseartikel Infoniqa erster Payroll-Spezialist mit TÜV-Zertifizierung&lt;/p&gt;</field>
+				<field index="datetime" type="integer">1525278540</field>
+				<field index="archive" type="integer">0</field>
+				<field index="author"></field>
+				<field index="author_email"></field>
+				<field index="categories" type="integer">0</field>
+				<field index="related" type="integer">0</field>
+				<field index="related_from" type="integer">0</field>
+				<field index="related_files" type="NULL"></field>
+				<field index="fal_related_files" type="integer">0</field>
+				<field index="related_links" type="integer">0</field>
+				<field index="type">0</field>
+				<field index="keywords"></field>
+				<field index="description"></field>
+				<field index="tags" type="integer">1</field>
+				<field index="media" type="NULL"></field>
+				<field index="fal_media" type="integer">0</field>
+				<field index="internalurl" type="NULL"></field>
+				<field index="externalurl" type="NULL"></field>
+				<field index="istopnews" type="integer">0</field>
+				<field index="content_elements" type="integer">0</field>
+				<field index="path_segment">erster-payroll-spezialist-mit-tuev-zertifizierung</field>
+				<field index="alternative_title">TÜV Süd vergibt Sec-IT Prüfzeichen für zertifizierte Auftragsdatenverarbeitung  Als erstes Unternehmen erhält die Infoniqa Payroll GmbH in Böblingen das TÜV Süd Sec- IT Prüfzeichen „Zertifizierte Auftragsdatenverarbeitung&quot;. Der Dienstleistungss</field>
+				<field index="sitemap_changefreq"></field>
+				<field index="sitemap_priority">0.5</field>
+				<field index="import_id"></field>
+				<field index="import_source"></field>
+				<field index="news_author" type="integer">0</field>
+			</fieldlist>
+			<related index="rels" type="array">
+				<field index="tags" type="array">
+					<type>db</type>
+					<relations index="itemArray" type="array">
+						<element index="0" type="array">
+							<id>58</id>
+							<table>tx_news_domain_model_tag</table>
+						</element>
+					</relations>
+				</field>
+			</related>
+		</tablerow>
+		<tablerow index="tx_news_domain_model_tag:85" type="array">
+			<fieldlist index="data" type="array">
+				<field index="uid" type="integer">85</field>
+				<field index="pid" type="integer">153</field>
+				<field index="tstamp" type="integer">1668609273</field>
+				<field index="crdate" type="integer">1668416897</field>
+				<field index="cruser_id" type="integer">3</field>
+				<field index="deleted" type="integer">0</field>
+				<field index="hidden" type="integer">0</field>
+				<field index="sys_language_uid" type="integer">-1</field>
+				<field index="l10n_parent" type="integer">0</field>
+				<field index="l10n_diffsource">{&quot;title&quot;:&quot;&quot;,&quot;slug&quot;:&quot;&quot;,&quot;hidden&quot;:&quot;&quot;,&quot;seo_title&quot;:&quot;&quot;,&quot;seo_description&quot;:&quot;&quot;,&quot;seo_headline&quot;:&quot;&quot;,&quot;seo_text&quot;:&quot;&quot;,&quot;notes&quot;:&quot;&quot;,&quot;sys_language_uid&quot;:&quot;&quot;}</field>
+				<field index="l10n_source" type="integer">0</field>
+				<field index="t3ver_oid" type="integer">0</field>
+				<field index="t3ver_wsid" type="integer">0</field>
+				<field index="t3ver_state" type="integer">0</field>
+				<field index="t3ver_stage" type="integer">0</field>
+				<field index="notes"></field>
+				<field index="l10n_state" type="NULL"></field>
+				<field index="sorting" type="integer">0</field>
+				<field index="t3ver_id" type="integer">0</field>
+				<field index="t3_origuid" type="integer">0</field>
+				<field index="t3ver_label"></field>
+				<field index="t3ver_count" type="integer">0</field>
+				<field index="t3ver_tstamp" type="integer">0</field>
+				<field index="t3ver_move_id" type="integer">0</field>
+				<field index="title">News</field>
+				<field index="slug">tags/news</field>
+				<field index="seo_title"></field>
+				<field index="seo_description"></field>
+				<field index="seo_headline"></field>
+				<field index="seo_text"></field>
+			</fieldlist>
+			<related index="rels" type="array"></related>
+		</tablerow>
+		<tablerow index="tx_news_domain_model_tag:57" type="array">
+			<fieldlist index="data" type="array">
+				<field index="uid" type="integer">57</field>
+				<field index="pid" type="integer">153</field>
+				<field index="tstamp" type="integer">1665126293</field>
+				<field index="crdate" type="integer">1665126293</field>
+				<field index="cruser_id" type="integer">3</field>
+				<field index="deleted" type="integer">0</field>
+				<field index="hidden" type="integer">0</field>
+				<field index="sys_language_uid" type="integer">-1</field>
+				<field index="l10n_parent" type="integer">0</field>
+				<field index="l10n_diffsource"></field>
+				<field index="l10n_source" type="integer">0</field>
+				<field index="t3ver_oid" type="integer">0</field>
+				<field index="t3ver_wsid" type="integer">0</field>
+				<field index="t3ver_state" type="integer">0</field>
+				<field index="t3ver_stage" type="integer">0</field>
+				<field index="notes"></field>
+				<field index="l10n_state" type="NULL"></field>
+				<field index="sorting" type="integer">0</field>
+				<field index="t3ver_id" type="integer">0</field>
+				<field index="t3_origuid" type="integer">0</field>
+				<field index="t3ver_label"></field>
+				<field index="t3ver_count" type="integer">0</field>
+				<field index="t3ver_tstamp" type="integer">0</field>
+				<field index="t3ver_move_id" type="integer">0</field>
+				<field index="title">Presseclippings</field>
+				<field index="slug">presseclippings</field>
+				<field index="seo_title"></field>
+				<field index="seo_description"></field>
+				<field index="seo_headline"></field>
+				<field index="seo_text"></field>
+			</fieldlist>
+			<related index="rels" type="array"></related>
+		</tablerow>
+		<tablerow index="tx_news_domain_model_tag:58" type="array">
+			<fieldlist index="data" type="array">
+				<field index="uid" type="integer">58</field>
+				<field index="pid" type="integer">153</field>
+				<field index="tstamp" type="integer">1665126304</field>
+				<field index="crdate" type="integer">1665126304</field>
+				<field index="cruser_id" type="integer">3</field>
+				<field index="deleted" type="integer">0</field>
+				<field index="hidden" type="integer">0</field>
+				<field index="sys_language_uid" type="integer">-1</field>
+				<field index="l10n_parent" type="integer">0</field>
+				<field index="l10n_diffsource"></field>
+				<field index="l10n_source" type="integer">0</field>
+				<field index="t3ver_oid" type="integer">0</field>
+				<field index="t3ver_wsid" type="integer">0</field>
+				<field index="t3ver_state" type="integer">0</field>
+				<field index="t3ver_stage" type="integer">0</field>
+				<field index="notes"></field>
+				<field index="l10n_state" type="NULL"></field>
+				<field index="sorting" type="integer">0</field>
+				<field index="t3ver_id" type="integer">0</field>
+				<field index="t3_origuid" type="integer">0</field>
+				<field index="t3ver_label"></field>
+				<field index="t3ver_count" type="integer">0</field>
+				<field index="t3ver_tstamp" type="integer">0</field>
+				<field index="t3ver_move_id" type="integer">0</field>
+				<field index="title">Pressemeldungen</field>
+				<field index="slug">pressemeldungen</field>
+				<field index="seo_title"></field>
+				<field index="seo_description"></field>
+				<field index="seo_headline"></field>
+				<field index="seo_text"></field>
+			</fieldlist>
+			<related index="rels" type="array"></related>
+		</tablerow>
+	</records>
+</T3RecordDocument>

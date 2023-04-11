@@ -425,7 +425,20 @@ figure img, figure picture {
 		order: 1;
 	}
 }
-
+@media (min-width: 1200px) {
+	.navbar-mainnavigation .nav-link {
+		height:111px;
+	}
+	.navbar-mainnavigation.navbar-transition .nav-link {
+		height:71px;
+	}
+	.nav-item.dropdown.dropdown-hover.show .ul-and-record-holder {
+		border-top:1px solid rgba(0,0,0,0.125);
+	}
+	.navbar-transition .nav-item.dropdown.dropdown-hover.show .ul-and-record-holder {
+		top:71px;
+	}
+}
 
 
 
