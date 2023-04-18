@@ -67,9 +67,30 @@
 						</f:if>
                             <f:if condition="{item.children}">
 								<div class="ul-and-record-holder">
-									<div class="record-holder">
+									<div class="record-holder"
+										<f:if condition="!{theme.navigation.record_id_people1} && 
+											!{theme.navigation.record_id_people2} ||
+											{item.data.uid}!={theme.navigation.uid_people}
+										">
+											style="display:none;"
+										</f:if>
+									>
 										<f:if condition="{item.data.uid}=={theme.navigation.uid_people}">
-											<f:cObject typoscriptObjectPath="lib.fluidLoadRecordEco">{theme.navigation.record_id_people}</f:cObject>
+											<f:cObject typoscriptObjectPath="lib.fluidLoadRecordEco">{theme.navigation.record_id_people1}</f:cObject>
+											<f:cObject typoscriptObjectPath="lib.fluidLoadRecordEco">{theme.navigation.record_id_people2}</f:cObject>
+										</f:if>
+									</div>
+									<div class="record-holder"
+										<f:if condition="!{theme.navigation.record_id_business1} && 
+											!{theme.navigation.record_id_business2} ||
+											{item.data.uid}!={theme.navigation.uid_business}
+										">
+											style="display:none;"
+										</f:if>
+									>
+										<f:if condition="{item.data.uid}=={theme.navigation.uid_business}">
+											<f:cObject typoscriptObjectPath="lib.fluidLoadRecordEco">{theme.navigation.record_id_business1}</f:cObject>
+											<f:cObject typoscriptObjectPath="lib.fluidLoadRecordEco">{theme.navigation.record_id_business2}</f:cObject>
 										</f:if>
 									</div>
 									<ul class="dropdown-menu" aria-labelledby="nav-item-{item.data.uid}">
