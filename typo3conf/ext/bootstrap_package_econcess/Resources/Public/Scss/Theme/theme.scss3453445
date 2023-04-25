@@ -416,9 +416,6 @@ figcaption.caption {
 					text-transform:none;
 				}
 			}
-			.subheader {
-				display:none;
-			}
 		}
 	}
 	#mainnavigation {
@@ -813,7 +810,7 @@ Beginn Topmenü
 		border-left:2px solid $primary;
 		margin-bottom: 2rem;
 	}
-/*	#mainnavigation {
+	#mainnavigation {
 		.nav-item:nth-last-child(2) {
 			> span {
 				display:none;
@@ -857,20 +854,6 @@ Beginn Topmenü
 	}
 	.navbar-mainnavigation.navbar-transition #mainnavigation .nav-item:nth-last-child(2) .ul-and-record-holder .dropdown-item {
 		height:71px;	
-	}
-*/
-	#mainnavigation {
-		.nav-item:nth-last-child(2) {
-			.nav-link-text {
-				padding:8px 16px;
-				background:$primary;
-				color:$lighter;
-				border-radius: $border-radius-base;
-			}
-			.subheader {
-				display:none;
-			}
-		}
 	}
 /*
 Ende Topmenü
