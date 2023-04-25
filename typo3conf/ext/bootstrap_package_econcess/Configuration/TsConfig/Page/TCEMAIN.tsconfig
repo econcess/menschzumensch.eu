@@ -1,6 +1,17 @@
+#//+3439/econcess
 #
 # TCEMAIN
 #
 TCEMAIN {
-
+	translateToMessage =
 }
+TCEMAIN.table.pages {
+  disablePrependAtCopy = 1
+  disableHideAtCopy = 1
+}
+TCEMAIN.table.tt_content {
+  disablePrependAtCopy = 1
+  disableHideAtCopy = 1
+}
+#TCEMAIN.clearCacheCmd = 1
+#//-3439/econcess
