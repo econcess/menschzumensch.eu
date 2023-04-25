@@ -6,6 +6,9 @@
             <authorEmail>bk@econcess.de</authorEmail>
         </header>
         <body>
+		    <trans-unit id="pleaseselectlang">
+                <source>Wählen Sie Ihre Region aus, um Inhalte für Ihren Standort zu sehen.</source>
+            </trans-unit>
         </body>
     </file>
 </xliff>

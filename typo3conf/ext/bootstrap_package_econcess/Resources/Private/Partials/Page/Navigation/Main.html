@@ -30,7 +30,18 @@
         </f:if>
     </div>
 </header>
-
+<f:if condition="{theme.language.enable}">
+	<div class="lang_pre_header">
+		<div class="container">
+			<div>
+				<p>{f:translate(key: 'LLL:EXT:bootstrap_package_econcess/Resources/Private/Language/locallang.xlf:pleaseselectlang')}</p>
+			</div>
+			<div>
+				<f:render partial="Navigation/Language" arguments="{_all}" />
+			</div>
+		</div>
+	</div>
+</f:if>
 <f:section name="MainNavigation">
     <f:if condition="{menu}">
         <ul class="navbar-nav">

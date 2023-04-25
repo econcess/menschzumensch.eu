@@ -7,3 +7,7 @@ $GLOBALS['TCA']['tt_content']['types']['textpic']['columnsOverrides']['layout'][
 //+3226/econcess
 $GLOBALS['TCA']['tt_content']['types']['card_group']['columnsOverrides']['layout']['config']['items'][2] = ['Card Group weißer Hintergrund', '30'];
 //-3226/econcess
+//+3425/econcess
+$GLOBALS['TCA']['tt_content']['columns']['bodytext']['l10n_mode'] = '';
+$GLOBALS['TCA']['tt_content']['columns']['header']['l10n_mode'] = '';
+//-3425/econcess

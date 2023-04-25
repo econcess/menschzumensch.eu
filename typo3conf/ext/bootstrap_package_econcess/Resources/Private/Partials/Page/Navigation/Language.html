@@ -1,0 +1,102 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:comment>
+//+3423/econcess
+</f:comment>
+<f:if condition="{languagenavigation}">
+	<f:for each="{languagenavigation}" as="item" iteration="objIterator">
+		<f:if condition="{item.available}">
+			<f:then>
+				<f:if condition="{objIterator.index}>0">
+					<f:variable name="other_langs_var" value="other_langs" />
+				</f:if>
+			</f:then>
+		</f:if>
+	</f:for>
+	<div 
+		class='custom-select-infoniqa<f:if condition="{other_langs_var}"> {other_langs_var}</f:if>' 
+		style="width:200px;"
+	>		
+    <select 
+		id="language_menu_select" 
+		name="language_menu_select"
+	>
+        <f:for each="{languagenavigation}" as="item">
+			<f:if condition="{item.available}">
+				<f:then>
+					<option value="{item.link}" {f:if(condition: item.active, then: 'selected')}>
+							{item.navigationTitle}
+					</option>
+				</f:then>
+			</f:if>
+        </f:for>
+    </select>
+	</div>
+<script>
+	var x, i, j, l, ll, selElmnt, a, b, c;
+	x = document.getElementsByClassName("custom-select-infoniqa");
+	l = x.length;
+	for (i = 0; i < l; i++) {
+	  selElmnt = x[i].getElementsByTagName("select")[0];
+	  ll = selElmnt.length;
+	  a = document.createElement("DIV");
+	  a.setAttribute("class", "select-selected");
+	  a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
+	  x[i].appendChild(a);
+	  b = document.createElement("DIV");
+	  b.setAttribute("class", "select-items select-hide");
+	  for (j = 0; j < ll; j++) {
+		c = document.createElement("DIV");
+		c.innerHTML = selElmnt.options[j].innerHTML;
+		if(selElmnt.options[selElmnt.selectedIndex].innerHTML ==c.innerHTML) c.setAttribute("class", "select-items select-hide");
+		c.addEventListener("click", function(e) {
+			var y, i, k, s, h, sl, yl;
+			s = this.parentNode.parentNode.getElementsByTagName("select")[0];
+			sl = s.length;
+			h = this.parentNode.previousSibling;
+			for (i = 0; i < sl; i++) {
+			  if (s.options[i].innerHTML == this.innerHTML) {
+			  console.log(i);
+			   console.log(s.options[i].innerHTML);
+			  console.log(this.innerHTML);
+				window.location = s.options[i].value;
+				break;
+			  }
+			}
+			h.click();
+		});
+		b.appendChild(c);
+	  }
+	  x[i].appendChild(b);
+	  a.addEventListener("click", function(e) {
+		e.stopPropagation();
+		closeAllSelect(this);
+		this.nextSibling.classList.toggle("select-hide");
+		this.classList.toggle("select-arrow-active");
+	  });
+	}
+	function closeAllSelect(elmnt) {
+	  var x, y, i, xl, yl, arrNo = [];
+	  x = document.getElementsByClassName("select-items");
+	  y = document.getElementsByClassName("select-selected");
+	  xl = x.length;
+	  yl = y.length;
+	  for (i = 0; i < yl; i++) {
+		if (elmnt == y[i]) {
+		  arrNo.push(i)
+		} else {
+		  y[i].classList.remove("select-arrow-active");
+		}
+	  }
+	  for (i = 0; i < xl; i++) {
+		if (arrNo.indexOf(i)) {
+		  x[i].classList.add("select-hide");
+		}
+	  }
+	}
+	document.addEventListener("click", closeAllSelect);
+</script>
+</f:if>
+</html>
+<f:comment>
+//-3423/econcess
+</f:comment>

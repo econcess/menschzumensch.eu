@@ -23,11 +23,17 @@
                                     <f:render partial="Navigation/Meta" arguments="{_all}" />
                                 </div>
                             </f:if>
+<f:comment>
+//+3421/econcess
+</f:comment>
                             <f:if condition="{theme.language.enable} && 1==2">
                                 <div class="footer-language">
                                     <f:render partial="Navigation/Language" arguments="{_all}" />
                                 </div>
                             </f:if>
+<f:comment>
+//-3421/econcess
+</f:comment>
                             <f:if condition="{theme.copyright.enable}">
                                 <div class="footer-copyright">
                                     <f:render partial="Structure/Copyright" arguments="{_all}" />
