@@ -974,6 +974,7 @@ Ende Topmenü
         transition: all .27s cubic-bezier(0, 0, .58, 1) 0s;
     }
     .navbar-default-transition:not(.navbar-transition),
+	.navbar-default:not(.navbar-transition),
     .navbar-inverse-transition:not(.navbar-transition) {
         background: transparent !important;
         box-shadow: none;
