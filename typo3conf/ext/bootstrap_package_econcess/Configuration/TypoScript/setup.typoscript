@@ -71,3 +71,112 @@ lib.fluidLoadRecordEco {
 }
 page.10.dataProcessing.10.levels = 3
 #//-3325/econcess
+#//+3442/econcess
+# tx_news1 = Blog Detail ID 155
+# tx_news2 = Lexikon Detail ID 157
+# tx_news3 = News Detail ID 164
+# tx_news4 = Downloads Detail ID 289 Aber richtig? Kein Detailview?
+# tx_news5 = Whitepaper Detail ID 195
+# tx_news6 = Referenzen Detail ID 159
+# tx_news7 = Partner Detail ID 139 Aber richtig? Kein Detailview?
+config.recordLinks {
+     tx_news1 {
+         typolink {
+            parameter = 155
+            additionalParams.data = field:uid
+            additionalParams.wrap = &tx_news_pi1[controller]=News&tx_news_pi1[action]=detail&tx_news_pi1[news]=|
+            useCacheHash = 1
+            ATagParams.data = parameters:allParams
+            target.data = parameters:target
+            title.data = parameters:title
+            extTarget = _blank
+            extTarget.override.data = parameters:target
+         }
+         forceLink = 1
+     },
+     tx_news2 {
+         typolink {
+            parameter = 157
+            additionalParams.data = field:uid
+            additionalParams.wrap = &tx_news_pi1[controller]=News&tx_news_pi1[action]=detail&tx_news_pi1[news]=|
+            useCacheHash = 1
+            ATagParams.data = parameters:allParams
+            target.data = parameters:target
+            title.data = parameters:title
+            extTarget = _blank
+            extTarget.override.data = parameters:target
+         }
+         forceLink = 1
+     },
+     tx_news3 {
+         typolink {
+            parameter = 164
+            additionalParams.data = field:uid
+            additionalParams.wrap = &tx_news_pi1[controller]=News&tx_news_pi1[action]=detail&tx_news_pi1[news]=|
+            useCacheHash = 1
+            ATagParams.data = parameters:allParams
+            target.data = parameters:target
+            title.data = parameters:title
+            extTarget = _blank
+            extTarget.override.data = parameters:target
+         }
+         forceLink = 1
+     },
+     tx_news4 {
+         typolink {
+            parameter = 289
+            additionalParams.data = field:uid
+            additionalParams.wrap = &tx_news_pi1[controller]=News&tx_news_pi1[action]=detail&tx_news_pi1[news]=|
+            useCacheHash = 1
+            ATagParams.data = parameters:allParams
+            target.data = parameters:target
+            title.data = parameters:title
+            extTarget = _blank
+            extTarget.override.data = parameters:target
+         }
+         forceLink = 1
+     },
+     tx_news5 {
+         typolink {
+            parameter = 195
+            additionalParams.data = field:uid
+            additionalParams.wrap = &tx_news_pi1[controller]=News&tx_news_pi1[action]=detail&tx_news_pi1[news]=|
+            useCacheHash = 1
+            ATagParams.data = parameters:allParams
+            target.data = parameters:target
+            title.data = parameters:title
+            extTarget = _blank
+            extTarget.override.data = parameters:target
+         }
+         forceLink = 1
+     },
+     tx_news6 {
+         typolink {
+            parameter = 159
+            additionalParams.data = field:uid
+            additionalParams.wrap = &tx_news_pi1[controller]=News&tx_news_pi1[action]=detail&tx_news_pi1[news]=|
+            useCacheHash = 1
+            ATagParams.data = parameters:allParams
+            target.data = parameters:target
+            title.data = parameters:title
+            extTarget = _blank
+            extTarget.override.data = parameters:target
+         }
+         forceLink = 1
+     },
+     tx_news7 {
+         typolink {
+            parameter = 139
+            additionalParams.data = field:uid
+            additionalParams.wrap = &tx_news_pi1[controller]=News&tx_news_pi1[action]=detail&tx_news_pi1[news]=|
+            useCacheHash = 1
+            ATagParams.data = parameters:allParams
+            target.data = parameters:target
+            title.data = parameters:title
+            extTarget = _blank
+            extTarget.override.data = parameters:target
+         }
+         forceLink = 1
+     }
+}
+#//-3442/econcess

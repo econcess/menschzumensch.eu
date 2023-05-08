@@ -640,12 +640,14 @@ $tx_news_domain_model_news = [
                                     --palette--;;imageoverlayPalette,
                                     --palette--;;filePalette'
                             ],
+//+3477/econcess
                             \TYPO3\CMS\Core\Resource\File::FILETYPE_IMAGE => [
                                 'showitem' => '
                                     --palette--;LLL:EXT:core/Resources/Private/Language/locallang_tca.xlf:sys_file_reference.imageoverlayPalette;newsPalette,
                                     --palette--;;imageoverlayPalette,
-                                    --palette--;;filePalette'
+                                    --palette--;;filePalette,sys_language_uid'
                             ],
+//-3477/econcess
                             \TYPO3\CMS\Core\Resource\File::FILETYPE_AUDIO => [
                                 'showitem' => '
                                     --palette--;LLL:EXT:core/Resources/Private/Language/locallang_tca.xlf:sys_file_reference.imageoverlayPalette;newsPalette,

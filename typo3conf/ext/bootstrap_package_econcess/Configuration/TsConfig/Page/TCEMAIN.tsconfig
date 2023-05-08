@@ -15,3 +15,97 @@ TCEMAIN.table.tt_content {
 }
 #TCEMAIN.clearCacheCmd = 1
 #//-3439/econcess
+# tx_news1 = Blog Ordner ID 147
+# tx_news2 = Lexikon Ordner ID 148
+# tx_news3 = News Ordner ID 153
+# tx_news4 = Downloads Ordner ID 271
+# tx_news5 = Whitepaper Ordner ID 150
+# tx_news6 = Referenzen Ordner ID 149
+# tx_news7 = Partner Ordner ID 140
+TCEMAIN {
+  linkHandler {
+    tx_news1 {
+      handler = TYPO3\CMS\Recordlist\LinkHandler\RecordLinkHandler
+      label = Blog
+      configuration {
+        table = tx_news_domain_model_news
+		storagePid = 147
+        hidePageTree = 1
+      }
+      scanAfter = page
+    }
+  }
+   linkHandler {
+    tx_news2 {
+      handler = TYPO3\CMS\Recordlist\LinkHandler\RecordLinkHandler
+      label = Lexikon
+      configuration {
+        table = tx_news_domain_model_news
+		storagePid = 148
+        hidePageTree = 1
+      }
+      scanAfter = page
+    }
+  }
+   linkHandler {
+    tx_news3 {
+      handler = TYPO3\CMS\Recordlist\LinkHandler\RecordLinkHandler
+      label = News
+      configuration {
+        table = tx_news_domain_model_news
+		storagePid = 153
+        hidePageTree = 1
+      }
+      scanAfter = page
+    }
+  }
+   linkHandler {
+    tx_news4 {
+      handler = TYPO3\CMS\Recordlist\LinkHandler\RecordLinkHandler
+      label = Downloads
+      configuration {
+        table = tx_news_domain_model_news
+		storagePid = 271
+        hidePageTree = 1
+      }
+      scanAfter = page
+    }
+  }
+   linkHandler {
+    tx_news5 {
+      handler = TYPO3\CMS\Recordlist\LinkHandler\RecordLinkHandler
+      label = Whitepaper
+      configuration {
+        table = tx_news_domain_model_news
+		storagePid = 150
+        hidePageTree = 1
+      }
+      scanAfter = page
+    }
+  }
+   linkHandler {
+    tx_news6 {
+      handler = TYPO3\CMS\Recordlist\LinkHandler\RecordLinkHandler
+      label = Referenzen
+      configuration {
+        table = tx_news_domain_model_news
+		storagePid = 149
+        hidePageTree = 1
+      }
+      scanAfter = page
+    }
+  }
+   linkHandler {
+    tx_news7 {
+      handler = TYPO3\CMS\Recordlist\LinkHandler\RecordLinkHandler
+      label = Partner
+      configuration {
+        table = tx_news_domain_model_news
+		storagePid = 140
+        hidePageTree = 1
+      }
+      scanAfter = page
+    }
+  }
+}
+#//-3443/econcess

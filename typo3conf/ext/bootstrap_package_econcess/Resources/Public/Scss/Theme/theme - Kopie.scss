@@ -741,10 +741,7 @@ Beginn Topmenü
 	.navbar-mainnavigation .record-holder + ul.dropdown-menu {
 		margin:42px 0;
 	}
-	body .navbar-default-transition:not(.navbar-transition), 
-	body .navbar-inverse-transition:not(.navbar-transition),
-	body .navbar-default:not(.navbar-transition)
-	{
+	body .navbar-default-transition:not(.navbar-transition), .navbar-inverse-transition:not(.navbar-transition) {
 		background: #fff !important;
 		border-bottom: 1px solid $tertiary;
 	}
