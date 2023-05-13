@@ -180,3 +180,11 @@ config.recordLinks {
      }
 }
 #//-3442/econcess
+#//+3488/econcess
+lib.contentElement.settings.responsiveimages.variants {
+    default {
+        breakpoint = 1400
+        width = 1920
+    }
+}
+#//-3488/econcess

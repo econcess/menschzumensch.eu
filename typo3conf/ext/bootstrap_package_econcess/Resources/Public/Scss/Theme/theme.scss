@@ -121,6 +121,26 @@ h5 {
 [lang="de-DE"] .laenderauswahl .deutschland a[class=""], 
 [lang="de-DE"] .laenderauswahl .deutschland a:not([class]) {
 	opacity:1;
+	pointer-events: none;
+	cursor: default;
+	text-decoration: none;
+	color: black;
+}
+[lang="de-CH"] .laenderauswahl .schweiz a[class=""], 
+[lang="de-CH"] .laenderauswahl .schweiz a:not([class]) {
+	opacity:1;
+	pointer-events: none;
+	cursor: default;
+	text-decoration: none;
+	color: black;
+}
+[lang="de-AT"] .laenderauswahl .oesterreich a[class=""], 
+[lang="de-AT"] .laenderauswahl .oesterreich a:not([class]) {
+	opacity:1;
+	pointer-events: none;
+	cursor: default;
+	text-decoration: none;
+	color: black;
 }
 .btn-default {
 	background-color:$lighter;
@@ -163,8 +183,14 @@ h5 {
 	background-color: $primary;
 	padding-bottom:0.8rem;
 }
-.card a:not(.btn) {
-    color: $dark;
+.card a:not(.btn),
+.card a:not(.btn):hover,
+.card a:not(.btn):active,
+.card a:not(.btn):visited,
+.card a:not(.btn):focus
+{
+    text-decoration:underline;
+	color:inherit;
 }
 .card h3 a:not(.btn) {
 	text-decoration:underline;
@@ -284,7 +310,7 @@ figcaption.caption {
 	flex-wrap:wrap;
 	background: #fff;
 }
-.nav-item.dropdown
+li.nav-item.dropdown > span
 {
 	cursor:pointer;
 }
@@ -369,6 +395,11 @@ figcaption.caption {
 .other_langs .select-selected.select-arrow-active:before {
 	right:27px;
 }
+//Keine Sprachleiste auf Startseite, da Sprachauswahl bereits in Content-Element vorhanden
+#p1 .lang_pre_header {
+	display:none;
+}
+
 @include media-breakpoint-down(sm) { 
 	.btn {
 		width: 100%;
@@ -380,6 +411,12 @@ figcaption.caption {
 	.teaser-right {
 		order: 1;
 	}
+	* {
+		hyphens:auto;
+	}
+}
+@include media-breakpoint-down(md) {
+
 }
 @include media-breakpoint-down(xl) {
 	#mainnavigation {
@@ -421,8 +458,11 @@ figcaption.caption {
 			}
 		}
 	}
+	* {
+		hyphens:auto;
+	}
 	#mainnavigation {
-		box-shadow: 0px 10px 20px #0000000D;
+		box-shadow: 0px 10px 20px #00000029;
 	}
 	.navbar-mainnavigation>.container>.navbar-collapse>.navbar-nav:last-child {
 		padding-bottom:0;
@@ -703,7 +743,7 @@ Beginn Topmenü
 		width:100%;
 		display: flex;
 		flex-wrap: wrap;
-		box-shadow: 0px 10px 20px #0000000D;
+		box-shadow: 0px 10px 20px #00000029;
 		overflow:auto;
 		max-height:100vh;
 	}
@@ -725,6 +765,9 @@ Beginn Topmenü
 		flex-direction: column;
 		align-items: start;
 		font-size:0.875rem;
+	}
+	.navbar-mainnavigation .dropdown-item .subheader {
+		font-size:0.7875rem;
 	}
 	.navbar-mainnavigation .dropdown-item:active,
 	.navbar-mainnavigation .dropdown-item.active,
@@ -819,7 +862,7 @@ Beginn Topmenü
 /*	#mainnavigation {
 		.nav-item:nth-last-child(2) {
 			> span {
-				display:none;
+			//	display:none;
 			}
 			.ul-and-record-holder {
 				display:block;
@@ -853,7 +896,7 @@ Beginn Topmenü
 					border-radius: $border-radius-base;
 				}
 				.subheader {
-					display:none;
+				//	display:none;
 				}
 			}
 		}
@@ -871,7 +914,7 @@ Beginn Topmenü
 				border-radius: $border-radius-base;
 			}
 			.subheader {
-				display:none;
+				//display:none;
 			}
 		}
 	}
