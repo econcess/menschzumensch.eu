@@ -188,3 +188,9 @@ lib.contentElement.settings.responsiveimages.variants {
     }
 }
 #//-3488/econcess
+#//+3569/econcess
+page.headerData.6 = TEXT
+page.headerData.6.value (
+<script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="813b4f2d-8bdd-421f-9ba9-74526f036c0b" data-blockingmode="auto" type="text/javascript"></script>
+)
+#//-3569/econcess

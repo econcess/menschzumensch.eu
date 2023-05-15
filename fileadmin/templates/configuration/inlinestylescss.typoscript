@@ -555,14 +555,14 @@ a {
     text-decoration: none;
     color: black;
 }
-[lang="de-AT"] .laenderauswahl .deutschland a[class=""], [lang="de-AT"] .laenderauswahl .deutschland a:not([class]) {
+[lang="de-AT"] .laenderauswahl .deutschland a[class=""], [lang="de-AT"] .laenderauswahl .oesterreich a:not([class]) {
     opacity: 1;
     pointer-events: none;
     cursor: default;
     text-decoration: none;
     color: black;
 }
-[lang="de-CH"] .laenderauswahl .deutschland a[class=""], [lang="de-CH"] .laenderauswahl .deutschland a:not([class]) {
+[lang="de-CH"] .laenderauswahl .deutschland a[class=""], [lang="de-CH"] .laenderauswahl .schweiz a:not([class]) {
     opacity: 1;
     pointer-events: none;
     cursor: default;
