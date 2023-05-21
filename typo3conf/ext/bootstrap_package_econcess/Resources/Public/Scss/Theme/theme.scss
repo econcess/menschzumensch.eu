@@ -399,7 +399,41 @@ li.nav-item.dropdown > span
 #p1 .lang_pre_header {
 	display:none;
 }
-
+.textmedia-gallery .video .embed iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+.textmedia-gallery .video .embed iframe[src] + .iframewrappervideo {
+	display:none;
+}
+.textmedia-gallery {
+    background: #E7F2FF;
+}
+.iframewrappervideo span.youtube {
+	background: url('typo3conf/ext/bootstrap_package_econcess/Resources/Public/Images/yt_icon_mono_light.svg') no-repeat center;
+	background-image:none;
+    background-size: 70px 70px;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    cursor: pointer;
+}
+.iframewrappervideo span.youtube span {
+    font-weight: 700;
+    font-size: 1.0rem;
+    padding: 1rem 1.3rem;
+    display: inline-block;
+}
+.iframewrappervideo a, .iframewrappervideo iframe, .iframewrappervideo span {
+    cursor: pointer;
+}
 @include media-breakpoint-down(sm) { 
 	.btn {
 		width: 100%;
@@ -586,6 +620,9 @@ li.nav-item.dropdown > span
 	}
 }
 @include media-breakpoint-up(sm) {
+	.iframewrappervideo span.youtube {
+		background-image: url('typo3conf/ext/bootstrap_package_econcess/Resources/Public/Images/yt_icon_mono_light.svg');
+	}
 	.laenderauswahl {
 		margin-top:-55px;
 	}
