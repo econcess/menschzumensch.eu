@@ -104,6 +104,71 @@
 											<f:cObject typoscriptObjectPath="lib.fluidLoadRecordEco">{theme.navigation.record_id_business2}</f:cObject>
 										</f:if>
 									</div>
+									<div class="record-holder"
+										<f:if condition="!{theme.navigation.record_id_wissen1} && 
+											!{theme.navigation.record_id_wissen2} ||
+											{item.data.uid}!={theme.navigation.uid_wissen}
+										">
+											style="display:none;"
+										</f:if>
+									>
+										<f:if condition="{item.data.uid}=={theme.navigation.uid_wissen}">
+											<f:cObject typoscriptObjectPath="lib.fluidLoadRecordEco">{theme.navigation.record_id_wissen1}</f:cObject>
+											<f:cObject typoscriptObjectPath="lib.fluidLoadRecordEco">{theme.navigation.record_id_wissen2}</f:cObject>
+										</f:if>
+									</div>
+									<div class="record-holder"
+										<f:if condition="!{theme.navigation.record_id_unternehmen1} && 
+											!{theme.navigation.record_id_unternehmen2} ||
+											{item.data.uid}!={theme.navigation.uid_unternehmen}
+										">
+											style="display:none;"
+										</f:if>
+									>
+										<f:if condition="{item.data.uid}=={theme.navigation.uid_unternehmen}">
+											<f:cObject typoscriptObjectPath="lib.fluidLoadRecordEco">{theme.navigation.record_id_unternehmen1}</f:cObject>
+											<f:cObject typoscriptObjectPath="lib.fluidLoadRecordEco">{theme.navigation.record_id_unternehmen2}</f:cObject>
+										</f:if>
+									</div>
+									<div class="record-holder"
+										<f:if condition="!{theme.navigation.record_id_partnerwelt1} && 
+											!{theme.navigation.record_id_partnerwelt2} ||
+											{item.data.uid}!={theme.navigation.uid_partnerwelt}
+										">
+											style="display:none;"
+										</f:if>
+									>
+										<f:if condition="{item.data.uid}=={theme.navigation.uid_partnerwelt}">
+											<f:cObject typoscriptObjectPath="lib.fluidLoadRecordEco">{theme.navigation.record_id_partnerwelt1}</f:cObject>
+											<f:cObject typoscriptObjectPath="lib.fluidLoadRecordEco">{theme.navigation.record_id_partnerwelt2}</f:cObject>
+										</f:if>
+									</div>
+									<div class="record-holder"
+										<f:if condition="!{theme.navigation.record_id_anfrage1} && 
+											!{theme.navigation.record_id_anfrage2} ||
+											{item.data.uid}!={theme.navigation.uid_anfrage}
+										">
+											style="display:none;"
+										</f:if>
+									>
+										<f:if condition="{item.data.uid}=={theme.navigation.uid_anfrage}">
+											<f:cObject typoscriptObjectPath="lib.fluidLoadRecordEco">{theme.navigation.record_id_anfrage1}</f:cObject>
+											<f:cObject typoscriptObjectPath="lib.fluidLoadRecordEco">{theme.navigation.record_id_anfrage2}</f:cObject>
+										</f:if>
+									</div>
+									<div class="record-holder"
+										<f:if condition="!{theme.navigation.record_id_login1} && 
+											!{theme.navigation.record_id_login2} ||
+											{item.data.uid}!={theme.navigation.uid_login}
+										">
+											style="display:none;"
+										</f:if>
+									>
+										<f:if condition="{item.data.uid}=={theme.navigation.uid_login}">
+											<f:cObject typoscriptObjectPath="lib.fluidLoadRecordEco">{theme.navigation.record_id_login1}</f:cObject>
+											<f:cObject typoscriptObjectPath="lib.fluidLoadRecordEco">{theme.navigation.record_id_login2}</f:cObject>
+										</f:if>
+									</div>
 									<ul class="dropdown-menu" aria-labelledby="nav-item-{item.data.uid}">
 										<f:for each="{item.children}" as="child">
 											<f:if condition="{child.spacer}">

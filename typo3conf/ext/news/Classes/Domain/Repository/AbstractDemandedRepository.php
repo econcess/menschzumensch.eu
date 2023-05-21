@@ -73,7 +73,9 @@ abstract class AbstractDemandedRepository extends Repository implements Demanded
     public function findDemanded(DemandInterface $demand, $respectEnableFields = true, $disableLanguageOverlayMode = false)
     {
         $query = $this->generateQuery($demand, $respectEnableFields, $disableLanguageOverlayMode);
-
+//+3588/econcess
+		$query->getQuerySettings()->setLanguageOverlayMode(false);
+//-3588/econcess
         return $query->execute();
     }
 
