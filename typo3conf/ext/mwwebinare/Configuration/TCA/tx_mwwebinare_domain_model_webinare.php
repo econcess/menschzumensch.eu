@@ -140,7 +140,7 @@ return [
             'config' => [
                 'type' => 'text',
                 'enableRichtext' => true,
-                'richtextConfiguration' => 'default',
+//+3701/econcess
                 'fieldControl' => [
                     'fullScreenRichtext' => [
                         'disabled' => false,
@@ -158,7 +158,7 @@ return [
             'config' => [
                 'type' => 'text',
                 'enableRichtext' => true,
-                'richtextConfiguration' => 'default',
+//-3701/econcess
                 'fieldControl' => [
                     'fullScreenRichtext' => [
                         'disabled' => false,
