@@ -1,0 +1,147 @@
+<?php
+namespace Mwwebinare\Mwwebinare\Domain\Repository;
+
+/***
+ *
+ * This file is part of the "Infoniqa Webinare" Extension for TYPO3 CMS.
+ *
+ * For the full copyright and license information, please read the
+ * LICENSE.txt file that was distributed with this source code.
+ *
+ *  (c) 2020 Martin Weymayer <office@weymayer.at>, Webagentur Weymayer
+ *
+ ***/
+
+/**
+ * The repository for Webinares
+ */
+class WebinareRepository extends \TYPO3\CMS\Extbase\Persistence\Repository
+{
+    /**
+     * @var array
+     */
+    protected $defaultOrderings = [
+        'sorting' => \TYPO3\CMS\Extbase\Persistence\QueryInterface::ORDER_ASCENDING
+    ];
+	
+	public function findAll() {
+		
+
+		$query = $this->createQuery();
+		#$query->getQuerySettings()->setRespectStoragePage(FALSE);
+		
+		$result = $query->execute();
+		
+		#print_r( $result);
+		#exit;
+
+		return $result;
+		
+	}
+	
+	public function findAllByVideoxx() {
+		
+
+		$query = $this->createQuery();
+		#$query->setOrderings(array("veranstalter" => \TYPO3\CMS\Extbase\Persistence\QueryInterface::ORDER_ASCENDING));
+		#$query->getQuerySettings()->setRespectStoragePage(FALSE);
+		
+		$constraints = array();
+
+		$constraints[] = $query->lessThan('termine.beginn', time());
+				
+		
+		$result = $query->matching($query->logicalAnd($constraints))
+		->execute();
+
+
+		return $result;
+		
+		
+	}
+	
+	public function findAllByVideo($pageid=1, $limit=4, $offset = '') {		
+		
+		########################
+		$timestamp = time();
+		
+		if($offset != '') {
+			$setOffset = 'OFFSET '.$offset;
+		}
+		else {
+			$setOffset = '';
+		}
+//+1127/econcess
+		$queryb = ("SELECT p.* , h.*, p.uid AS uid
+			FROM tx_mwwebinare_domain_model_webinare p, tx_mwwebinare_domain_model_termine h
+			WHERE (
+				p.deleted = 0
+				AND h.deleted = 0
+				AND p.sys_language_uid IN (".(int)$GLOBALS['TSFE']->sys_language_uid.",-1)
+				AND p.uid = h.webinare
+				AND p.pid = ".$pageid."
+			) 
+			AND p.hidden = 0  AND h.hidden = 0 
+			AND p.starttime<=".$timestamp."  
+			AND (p.endtime=0 OR p.endtime>".$timestamp." )
+			AND h.starttime<=".$timestamp."  
+			AND (h.endtime=0 OR h.endtime>".$timestamp." )
+			AND h.beginn < ".$timestamp."
+			ORDER BY h.beginn
+			LIMIT ".$limit."
+			".$setOffset."
+			");
+		
+		$query = $this->createquery();
+		#$query->getQuerySettings()->setRespectStoragePage(FALSE);
+		$query->statement($queryb);
+		$result = $query->execute(TRUE);
+
+		
+		#print_r($result);
+		#exit;
+		return $result;
+
+	}
+	
+	public function findAllByDate($pageid=1) {		
+		
+		########################
+		$timestamp = time();
+
+		$queryb = ("SELECT p.* , h.*, p.uid AS uid, h.uid as terminuid
+			FROM tx_mwwebinare_domain_model_webinare p, tx_mwwebinare_domain_model_termine h
+			WHERE (
+				p.deleted = 0
+				AND h.deleted = 0
+				AND p.sys_language_uid IN (".(int)$GLOBALS['TSFE']->sys_language_uid.",-1)
+				AND p.uid = h.webinare
+				AND p.pid = ".$pageid."
+			) 
+			AND p.hidden = 0  AND h.hidden = 0 
+			AND p.starttime<=".$timestamp."  
+			AND (p.endtime=0 OR p.endtime>".$timestamp." )
+			AND h.starttime<=".$timestamp."  
+			AND (h.endtime=0 OR h.endtime>".$timestamp." )
+			AND h.beginn > ".$timestamp."
+			ORDER BY h.beginn
+			");
+//-1127/econcess		
+		$query = $this->createquery();
+		#$query->getQuerySettings()->setRespectStoragePage(FALSE);
+		$query->statement($queryb);
+		$result = $query->execute(TRUE);
+		
+		foreach($result as $key => $value) {
+#			echo date('d.m.Y', $value['beginn']).' '.$value['titel'].'<br>';
+			$fileRepository = $this->objectManager->get('TYPO3\CMS\Core\Resource\FileRepository');
+			$fileObjects = $fileRepository->findByRelation('tx_mwwebinare_domain_model_webinare', 'bilder', $value['uid']);
+			$result[$key]['bildobject'] = $fileObjects;
+		}
+		
+		#print_r($result);
+		#exit;
+		return $result;
+
+	}
+}
