@@ -30,12 +30,14 @@ class YouTubeRenderer extends \TYPO3\CMS\Core\Resource\Rendering\YouTubeRenderer
 		//$pageRenderer = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(\TYPO3\CMS\Core\Page\PageRenderer::class);
 		//$pageRenderer->loadRequireJsModule('TYPO3/CMS/EcPageSpeed/PageSpeedWorker');
 //-2844/econcess
+//+3761/econcess
         return sprintf(
-            '<iframe data-cookieconsent="marketing" data-cookieblock-src="%s&autoplay=1"%s></iframe><div width="800" height="800" class="iframewrappervideo"><img class="lazyload" data-cookieconsent="marketing" data-cookieblock-src="https://i.ytimg.com/vi_webp/'.$this->getVideoIdFromFile($file).'/maxresdefault.webp" /><span class="cookieconsent-optout-marketing youtube"><span>Um dieses Video anschauen zu können, geben Sie <a href="#" onclick="event.preventDefault(); window.CookieConsent.renew();">bitte hier Ihre Zustimmung zu den Marketing Cookies.</a></span></span></div>',
+            '<iframe data-cookieconsent="marketing" data-cookieblock-src="%s&autoplay=0"%s></iframe><div width="800" height="800" class="iframewrappervideo"><img class="lazyload" data-cookieconsent="marketing" data-cookieblock-src="https://i.ytimg.com/vi_webp/'.$this->getVideoIdFromFile($file).'/maxresdefault.webp" /><span class="cookieconsent-optout-marketing youtube"><span>Um dieses Video anschauen zu können, geben Sie <a href="#" onclick="event.preventDefault(); window.CookieConsent.renew();">bitte hier Ihre Zustimmung zu den Marketing Cookies.</a></span></span></div>',
             htmlspecialchars($src, ENT_QUOTES | ENT_HTML5),
             empty($attributes) ? '' : ' ' . $this->implodeAttributes($attributes)
         );
     }
+//-3761/econcess
 //-1498/econcess
 //-1324/econcess
 

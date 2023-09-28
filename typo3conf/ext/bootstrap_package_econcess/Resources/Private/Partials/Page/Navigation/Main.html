@@ -183,6 +183,11 @@
 																	<bk2k:icon icon="{child.icon}" width="{theme.navigation.dropdown.icon.width}" height="{theme.navigation.dropdown.icon.height}" />
 																</span>
 															</f:if>
+															<f:if condition="{child.data.title} != {child.title}">
+																<span class="menu-header-text">
+																	{child.data.title}
+																</span>
+															</f:if>
 															<span class="dropdown-text">
 																{child.title}
 																<f:if condition="{child.current}"> 

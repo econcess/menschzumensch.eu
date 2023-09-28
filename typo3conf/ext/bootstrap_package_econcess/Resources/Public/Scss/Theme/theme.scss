@@ -1,5 +1,8 @@
 @import "EXT:bootstrap_package/Resources/Public/Scss/bootstrap5/theme";
 @import "variables";
+@import "theme_lw";
+@import "theme_ls";
+@import "theme_jm";
 * {
 //color:red !important;
 }
@@ -203,10 +206,15 @@ h5 {
 .white-bg .card {
 	color: $dark;
 	background-color: $lighter;
+//	text-align:center;
+}
+.white-bg .card .card-icon-top,
+.white-bg .card .card-title
+ {
 	text-align:center;
 }
 .white-bg .card .card-img-top + .card-body {
-	text-align:left;
+//	text-align:left;
 }
 .card-icon-top {
 	margin-top:2.5rem;
@@ -399,7 +407,7 @@ li.nav-item.dropdown > span
 #p1 .lang_pre_header {
 	display:none;
 }
-.textmedia-gallery .video .embed iframe {
+.video .embed iframe {
     position: absolute;
     top: 0;
     left: 0;
@@ -407,10 +415,10 @@ li.nav-item.dropdown > span
     height: 100%;
     border: none;
 }
-.textmedia-gallery .video .embed iframe[src] + .iframewrappervideo {
+.video .embed iframe[src] + .iframewrappervideo {
 	display:none;
 }
-.textmedia-gallery {
+.video {
     background: #E7F2FF;
 }
 .iframewrappervideo span.youtube {
@@ -618,6 +626,9 @@ li.nav-item.dropdown > span
 		padding-left: var(--frame-spacing);
 		padding-right: var(--frame-spacing);
 	}
+	.menu-header-text {
+		display:none;
+	}
 }
 @include media-breakpoint-up(sm) {
 	.iframewrappervideo span.youtube {
@@ -758,6 +769,34 @@ li.nav-item.dropdown > span
 /*
 Beginn Topmenü
 */
+////////////////////////// Anfang: Ab hier nur für Entwicklung Main Menu
+/*
+	.nav-item.dropdown.dropdown-hover:first-child .ul-and-record-holder {
+		position:absolute;
+		left:0;
+		top:111px;
+		width:100%;
+		display: flex;
+		flex-wrap: wrap;
+		box-shadow: 0px 10px 20px #00000029;
+		overflow:auto;
+		max-height:100vh;
+	}
+	.nav-item.dropdown.dropdown-hover:first-child .dropdown-menu{
+		display:flex;
+		flex-wrap:wrap;
+	}
+	.nav-item.dropdown.dropdown-hover:first-child .dropdown-menu .dropdown-menu {
+		flex-direction:column;
+	}
+	.nav-item.dropdown.dropdown-hover:first-child .dropdown-menu > li{
+		width:32%
+	}
+	.nav-item.dropdown.dropdown-hover:first-child .dropdown-menu>li li{
+		width:100%;
+	}
+*/
+////////////////////////// Ende: Bis hier nur für Entwicklung Main Menu	
 	#page-header > .container {
 		position:relative;
 	}
@@ -872,14 +911,16 @@ Beginn Topmenü
 		border-bottom:1px solid $lighter;
 	}
 	.ul-and-record-holder > .dropdown-menu > li > a {
-		min-height:12rem;
-		border-bottom: 1px solid $tertiary;
+		//min-height:12rem;
+		min-height:0;
+		//border-bottom: 1px solid $tertiary;
+		border-bottom: 0;
 		margin-left:1rem;
 		margin-right:1rem;
 		padding-left:0;
 		padding-right:0;
 		width:auto;
-		margin-bottom:2rem;
+		margin-bottom:1rem;
 	}
 	.navbar-mainnavigation .nav-link-text {
 		font-weight:600;
@@ -892,9 +933,37 @@ Beginn Topmenü
 	}
 
 	.navbar-mainnavigation .dropdown-menu .dropdown-menu .dropdown-item {
-		margin-left: 1rem;
-		border-left:2px solid $primary;
+		margin-left: 2.5rem;
+		border-left:0;
 		margin-bottom: 2rem;
+		width:auto;
+	}
+	.navbar-mainnavigation .dropdown-menu .dropdown-menu .dropdown-item {
+		padding-left:0;
+	}
+	.navbar-mainnavigation .dropdown-menu .dropdown-menu[aria-labelledby='nav-item-338'] .dropdown-item {
+		margin-left: 1rem;
+	}
+	.navbar-mainnavigation .dropdown-menu .dropdown-menu .dropdown-item:before {
+		content: "";
+		position: absolute;
+		display:inline-block;
+		width: 0.6rem;
+		height: 0.6rem;
+		margin-left: -1.3rem;
+		//margin-left: -0.6rem;
+		margin-top:0.35rem;
+		background:$tertiary;
+		border-radius:0.15rem;
+	}
+	.navbar-mainnavigation .dropdown-menu .dropdown-menu[aria-labelledby='nav-item-338'] .dropdown-item:before {
+		display:none;
+	}
+	.navbar-mainnavigation .dropdown-menu span.menu-header-text {
+		color:$primary;
+		text-transform: uppercase;
+		padding-bottom: 8px;
+		font-weight:600;
 	}
 /*	#mainnavigation {
 		.nav-item:nth-last-child(2) {
@@ -1049,7 +1118,8 @@ Ende Topmenü
 		text-align: center;
 	}
 	.ul-and-record-holder>.dropdown-menu>li>a {
-		min-height:9rem;
+		//min-height:9rem;
+		min-height:0;
 	}
 }
 @media (min-width: $grid-float-breakpoint) {

@@ -1,6 +1,8 @@
 <?php
-namespace Mwwebinare\Mwwebinare\Domain\Repository;
 
+namespace Mwwebinare\Mwwebinare\Domain\Repository;
+use TYPO3\CMS\Core\Database\ConnectionPool;
+use TYPO3\CMS\Core\Utility\GeneralUtility;
 /***
  *
  * This file is part of the "Infoniqa Webinare" Extension for TYPO3 CMS.
@@ -23,7 +25,8 @@ class WebinareRepository extends \TYPO3\CMS\Extbase\Persistence\Repository
     protected $defaultOrderings = [
         'sorting' => \TYPO3\CMS\Extbase\Persistence\QueryInterface::ORDER_ASCENDING
     ];
-	
+
+
 	public function findAll() {
 		
 
@@ -106,7 +109,8 @@ class WebinareRepository extends \TYPO3\CMS\Extbase\Persistence\Repository
 	
 	public function findAllByDate($pageid=1) {		
 		
-		########################
+	
+		
 		$timestamp = time();
 
 		$queryb = ("SELECT p.* , h.*, p.uid AS uid, h.uid as terminuid
@@ -138,9 +142,31 @@ class WebinareRepository extends \TYPO3\CMS\Extbase\Persistence\Repository
 			$fileObjects = $fileRepository->findByRelation('tx_mwwebinare_domain_model_webinare', 'bilder', $value['uid']);
 			$result[$key]['bildobject'] = $fileObjects;
 		}
+				
 		
-		#print_r($result);
-		#exit;
+		
+		
+		
+		
+		
+		$queryBuilder = GeneralUtility::makeInstance(ConnectionPool::class)->getQueryBuilderForTable('tx_mwwebinare_domain_model_webinare');
+		$queryBuilder
+		->select('*')
+		->from('tx_mwwebinare_domain_model_webinare') ;
+			
+			$result = $queryBuilder->executeQuery()->fetchAllAssociative();
+		
+		
+		
+		
+		
+		
+		
+		
+	//	$result=NULL;
+		
+		
+		
 		return $result;
 
 	}

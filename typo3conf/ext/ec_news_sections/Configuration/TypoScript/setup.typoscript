@@ -38,6 +38,7 @@ tt_content {
 				}
 			}
 #//+2514/econcess
+#//+3770/econcess
 			20 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
 			20 {
 				table = tx_news_domain_model_news
@@ -52,11 +53,12 @@ tt_content {
 					20 {
 						table = tt_content   
 						pidInList.field=pid
-						where.dataWrap = tx_news_related_news = {field:t3_origuid}
+						where.dataWrap = tx_news_related_news = {field:uid} AND sectionIndex = 1
 						as = myrecords-wo-standard-lang-contents
 					}
 				}
 			}
+#//-3770/econcess
 #//-2514/econcess
 		}
     },

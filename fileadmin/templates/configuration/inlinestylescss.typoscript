@@ -956,6 +956,18 @@ h1, .h1 {
 	.frame-container-default {
 		max-width: 1140px;
 	}
+	.navbar-mainnavigation .dropdown:first-child .nav-link-text,
+	[lang='de-CH'] .navbar-mainnavigation .dropdown:first-child + .dropdown .nav-link-text
+	{
+		color:#363636;
+		border-bottom: 3px solid #1681fb;
+		padding: 6px 0 3px 0;
+	}
+	.navbar-mainnavigation .dropdown:first-child.show .nav-link-text,
+	[lang='de-CH'] .navbar-mainnavigation .dropdown:first-child + .dropdown.show .nav-link-text
+	{
+		color:#1681fb;
+	}
 }
 @media only screen and (min-width: 1400px) {
 	.container, .container-sm, .container-md, .container-lg, .container-xl, .container-xxl {

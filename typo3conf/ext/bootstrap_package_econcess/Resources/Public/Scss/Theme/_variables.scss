@@ -41,7 +41,9 @@ $eco__assets-path: 'typo3conf/ext/bootstrap_package_econcess/Resources/Public/Fo
 $font-family-base: "Noto Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 $font-size-base:			1rem;
 $h1-font-size:              $font-size-base * 2.285714;
-$h2-font-size:              $h1-font-size;
+//$h2-font-size:              $h1-font-size;
+//Vorher: h1=h2, jetzt in der Mitte von h1 und h3, 28.09.2023, econcess bk
+$h2-font-size:              $font-size-base * 1.8571425;
 $h3-font-size:              $font-size-base * 1.428571;
 $h4-font-size:              $font-size-base * 1.142857;
 $h5-font-size:              $font-size-base;
@@ -51,7 +53,9 @@ $h3-line-height:            $font-size-base * 2;
 $h4-line-height:            $font-size-base * 1.714286;
 $h5-line-height:            $font-size-base * 1.571429;
 $h1-font-size-md:              $font-size-base * 2.571429;
-$h2-font-size-md:              $h1-font-size-md;
+//$h2-font-size-md:              $h1-font-size-md;
+//Vorher: h1=h2, jetzt in der Mitte von h1 und h3, 28.09.2023, econcess bk
+$h2-font-size-md:              $font-size-base * 2;
 $h3-font-size-md:              $font-size-base * 1.428571;
 $h4-font-size-md:              $font-size-base * 1.142857;
 $h5-font-size-md:              $font-size-base;
@@ -61,7 +65,9 @@ $h3-line-height-md:            $font-size-base * 2;
 $h4-line-height-md:            $font-size-base * 1.714286;
 $h5-line-height-md:            $font-size-base * 1.571429;
 $h1-font-size-xl:              $font-size-base * 2.75;
-$h2-font-size-xl:              $h1-font-size-xl;
+//$h2-font-size-xl:              $h1-font-size-xl;
+//Vorher: h1=h2, jetzt in der Mitte von h1 und h3, 28.09.2023, econcess bk
+$h2-font-size-xl:            $font-size-base * 2.3125;
 $h3-font-size-xl:              $font-size-base * 1.875;
 $h4-font-size-xl:              $font-size-base * 1.5;
 $h5-font-size-xl:              $font-size-base * 1.125;
