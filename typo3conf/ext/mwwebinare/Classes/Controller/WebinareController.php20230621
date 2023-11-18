@@ -69,7 +69,7 @@ class WebinareController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControl
 		$this->view->assign('ttheader', $this->contentObj->data['header']);
 				
         $webinares = $this->webinareRepository->findAllByDate($this->contentObj->data['pages']);
-		//var_dump($webinares[0]);exit;
+		
 		foreach($webinares as $key => $value) {
 			$webinare =  $this->webinareRepository->findByUid($value['uid']);
 //+1484/econcess
@@ -165,10 +165,7 @@ class WebinareController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControl
 		$webinar_slug = str_replace("ö", "oe", $webinar_slug);
 		$webinar_slug = str_replace("ß", "ss", $webinar_slug);
 		$webinar_slug = rtrim(preg_replace('/[\-]{2,}/','-',strtolower(preg_replace('/[^A-Za-z0-9\-]/', '-', $webinar_slug))),'-');
-		$webinare->slug = $webinar_slug;
-//+3705/econcess
-		$webinare->path_segment = $this->configurationManager->getContentObject()->data['path_segment'];
-//-3705/econcess		
+		$webinare->slug = $webinar_slug;		 
 //-1913/econcess			
 		$this->view->assign('webinare', $webinare);
 		$this->view->assign('termine', $termine);

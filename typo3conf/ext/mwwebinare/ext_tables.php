@@ -60,8 +60,8 @@ $extensionName = strtolower(\TYPO3\CMS\Core\Utility\GeneralUtility::underscoredT
 $pluginName = strtolower('Mwlistwebinare');
 $pluginSignature = $extensionName.'_'.$pluginName;
 
-$TCA['tt_content']['types']['list']['subtypes_excludelist'][$pluginSignature] = '';
-$TCA['tt_content']['types']['list']['subtypes_addlist'][$pluginSignature] = 'pi_flexform';
+$GLOBALS['TCA']['tt_content']['types']['list']['subtypes_excludelist'][$pluginSignature] = '';
+$GLOBALS['TCA']['tt_content']['types']['list']['subtypes_addlist'][$pluginSignature] = 'pi_flexform';
 //\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPiFlexFormValue($pluginSignature, 'FILE:EXT:'.$_EXTKEY . '/Configuration/FlexForms/WebinarAction.xml');
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPiFlexFormValue($pluginSignature, 'FILE:EXT:'.'mwwebinare'. '/Configuration/FlexForms/WebinarAction.xml');
 //-1718/econcess

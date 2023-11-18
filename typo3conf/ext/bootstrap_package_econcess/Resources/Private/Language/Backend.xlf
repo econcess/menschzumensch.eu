@@ -10,6 +10,9 @@
             <trans-unit id="backend_layout.column.teaserright">
                 <source>Teaser: Right</source>
             </trans-unit>
+            <trans-unit id="ratio.945_275">
+                <source>945 zu 275</source>
+            </trans-unit>
         </body>
     </file>
 </xliff>

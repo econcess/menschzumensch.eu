@@ -194,3 +194,99 @@ page.headerData.6.value (
 <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="813b4f2d-8bdd-421f-9ba9-74526f036c0b" data-blockingmode="auto" type="text/javascript"></script>
 )
 #//-3569/econcess
+plugin.tx_seo {
+    config {
+        xmlSitemap {
+            sitemaps {
+                pages { 
+                    config {
+                        #excludedDoktypes = 9818, 500
+                        additionalWhere = AND no_index = 0
+						additionalWhere = AND sitemap_xml_exclude = 0
+						additionalWhere = AND hidden = 0
+                    }
+                }
+				news-blog {
+				   provider = TYPO3\CMS\Seo\XmlSitemap\RecordsXmlSitemapDataProvider
+				   config {
+					  table = tx_news_domain_model_news
+					  sortField = sorting
+					  lastModifiedField = tstamp
+					  pid = 147
+					  url {
+						 pageId = 155
+						 fieldToParameterMap {
+							uid = tx_news_pi1[news]
+						 }
+						 additionalGetParameters {
+							tx_news_pi1.controller = News
+							tx_news_pi1.action = detail
+						 }
+						 useCacheHash = 1
+					  }
+				   }
+				}
+				news-partner {
+				   provider = TYPO3\CMS\Seo\XmlSitemap\RecordsXmlSitemapDataProvider
+				   config {
+					  table = tx_news_domain_model_news
+					  sortField = sorting
+					  lastModifiedField = tstamp
+					  pid = 140
+					  url {
+						 pageId = 139
+						 fieldToParameterMap {
+							uid = tx_news_pi1[news]
+						 }
+						 additionalGetParameters {
+							tx_news_pi1.controller = News
+							tx_news_pi1.action = detail
+						 }
+						 useCacheHash = 1
+					  }
+				   }
+				}
+				news-referenzen {
+				   provider = TYPO3\CMS\Seo\XmlSitemap\RecordsXmlSitemapDataProvider
+				   config {
+					  table = tx_news_domain_model_news
+					  sortField = sorting
+					  lastModifiedField = tstamp
+					  pid = 149
+					  url {
+						 pageId = 159
+						 fieldToParameterMap {
+							uid = tx_news_pi1[news]
+						 }
+						 additionalGetParameters {
+							tx_news_pi1.controller = News
+							tx_news_pi1.action = detail
+						 }
+						 useCacheHash = 1
+					  }
+				   }
+				}
+				news-whitepaper {
+				   provider = TYPO3\CMS\Seo\XmlSitemap\RecordsXmlSitemapDataProvider
+				   config {
+					  table = tx_news_domain_model_news
+					  sortField = sorting
+					  lastModifiedField = tstamp
+					  pid = 150
+					  url {
+						 pageId = 195
+						 fieldToParameterMap {
+							uid = tx_news_pi1[news]
+						 }
+						 additionalGetParameters {
+							tx_news_pi1.controller = News
+							tx_news_pi1.action = detail
+						 }
+						 useCacheHash = 1
+					  }
+				   }
+				}
+            }
+        }
+    }
+}

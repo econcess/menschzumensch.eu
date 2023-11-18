@@ -85,34 +85,21 @@
 									<f:for each="{webinares}" as="webinare">
 									<div class="col-lg-4 col-md-6 col-sm-12 element-item2 transition <f:for each="{webinare.object.kategorien}" as="kategorie">kat_{kategorie.uid} </f:for>">
 										<div class="webinarbox">
-										
-										
-										
-										<f:debug>
-										{_all}
-										</f:debug>	
-										
-										
-										
-										
-										
 <f:comment>
 //+1483/econcess
 //+1698/econcess
-//+3706/econcess
 </f:comment>
 											<f:if condition="{webinare.linktext} != ''">
 											<f:then>
 									
 											</f:then>
 											<f:else>
-											<f:link.action action="show" pageUid="{settings.detailseite}" arguments="{webinare : webinare.uid, termine: webinare.terminuid, slug: webinare.path_segment}">
+											<f:link.action action="show" pageUid="{settings.detailseite}" arguments="{webinare : webinare.uid, termine: webinare.terminuid}">
 												<f:render section="contentdetail" arguments="{webinare: webinare}"/>
 											</f:link.action>
 											</f:else>
 											</f:if>
 <f:comment>
-//-3706/econcess
 //-1698/econcess
 //-1483/econcess
 </f:comment>											
