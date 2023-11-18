@@ -165,7 +165,10 @@ class WebinareController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControl
 		$webinar_slug = str_replace("ö", "oe", $webinar_slug);
 		$webinar_slug = str_replace("ß", "ss", $webinar_slug);
 		$webinar_slug = rtrim(preg_replace('/[\-]{2,}/','-',strtolower(preg_replace('/[^A-Za-z0-9\-]/', '-', $webinar_slug))),'-');
-		$webinare->slug = $webinar_slug;		 
+		$webinare->slug = $webinar_slug;
+//+3705/econcess
+		$webinare->path_segment = $this->configurationManager->getContentObject()->data['path_segment'];
+//-3705/econcess		
 //-1913/econcess			
 		$this->view->assign('webinare', $webinare);
 		$this->view->assign('termine', $termine);

@@ -88,18 +88,20 @@
 <f:comment>
 //+1483/econcess
 //+1698/econcess
+//+3706/econcess
 </f:comment>
 											<f:if condition="{webinare.linktext} != ''">
 											<f:then>
 									
 											</f:then>
 											<f:else>
-											<f:link.action action="show" pageUid="{settings.detailseite}" arguments="{webinare : webinare.uid, termine: webinare.terminuid}">
+											<f:link.action action="show" pageUid="{settings.detailseite}" arguments="{webinare : webinare.uid, termine: webinare.terminuid, slug: webinare.path_segment}">
 												<f:render section="contentdetail" arguments="{webinare: webinare}"/>
 											</f:link.action>
 											</f:else>
 											</f:if>
 <f:comment>
+//-3706/econcess
 //-1698/econcess
 //-1483/econcess
 </f:comment>											
